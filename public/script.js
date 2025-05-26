@@ -149,6 +149,13 @@ document.getElementById("toggle-view").onclick = () => {
   document.getElementById("toggle-view").textContent = isCarouselVisible ? "Carousel" : "List";
 };
 
+document.getElementById("add-album").onclick = () => {
+  const isCarouselVisible = document.getElementById("carousel-view").style.display !== "none";
+  document.getElementById("carousel-view").style.display = isCarouselVisible ? "none" : "block";
+  document.getElementById("list-view").style.display = isCarouselVisible ? "block" : "none";
+  document.getElementById("add-album").textContent = isCarouselVisible ? "Carousel" : "List";
+};
+
 document.getElementById("carousel").addEventListener("wheel", (event) => {
   event.preventDefault();
   event.deltaY > 0 ? nextSlide() : prevSlide();
