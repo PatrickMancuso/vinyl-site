@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'HooeyDemo';
+  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pexels-mike-468229-1181769.jpg?v=1746487508518') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header Layout */
+/* Header Container */
+.list-header {
+  background-color: #111;
+  border-bottom: 7px solid #222;
+  padding: 1.2rem 1.5rem 1rem;
+  color: white;
+}
+
+/* Top Row: Back on left, title centered, filters on right */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Centered Title (absolute center regardless of sides) */
+.header-title-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none; /* allow clicks on other elements */
+}
+
+.header-title {
+  font-size: 3rem;
+  font-family: 'HooeyDemo', serif;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+    font-weight: normal;
+    transform: translateY(6%);
+
+  
+
+}
+
+/* Left + Right Sections */
+.header-left,
+.header-right {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+/* Bottom Row: Search and Record Count Centered */
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Control Styling */
+#genre-select,
+#decade-select,
+#search-input,
+#toggle-view,
+.record-count {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border: none;
+}
+
+#genre-select,
+#decade-select {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+#search-input {
+  width: 200px;
+}
+
+
+
+.record-count {
+  color: #ccc;
+  background: transparent;
+  min-width: 100px;
+  text-align: center;
+    font-size: 1.1rem;
+    transform: translateX(-10%);
+
+
+}
+
+
+/* Album Grid */
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 60px 100px;
+}
+
+.album-item {
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.album-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.album-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.album-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.album-info p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Back Button */
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+}
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Utility Navigation (if used) */
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+
+.spin {
+  animation: spin 5s linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.title-with-vinyls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between vinyls and text */
+}
+
+.spinnable-vinyl {
+  width: 50px;
+  height: 50px;
+  transition: transform 5s linear;
+}
+
+@media (max-width: 600px) {
+  .spinnable-vinyl {
+    display: none; /* hide vinyls on narrow screens if needed */
+  }
+}

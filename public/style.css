@@ -1,202 +1,454 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #BDC9FF;
-  --color-text-main: #000000;
-  --color-text-header: #2800FF;
-  --color-primary: #AFECE0;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
-}
-
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
+/* Load the custom font */
 @font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
+  font-family: 'HooeyDemo';
+  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
-/* Our remix on glitch button */
-.btn--remix {
-  font-family: HK Grotesk;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  font-weight: 500;
-  height: 2.75rem;
-  align-items: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  white-space: nowrap;
-  margin-left: auto;
-}
-.btn--remix img {
-  margin-right: 0.5rem;
-}
-.btn--remix:hover {
-  background-color: #D0FFF1;
-}
-
-/* Navigation grid */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
-  width: 100%;
-  flex-wrap: wrap;
-  border-top: 4px solid #fff;
-}
-
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: #000;
-  text-decoration: none;
-  border-style: none;
-}
-.footer a:hover {
-  background: var(--color-primary);
-}
-
-.footer .links {
-  padding: 0.5rem 1rem 1.5rem;
-  white-space: nowrap;
-}
-
-.divider {
-  padding: 0 1rem;
-}
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
+/* Global body styles */
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  margin: 0;
+  font-family: 'Garamond', serif;  /* Default font */
+  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/AdobeStock_79897624-2048x1366.jpeg?v=1746078479811') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
+/* Header styles */
+/* Header styles */
+header {
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1.5rem;
+  background-color: #111;
+  color: white;
+  border-bottom: 5px solid #222;
+  flex-wrap: wrap;
 }
 
-p {
-  font-size: 1.25rem;
-}
-
-/* Title h1 style */
-.title {
-  color: var(--color-text-header);
-  font-family: HK Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 2rem 0 0;
-}
-
-/* Very light scaling for our illustration */
-.illo-container {
+.header-left,
+.header-right {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
   justify-content: flex-end;
 }
-.illustration {
-  max-width: 100%;
-  max-height: 150px;
-  margin-top: 1rem;
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'HooeyDemo', sans-serif;
+  transform: translateY(10%);
+  margin: 0;
 }
 
-/* Styles for our custom color form and its results */
-.color-info {
-  margin-left: 5px;
+/* Optional: for tighter layout grouping */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.color-search {
-  margin-top: 3rem;
-}
-.color-form {
-  width: 90%;
-  max-width: 500px;
-  margin-left: 5px;
-}
-.color-form a:not(.btn--remix) {
-  font-weight: bold;
-  color: var(--color-text-main);
-  margin-top: 8px;
-}
-.color-form button {
-  margin-top: 8px;
-}
-.color-form button:hover {
+
+/* Unified select styles */
+#genre-select,
+#decade-select {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+  background: #fff;
+  color: #000;
   cursor: pointer;
-  box-shadow: -8px 4px 20px #9BE7D8;
-}
-form {
-  margin: 0.75rem 0;
-}
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-}
-label {
-  color: #000000;
-  font-weight: bold;
 }
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+/* Flex container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
-.instructions p {
-  font-size: 1rem;
+
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
 }
-h2 {
-  color: var(--color-text-header);
+
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-group label {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+
+/* CAROUSEL */
+
+
+.carousel {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.album {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  will-change: transform, opacity;
+  transition: transform 0.6s cubic-bezier(0.20, 0.8, 0.20, 1), opacity 0.4s ease;
+}
+
+
+
+.album img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.album-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 8px;
+  text-align: center;
+  display: none;
+}
+
+.album:hover .album-info {
+  display: block;
+}
+
+/* Carousel position classes */
+.album.main {
+  transform: scale(1.1);
+  z-index: 5;
+}
+.album.left1 {
+  transform: translateX(-220px) rotateY(25deg) scale(0.95);
+  z-index: 4;
+}
+.album.right1 {
+  transform: translateX(220px) rotateY(-25deg) scale(0.95);
+  z-index: 4;
+}
+.album.left2 {
+  transform: translateX(-440px) rotateY(25deg) scale(0.85);
+  z-index: 3;
+}
+.album.right2 {
+  transform: translateX(440px) rotateY(-25deg) scale(0.85);
+  z-index: 3;
+}
+.album.left3 {
+  transform: translateX(-660px) rotateY(25deg) scale(0.75);
+  z-index: 2;
+}
+.album.right3 {
+  transform: translateX(660px) rotateY(-25deg) scale(0.75);
+  z-index: 2;
+}
+.album.hidden {
+  opacity: 0;
+  transform: scale(0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* NAVIGATION */
+.nav-controls {
+  position: fixed;
+  bottom: 20px; /* was 40px */
+  left: 50%;
+  transform: translateX(-45%); /* center it properly */
+  display: flex;
+  gap: 53px;
+  z-index: 10;
+}
+
+
+.nav-btn {
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #333;
+}
+
+#randomBtn {
+  position: fixed;
+  bottom: -7px;
+  left: 49.5%;
+  transform: translateX(-50%);
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  cursor: pointer;
+  z-index: 15;
+  line-height: 1;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform;
+  text-align: center;             
+}
+
+#randomBtn.rolling {
+  animation: rollDice 0.25s linear infinite;
+}
+
+@keyframes rollDice {
+  0%   { transform: translateX(-50%) rotate(0deg); }
+  25%  { transform: translateX(-50%) rotate(90deg); }
+  50%  { transform: translateX(-50%) rotate(180deg); }
+  75%  { transform: translateX(-50%) rotate(270deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+/* BOOKSHELF */
+.bookshelf {
+  position: fixed; /* change from absolute */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85px; /* reduce height */
+  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
+  background-size: cover;
+  border-top: 9px solid #222;
+  box-shadow: inset 0 15px 12px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+
+
+
+#search-input {
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+  width: 220px; /* Make it consistent */
+}
+
+
+.fav-icon {
+  color: #aaa;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  
+  
+  
+  
+}
+
+.fav-icon:hover {
+  color: gold;
+  text-shadow: 0 0 8px gold;
+}
+
+.fav-icon.active {
+  color: gold;
+}
+
+#fav-filter-toggle {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  padding: 6.5px 10px;
+  font-size: 1.1rem;
+  margin-left: 0px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;  
+
+
+}
+
+#fav-filter-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: gold;
+}
+
+#fav-filter-toggle.active {
+  color: gold;
+  border-color: gold;
+  
+}
+
+.album-info .fav-icon {
+  line-height: 1.2;
+  position: relative;
+  top: 3px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .album {
+    width: 500px;
+    height: 500px;
+  }
+  .album.left1,
+  .album.right1 {
+    transform: translateX(180px) rotateY(25deg) scale(0.9);
+  }
+  .album.left2,
+  .album.right2 {
+    transform: translateX(360px) rotateY(25deg) scale(0.8);
+  }
+  .album.left3,
+  .album.right3 {
+    transform: translateX(540px) rotateY(25deg) scale(0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.2rem;
+  }
+
+  #search-input {
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .header-left,
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-group label {
+    font-size: 1rem;
+  }
+
+  #genre-select,
+  #decade-select,
+  #toggle-view {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .album {
+    width: 360px;
+    height: 360px;
+  }
+
+  .carousel-wrapper {
+    height: 520px;
+  }
+
+  .carousel {
+    bottom: 120px;
+    height: 240px;
+  }
+
+  .nav-controls {
+    gap: 30px;
+  }
+
+  .nav-btn,
+  #randomBtn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-left,
+  .header-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  .album {
+    width: 280px;
+    height: 280px;
+  }
+
+  .carousel-wrapper {
+    height: 420px;
+  }
+
+  .carousel {
+    bottom: 100px;
+    height: 200px;
+  }
+
+  .bookshelf {
+    height: 50px;
+    background-size: cover;
+  }
+}
+
+

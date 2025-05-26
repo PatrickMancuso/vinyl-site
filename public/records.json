@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "love-deluxe",
+    "title": "Love Deluxe",
+    "artist": "Sade",
+    "year": 1992,
+    "cover": "https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/Love-Deluxe.jpg?v=1746070864210",
+    "api_artist_name": "Sade",
+    "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/2PfGKHtqEX58bHtkQxJnWG?utm_source=generator"
+  },
+  
+  {
+  "id": "adam-s-apple",
+  "title": "Adam's Apple",
+  "artist": "Wayne Shorter",
+  "year": 1967,
+  "cover": "https://m.media-amazon.com/images/I/71UmMKS8m3L._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Wayne Shorter",
+  "tags": "jazz, saxophone, Hard Bop, bebop, Fusion",
+  "spotify_url": "https://open.spotify.com/embed/album/4sxvTow8IffB0lisGJWb6Z?utm_source=generator"
+},
+  
+  {
+  "id": "back-at-the-chicken-shack",
+  "title": "Back at the Chicken Shack",
+  "artist": "Jimmy Smith",
+  "year": 1963,
+  "cover": "https://m.media-amazon.com/images/I/81VZURwjq2L._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Jimmy Smith",
+  "tags": "jazz, organ, funk, Hammond, blues",
+  "spotify_url": "https://open.spotify.com/embed/album/6YhvR14clg0yibdTKB5aBv?utm_source=generator"
+},
+  
+  {
+  "id": "blues-roots",
+  "title": "Blues & Roots",
+  "artist": "Charles Mingus",
+  "year": 1960,
+  "cover": "https://m.media-amazon.com/images/I/91fJ7HjopTL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Charles Mingus",
+  "tags": "jazz, bebop, bass, Avant-Garde, Post-Bop",
+    "spotify_url": "https://open.spotify.com/embed/album/7EOQggjtK8JCqeRz9IG33e?utm_source=generator"
+},
+  
+  {
+  "id": "round-about-midnight",
+  "title": "'Round About Midnight",
+  "artist": "Miles Davis",
+  "year": 1957,
+  "cover": "https://i.scdn.co/image/ab67616d0000b2737df8c70e41f248299b4224a1",
+  "api_artist_name": "Miles Davis",
+  "tags": "jazz, trumpet, Fusion, bebop, blues",
+  "spotify_url": "https://open.spotify.com/embed/album/4VUawqEDCHHfrUe77ScQ2K?utm_source=generator"
+
+},
+  {
+  "id": "mingus-ah-um",
+  "title": "Mingus Ah Um",
+  "artist": "Charles Mingus",
+  "year": 1959,
+  "cover": "https://m.media-amazon.com/images/I/81DmDMv-VzL._SL1500_.jpg",
+  "api_artist_name": "Charles Mingus",
+  "tags": "jazz, bebop, bass, Avant-Garde, Post-Bop",
+  "spotify_url": "https://open.spotify.com/embed/album/7pojWP7x9uEFSJgw765khA?utm_source=generator" 
+
+},
+  {
+    "id": "one-nation-under-a-groove",
+    "title": "One Nation Under a Groove",
+    "artist": "Funkadelic",
+    "year": 1978,
+    "cover": "https://m.media-amazon.com/images/I/71CcyoKo8EL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Funkadelic",
+    "tags": "funk, soul, psychedelic, p-funk, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/0QLGc9YYoHIKpnprRURTdm?utm_source=generator"
+  },
+  {
+    "id": "eye-in-the-sky",
+    "title": "Eye in the Sky",
+    "artist": "The Alan Parsons Project",
+    "year": 1982,
+    "cover": "https://m.media-amazon.com/images/I/61SzMHIYPfL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "The Alan Parsons Project",
+    "tags": "Progressive rock, classic rock, rock, 80s, electronic",
+    "spotify_url": "https://open.spotify.com/embed/album/71Y6kburF8k1qyHycovHy8?utm_source=generator"
+  },
+  {
+    "id": "remember-the-future",
+    "title": "Remember the Future",
+    "artist": "Nektar",
+    "year": 1973,
+    "cover": "https://m.media-amazon.com/images/I/818QU0JBF1L.jpg",
+    "api_artist_name": "Nektar",
+    "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
+    "spotify_url": "https://open.spotify.com/embed/album/1BQYS7PTIxgYFY4mv5P8M0?utm_source=generator"
+  },
+  {
+  "id": "maiden-voyage",
+  "title": "Maiden Voyage",
+  "artist": "Herbie Hancock",
+  "year": 1965,
+  "cover": "https://i0.wp.com/bestofjazz.org/wp-content/uploads/Herbie-Hancock-Maiden-Voyage.png?resize=600%2C600&ssl=1",
+  "api_artist_name": "Herbie Hancock",
+  "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
+  "spotify_url": "https://open.spotify.com/embed/album/7huPJTTsWVt854oZkr88mf?utm_source=generator"
+},
+  {
+  "id": "live-at-carnegie-hall",
+  "title": "Live at Carnegie Hall",
+  "artist": "Bill Withers",
+  "year": 1970,
+  "cover": "https://m.media-amazon.com/images/I/61LHfVOjEkL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Bill Withers",
+  "tags": "soul, funk, 70s, rhythm and blues, rnb",
+   "spotify_url": "https://open.spotify.com/embed/album/0Stnb66v5cibvR22sFdLYx?utm_source=generator"
+},
+ {
+    "id": "giant-steps",
+    "title": "Giant Steps",
+    "artist": "John Coltrane",
+    "year": 1960,
+    "cover": "https://artrockstore.com/cdn/shop/products/artrockstore-john-coltrane-giant-steps-album_1024x1024.jpg?v=1683171328",
+    "api_artist_name": "John Coltrane",
+    "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/7cZ6oBx0SEUPDAoxJtxNDh?utm_source=generator"
+  },
+  {
+    "id": "josh-at-midnight",
+    "title": "Josh at Midnight",
+    "artist": "Josh White",
+    "year": 1956,
+    "cover": "https://m.media-amazon.com/images/I/71xO8ChJ3aL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Josh White",
+    "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues",
+    "spotify_url": "https://open.spotify.com/embed/album/5ZvkLS9KmiDSdW9MbEWwLV?utm_source=generator"
+  },
+  {
+    "id": "cowboy-bebop",
+    "title": "Cowboy Bebop",
+    "artist": "Seatbelts",
+    "year": 1998,
+    "cover": "https://i.discogs.com/MmbF8Musstn8k4n5kUr9UErm3jJNYXuOJlE46EVq1PY/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMDY0/My0xMTYyMTgxNDIw/LmpwZWc.jpeg",
+    "api_artist_name": "Seatbelts",
+    "tags": "jazz, blues, japanese, funk, instrumental, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/1XoE7ZirQ3gjxq8HIzTJU9?utm_source=generator"
+  },
+  {
+    "id": "a-silent-voice",
+    "title": "A Silent Voice",
+    "artist": "Kensuke Ushio",
+    "year": 2016,
+    "cover": "https://blackscreenrecords.com/cdn/shop/files/aSilentVoiceVinyl_2D_FLAT_Withbellyband_2048x.jpg?v=1737535341",
+    "api_artist_name": "Kensuke Ushio",
+    "tags": "Soundtrack, japanese, ambient, anime, electronic, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/3WlmFFtmePwfhN9pQdVJ5v?utm_source=generator"
+  },
+  {
+    "id": "crumbling",
+    "title": "Crumbling",
+    "artist": "Mid-Air Thief",
+    "year": 2018,
+    "cover": "https://i.ytimg.com/vi/rDMiwWfclTs/maxresdefault.jpg",
+    "api_artist_name": "Mid-Air Thief",
+    "tags": "folktronica, psychedelic, Neo-Psychedelia, psychedelic pop, Korean, ambient",
+    "spotify_url": "https://open.spotify.com/embed/album/4n9J61IrlrEFswxTu0MJIo?utm_source=generator"
+  },
+  {
+    "id": "what-s-going-on",
+    "title": "What's Going On",
+    "artist": "Marvin Gaye",
+    "year": 1971,
+    "cover": "https://d.newsweek.com/en/full/1802884/marvin-gayes-whats-going-turns-50.webp",
+    "api_artist_name": "Marvin Gaye",
+    "tags": "soul, motown, funk, rhythm and blues, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/2v6ANhWhZBUKkg6pJJBs3B?utm_source=generator"
+  },
+  {
+    "id": "baduizm",
+    "title": "Baduizm",
+    "artist": "Erykah Badu",
+    "year": 1997,
+    "cover": "https://m.media-amazon.com/images/I/713Hbj16ASL.jpg",
+    "api_artist_name": "Erykah Badu",
+    "tags": "soul, Neo-Soul, female vocalists, rnb, jazz",
+    "spotify_url": "https://open.spotify.com/embed/album/3qr4pTBWEU1SVf01j6RAx3?utm_source=generator"
+  },
+  {
+    "id": "innervisions",
+    "title": "Innervisions",
+    "artist": "Stevie Wonder",
+    "year": 1973,
+    "cover": "https://i.scdn.co/image/ab67616d0000b273ea8ab1a548312b79ac955266",
+    "api_artist_name": "Stevie Wonder",
+    "tags": "soul, funk, motown, pop, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/5jgI8Eminx9MmLBontDWq8?utm_source=generator"
+  },
+  {
+    "id": "songs-in-the-key-of-life",
+    "title": "Songs in the Key of Life",
+    "artist": "Stevie Wonder",
+    "year": 1976,
+    "cover": "https://m.media-amazon.com/images/I/71hVRbO+KHL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Stevie Wonder",
+    "tags": "soul, funk, motown, pop, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/6YUCc2RiXcEKS9ibuZxjt0?utm_source=generator"
+  },
+  {
+    "id": "rise",
+    "title": "Rise",
+    "artist": "Herb Alpert",
+    "year": 1979,
+    "cover": "https://i.ebayimg.com/images/g/12kAAOSwHahmRDOi/s-l1200.jpg",
+    "api_artist_name": "Herb Alpert",
+    "tags": "jazz, instrumental, easy listening, trumpet, chill",
+    "spotify_url": "https://open.spotify.com/embed/album/7HY0aAzDNhAqmFHATtABPY?utm_source=generator"
+  },
+  {
+    "id": "mysterious-traveler",
+    "title": "Mysterious Traveler",
+    "artist": "Weather Report",
+    "year": 1974,
+    "cover": "https://m.media-amazon.com/images/I/71yrT-bvEpL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Weather Report",
+    "tags": "jazz, Fusion, jazz fusion, instrumental, funk",
+    "spotify_url": "https://open.spotify.com/embed/album/2JARH6A2TX28OzcPwJnD1p?utm_source=generator"
+  },
+  {
+    "id": "black-market",
+    "title": "Black Market",
+    "artist": "Weather Report",
+    "year": 1976,
+    "cover": "https://m.media-amazon.com/images/I/81MQAN7-0EL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Weather Report",
+    "tags": "jazz, Fusion, jazz fusion, instrumental, funk",
+    "spotify_url": "https://open.spotify.com/embed/album/4COZn5okauxP5luXkwEPLd?utm_source=generator"
+  },
+  {
+    "id": "empyrean-isles",
+    "title": "Empyrean Isles",
+    "artist": "Herbie Hancock",
+    "year": 1964,
+    "cover": "https://www.herbiehancock.com/wp-content/uploads/2017/02/Empyrean-Isles.jpg",
+    "api_artist_name": "Herbie Hancock",
+    "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/11TXHm0xqob0K697Fz8cSo?utm_source=generator"
+  },
+  {
+    "id": "headhunters",
+    "title": "Headhunters",
+    "artist": "Herbie Hancock",
+    "year": 1973,
+    "cover": "https://www.herbiehancock.com/wp-content/uploads/2017/02/Head-Hunters.jpg",
+    "api_artist_name": "Herbie Hancock",
+    "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/5fmIolILp5NAtNYiRPjhzA?utm_source=generator"
+  },
+  {
+    "id": "justments",
+    "title": "+'Justments",
+    "artist": "Bill Withers",
+    "year": 1974,
+    "cover": "https://m.media-amazon.com/images/I/8143pir8TVL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Bill Withers",
+    "tags": "soul, funk, 70s, rhythm and blues, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/10jKkqtTI0cblOQjJfDUpt?utm_source=generator"
+  },
+    {
+    "id": "still-bill",
+    "title": "Still Bill",
+    "artist": "Bill Withers",
+    "year": 1972,
+    "cover": "https://m.media-amazon.com/images/I/7108IhubsnL.jpg",
+    "api_artist_name": "Bill Withers",
+    "tags": "soul, funk, 70s, rhythm and blues, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/5EClNCnI8hnAbelstFbiU9?utm_source=generator"
+  },
+  {
+    "id": "superfly",
+    "title": "Superfly",
+    "artist": "Curtis Mayfield",
+    "year": 1972,
+    "cover": "https://m.media-amazon.com/images/I/81hBKihuLkL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Curtis Mayfield",
+    "tags": "soul, funk, 70s, rhythm and blues, rnb, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/295ykF5lEp4sZseuob1qTu?utm_source=generator"
+  },
+  {
+    "id": "curtis",
+    "title": "Curtis",
+    "artist": "Curtis Mayfield",
+    "year": 1970,
+    "cover": "https://m.media-amazon.com/images/I/91d1E9ZjkuL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Curtis Mayfield",
+    "tags": "soul, funk, 70s, rhythm and blues, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/3tgJmEz0R0ZsRSrpwafp4R?utm_source=generator"
+  },
+  {
+    "id": "diamond-life",
+    "title": "Diamond Life",
+    "artist": "Sade",
+    "year": 1984,
+    "cover": "https://m.media-amazon.com/images/I/71T3-lHvXxL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Sade",
+    "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0?utm_source=generator"
+  },
+  {
+    "id": "can-t-buy-a-thrill",
+    "title": "Can't Buy a Thrill",
+    "artist": "Steely Dan",
+    "year": 1972,
+    "cover": "https://m.media-amazon.com/images/I/613fQ0Vi++L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Steely Dan",
+    "tags": "classic rock, Jazz Rock, rock, 70s, jazz",
+    "spotify_url": "https://open.spotify.com/embed/album/6DlSUW5gmq6Byc3osKDJ2p?utm_source=generator"
+  },
+  {
+    "id": "aja",
+    "title": "Aja",
+    "artist": "Steely Dan",
+    "year": 1977,
+    "cover": "https://m.media-amazon.com/images/I/51Or8sHTe-L.jpg",
+    "api_artist_name": "Steely Dan",
+    "tags": "classic rock, Jazz Rock, rock, 70s, jazz",
+    "spotify_url": "https://open.spotify.com/embed/album/1hOK2ey9W76x9GnftSRgrw?utm_source=generator"
+  },
+  {
+    "id": "uzumaki",
+    "title": "Uzumaki",
+    "artist": "Colin Stetson",
+    "year": 2024,
+    "cover": "https://i.scdn.co/image/ab67616d0000b273fc4ffbca719a52819e3ec9f1",
+    "api_artist_name": "Colin Stetson",
+    "tags": "experimental, Avant-Garde, seen live, Avant-Garde Jazz, ambient, instrumental, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/7jSnAYdc0Aysd2ONzzVwLX?utm_source=generator"
+  },
+  {
+    "id": "solid-state-survivor",
+    "title": "Solid State Survivor",
+    "artist": "Yellow Magic Orchestra",
+    "year": 1979,
+    "cover": "https://i.scdn.co/image/ab67616d0000b273c70aa05c55b6fb116863f6f5",
+    "api_artist_name": "Yellow Magic Orchestra",
+    "tags": "electronic, japanese, synthpop, techno, electronica",
+    "spotify_url": "https://open.spotify.com/embed/album/5TmpFE7Xus70ko1QYGxFIe?utm_source=generator"
+  },
+  {
+    "id": "thousand-knives",
+    "title": "Thousand Knives",
+    "artist": "Ryuichi Sakamoto",
+    "year": 1978,
+    "cover": "https://m.media-amazon.com/images/I/81rKz1yPPBL.jpg",
+    "api_artist_name": "Ryuichi Sakamoto",
+    "tags": "japanese, piano, ambient, experimental, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/0EwjDAYbgBNtS3zY7uPCh7?utm_source=generator"
+  },
+  {
+    "id": "yellow-magic-orchestra",
+    "title": "Yellow Magic Orchestra",
+    "artist": "Yellow Magic Orchestra",
+    "year": 1978,
+    "cover": "https://m.media-amazon.com/images/I/71tNdtNw70L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Yellow Magic Orchestra",
+    "tags": "electronic, japanese, synthpop, techno, electronica",
+    "spotify_url": "https://open.spotify.com/embed/album/76xjrDclKxWzJdDz3isxBX?utm_source=generator"
+  },
+  {
+    "id": "floating",
+    "title": "Floating",
+    "artist": "Eloy",
+    "year": 1974,
+    "cover": "https://www.progarchives.com/progressive_rock_discography_covers/95/cover_2412692016_r.jpg",
+    "api_artist_name": "Eloy",
+    "tags": "Progressive rock, space rock, krautrock, Psychedelic Rock, german",
+    "spotify_url": "https://open.spotify.com/embed/album/7zhuy8vqMtMJF73gQN0lvi?utm_source=generator"
+  },
+  {
+    "id": "silent-cries-and-mighty-echoes",
+    "title": "Silent Cries and Mighty Echoes",
+    "artist": "Eloy",
+    "year": 1979,
+    "cover": "https://www.progarchives.com/progressive_rock_discography_covers/95/cover_55287892016_r.jpg",
+    "api_artist_name": "Eloy",
+    "tags": "Progressive rock, space rock, krautrock, Psychedelic Rock, german",
+    "spotify_url": "https://open.spotify.com/embed/album/6XAES0j2QM7gPjLsEEKPVn?utm_source=generator"
+  },
+  {
+    "id": "recycled",
+    "title": "Recycled",
+    "artist": "Nektar",
+    "year": 1976,
+    "cover": "https://cleorecs.com/cdn/shop/files/9296-NEKTAR.jpg?v=1712953156",
+    "api_artist_name": "Nektar",
+    "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
+    "spotify_url": "https://open.spotify.com/embed/album/4D5ZGmqizLUdRUZkHZi0Tn?utm_source=generator"
+  },
+  {
+    "id": "rainbow-dome-musick",
+    "title": "Rainbow Dome Musick",
+    "artist": "Steve Hillage",
+    "year": 1979,
+    "cover": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F641cd1ee-051d-4460-ba1a-983b33f17b34_1184x1180.jpeg",
+    "api_artist_name": "Steve Hillage",
+    "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene, ambient",
+    "spotify_url": "https://open.spotify.com/embed/album/67m5VTJCEDpxDz5WH2upcz?utm_source=generator"
+  },
+  {
+    "id": "green",
+    "title": "Green",
+    "artist": "Steve Hillage",
+    "year": 1978,
+    "cover": "https://m.media-amazon.com/images/I/61BJT9XXAgL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Steve Hillage",
+    "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene",
+    "spotify_url": "https://open.spotify.com/embed/album/3EiyPffQse15BhPxfOYN0r"
+  },
+  {
+    "id": "flying-teapot",
+    "title": "Flying Teapot",
+    "artist": "Gong",
+    "year": 1973,
+    "cover": "https://m.media-amazon.com/images/I/91d8f0UrY6L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Gong",
+    "tags": "Progressive rock, Psychedelic Rock, psychedelic, space rock, Canterbury",
+    "spotify_url": "https://open.spotify.com/embed/album/47tuhYAVX2ELCONy10VOLX"
+  },
+  {
+    "id": "gong-live-at-sheffield",
+    "title": "Gong - Live! At Sheffield ",
+    "artist": "Gong",
+    "year": 1974,
+    "cover": "https://i.discogs.com/4EOmEkoXlI8_U4xKdAYpwjXu__hmsPYRHsnUwQ_SUcU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODA0/OTc1LTE1MjI2Nzg3/MDktMTY0NS5qcGVn.jpeg",
+    "api_artist_name": "Gong",
+    "tags": "Progressive rock, Psychedelic Rock, psychedelic, space rock, Canterbury",
+    "spotify_url": "https://open.spotify.com/embed/album/3pkBSd9WV2J3oDFDpPZ66A"
+  },
+  {
+    "id": "wish-you-were-here",
+    "title": "Wish You Were Here",
+    "artist": "Pink Floyd",
+    "year": 1975,
+    "cover": "https://media.pitchfork.com/photos/673362c0fc837d4b9b27db8a/16:9/w_1280,c_limit/Pink%20Floyd:%20Wish%20You%20Were%20Here.jpg",
+    "api_artist_name": "Pink Floyd",
+    "tags": "Progressive rock, classic rock, Psychedelic Rock, rock, psychedelic",
+    "spotify_url": "https://open.spotify.com/embed/album/0bCAjiUamIFqKJsekOYuRw"
+  },
+  {
+    "id": "houses-of-the-holy",
+    "title": "House of the Holy",
+    "artist": "Led Zeppelin",
+    "year": 1973,
+    "cover": "https://experiencevinyl.com/cdn/shop/products/R-4817946-1420758524-8571_jpeg-716391.jpg?v=1619200300",
+    "api_artist_name": "Led Zeppelin",
+    "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
+    "spotify_url": "https://open.spotify.com/embed/album/0GqpoHJREPp0iuXK3HzrHk?utm_source=generator"
+  
+  
+  
+  
+  
+  
+  },
+  {
+    "id": "physical-graffiti",
+    "title": "Physical Graffiti",
+    "artist": "Led Zeppelin",
+    "year": 1975,
+    "cover": "https://m.media-amazon.com/images/I/91nQIviADKL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Led Zeppelin",
+    "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5F"
+  },
+  {
+    "id": "demons-and-wizards",
+    "title": "Demons and Wizards",
+    "artist": "Uriah Heep",
+    "year": 1972,
+    "cover": "https://m.media-amazon.com/images/I/A1palN6Z3IL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Uriah Heep",
+    "tags": "classic rock, hard rock, Progressive rock, rock, 70s",
+    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5G"
+  },
+  {
+    "id": "machine-head",
+    "title": "Machine Head",
+    "artist": "Deep Purple",
+    "year": 1971,
+    "cover": "https://m.media-amazon.com/images/I/71fU7JDo9DL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Deep Purple",
+    "tags": "hard rock, classic rock, rock, Progressive rock, heavy metal",
+    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5H"
+  },
+  {
+    "id": "nightingales-and-bombers",
+    "title": "Nightingales and Bombers",
+    "artist": "Manfred Mann's Earth Band",
+    "year": 1975,
+    "cover": "https://images.genius.com/e15a442e517a1a53b338a985a13a94b3.600x602x1.jpg",
+    "api_artist_name": "Manfred Mann's Earth Band",
+    "tags": "classic rock, Progressive rock, rock, 70s, art rock",
+    "spotify_url": "https://open.spotify.com/embed/album/2nE8G9u3XbO3q1I0p1zF8I"
+  },
+  {
+    "id": "silver",
+    "title": "Silver",
+    "artist": "Silver",
+    "year": 1976,
+    "cover": "https://e.snmc.io/i/1200/s/b6b9abde70e8207a82ff0686c5dd6e26/4051943",
+    "api_artist_name": "Silver",
+    "tags": "rock, folk rock, classic rock, 70s",
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5J"
+  },
+  {
+    "id": "dire-straits",
+    "title": "Dire Straits",
+    "artist": "Dire Straits",
+    "year": 1977,
+    "cover": "https://m.media-amazon.com/images/I/61rF8+Xsd4L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Dire Straits",
+    "tags": "classic rock, rock, 80s, blues, guitar",
+    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5K"
+  },
+  {
+    "id": "golden-biscuits",
+    "title": "Golden Biscuits",
+    "artist": "Three Dog Night",
+    "year": 1971,
+    "cover": "https://i.discogs.com/p53bKY4rM5I2YSy7sQ_eKWDlI7RP9RmkjWVepK35iR0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDEy/NTExLTE2MDE4NTkx/ODQtOTg0NC5qcGVn.jpeg",
+    "api_artist_name": "Three Dog Night",
+    "tags": "classic rock, rock, 70s, oldies, Southern Rock",
+    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5L"
+  },
+  {
+    "id": "dreamboat-annie",
+    "title": "Dreamboat Annie",
+    "artist": "Heart",
+    "year": 1975,
+    "cover": "https://m.media-amazon.com/images/I/71AS649ysgL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Heart",
+    "tags": "classic rock, rock, female vocalists, 80s, hard rock",
+    "spotify_url": "https://open.spotify.com/embed/album/2Q8v3y0Kz0Qh7xX1K1sLkX5M"
+  },
+  {
+    "id": "time",
+    "title": "Time",
+    "artist": "Electric Light Orchestra",
+    "year": 1981,
+    "cover": "https://i.scdn.co/image/ab67616d0000b2731083325e2f648767a49ddfad",
+    "api_artist_name": "Electric Light Orchestra",
+    "tags": "classic rock, Progressive rock, rock, 70s, british",
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5N?utm_source=generator"
+  },
+  {
+  "id": "breakfast-in-america",
+  "title": "Breakfast in America",
+  "artist": "Supertramp",
+  "year": 1979,
+  "cover": "https://m.media-amazon.com/images/I/71Gz3u2htNL.jpg",
+  "api_artist_name": "Supertramp",
+  "tags": "classic rock, Progressive rock, rock, 70s, pop",
+  "spotify_url": "https://open.spotify.com/embed/album/1J1ghdI9ILb9eZp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "fire-of-unknown-origin",
+  "title": "Fire of Unknown Origin",
+  "artist": "Blue Oyster Cult",
+  "year": 1981,
+  "cover": "https://i.scdn.co/image/ab67616d0000b2736895da04b237964b95c2a166",
+  "api_artist_name": "Blue Oyster Cult",
+  "tags": "classic rock, rock, hard rock, american, psychedelic",
+  "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "agents-of-fortune",
+  "title": "Agents of Fortune",
+  "artist": "Blue Oyster Cult",
+  "year": 1976,
+  "cover": "https://i.scdn.co/image/ab67616d0000b2733ac318439ae56ce048d7bf5d",
+  "api_artist_name": "Blue Oyster Cult",
+  "tags": "classic rock, rock, hard rock, american, psychedelic",
+  "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "eliminator",
+  "title": "Eliminator",
+  "artist": "ZZ Top",
+  "year": 1983,
+  "cover": "https://m.media-amazon.com/images/I/91hXfCFcIOL.jpg",
+  "api_artist_name": "ZZ Top",
+  "tags": "classic rock, blues rock, rock, Southern Rock, hard rock",
+  "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "ritchie-blackmore-s-rainbow",
+  "title": "Ritchie Blackmore's Rainbow",
+  "artist": "Rainbow",
+  "year": 1974,
+  "cover": "https://m.media-amazon.com/images/I/81jJzi9yMiL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Rainbow",
+  "tags": "hard rock, classic rock, heavy metal, rock, metal",
+  "spotify_url": "https://open.spotify.com/embed/album/6v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "asia",
+  "title": "Asia",
+  "artist": "Asia",
+  "year": 1981,
+  "cover": "https://autographcentral.net/wp-content/uploads/Asia.jpg",
+  "api_artist_name": "Asia",
+  "tags": "Progressive rock, classic rock, rock, 80s, hard rock",
+  "spotify_url": "https://open.spotify.com/embed/album/7v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "love-at-first-sting",
+  "title": "Love at First Sting",
+  "artist": "Scorpions",
+  "year": 1981,
+  "cover": "https://i.discogs.com/qM8fORa62C4Scl2ke2jo0oXI_xxathT5quSFkYIf9uc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNDkx/NTEtMTQ2Mzk2MTMz/Ny05MTA1LmpwZWc.jpeg",
+  "api_artist_name": "Scorpions",
+  "tags": "hard rock, classic rock, rock, heavy metal, 80s",
+  "spotify_url": "https://open.spotify.com/embed/album/8v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "music-for-the-masses",
+  "title": "Music for the Masses",
+  "artist": "Depeche Mode",
+  "year": 1987,
+  "cover": "https://lunchboxrecords.com/cdn/shop/files/MFTM_Cover.jpg?v=1743725621",
+  "api_artist_name": "Depeche Mode",
+  "tags": "electronic, new wave, 80s, synthpop, synth pop",
+  "spotify_url": "https://open.spotify.com/embed/album/9v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "violator",
+  "title": "Violator",
+  "artist": "Depeche Mode",
+  "year": 1990,
+  "cover": "https://cdn-images.dzcdn.net/images/cover/2632e326fac7c48c2fbef198f295995a/0x1900-000000-80-0-0.jpg",
+  "api_artist_name": "Depeche Mode",
+  "tags": "electronic, new wave, 80s, synthpop, synth pop",
+  "spotify_url": "https://open.spotify.com/embed/album/0v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "i-robot",
+  "title": "I Robot",
+  "artist": "The Alan Parsons Project",
+  "year": 1977,
+  "cover": "https://i.ebayimg.com/images/g/dUgAAOSw~pll2jNs/s-l1200.jpg",
+  "api_artist_name": "The Alan Parsons Project",
+  "tags": "Progressive rock, classic rock, rock, 80s, electronic",
+  "spotify_url": "https://open.spotify.com/embed/album/1v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "cargo",
+  "title": "Cargo",
+  "artist": "Men at Work",
+  "year": 1983,
+  "cover": "https://i.scdn.co/image/ab67616d0000b2733b67a6855fed4af6088ee72a",
+  "api_artist_name": "Men at Work",
+  "tags": "80s, new wave, rock, australian, pop",
+  "spotify_url": "https://open.spotify.com/embed/album/2v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "business-as-usual",
+  "title": "Business as Usual",
+  "artist": "Men at Work",
+  "year": 1981,
+  "cover": "https://i.scdn.co/image/ab67616d0000b273aa5e4c9da271951ac0b31fa2",
+  "api_artist_name": "Men at Work",
+  "tags": "80s, new wave, rock, australian, pop",
+  "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "frontiers",
+  "title": "Frontiers",
+  "artist": "Journey",
+  "year": 1983,
+  "cover": "https://m.media-amazon.com/images/I/81RPFmr49sL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Journey",
+  "tags": "classic rock, rock, 80s, hard rock, Progressive rock",
+  "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+{
+  "id": "dead-man-s-party",
+  "title": "Dead Man's Party",
+  "artist": "Oingo Boingo",
+  "year": 1985,
+  "cover": "https://i.discogs.com/CPtMk0l_qT05befircmRA7kihhf8qY-qppoiw5eJdZA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODQ3/NTktMTM2MTc2Mzgx/OC0yNzM0LmpwZWc.jpeg",
+  "api_artist_name": "Oingo Boingo",
+  "tags": "new wave, 80s, rock, alternative, pop",
+  "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+},
+  
+  
+  
+  
+  
+ {
+    "id": "seven-and-the-ragged-tiger",
+    "title": "Seven and the Ragged Tiger",
+    "artist": "Duran Duran",
+    "year": 1983,
+    "cover": "https://m.media-amazon.com/images/I/81P2GDOmp2L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Duran Duran",
+    "tags": "new wave, 80s, pop, synth pop, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/1A1AKj7tAopU9MIZgWdSP9"
+  },
+  {
+    "id": "duran-duran",
+    "title": "Duran Duran",
+    "artist": "Duran Duran",
+    "year": 1981,
+    "cover": "https://e.snmc.io/i/1200/s/93c8a55218632223a3086f5d0c91ad6b/6973916",
+    "api_artist_name": "Duran Duran",
+    "tags": "new wave, 80s, pop, synth pop, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/7rCjItVh49HVMaHqxFKPRZ"
+  },
+  {
+    "id": "rio",
+    "title": "Rio",
+    "artist": "Duran Duran",
+    "year": 1982,
+    "cover": "https://m.media-amazon.com/images/I/91Xu+eLZOqL.jpg",
+    "api_artist_name": "Duran Duran",
+    "tags": "new wave, 80s, pop, synth pop, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/0vndiSM8xxlb8CQFOMMO9h"
+  },
+  {
+    "id": "substance-1987",
+    "title": "Substance 1987",
+    "artist": "New Order",
+    "year": 1987,
+    "cover": "https://i.discogs.com/mFUHM6O8W2wNfV4GUhNxUG5JBlRF3yPSO6UuK0SWBjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjYy/LTE2MTQxNTQ3ODAt/ODU0MC5qcGVn.jpeg",
+    "api_artist_name": "New Order",
+    "tags": "new wave, electronic, post-punk, 80s, alternative",
+    "spotify_url": "https://open.spotify.com/embed/album/6iHuSGy6pq4tNGFV3ZVPtl"
+  },
+  {
+    "id": "random-access-memories",
+    "title": "Random Access Memories",
+    "artist": "Daft Punk",
+    "year": 2013,
+    "cover": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
+    "api_artist_name": "Daft Punk",
+    "tags": "electronic, House, dance, electronica, techno",
+    "spotify_url": "https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa"
+  },
+  {
+    "id": "discovery",
+    "title": "Discovery",
+    "artist": "Daft Punk",
+    "year": 2001,
+    "cover": "https://preview.redd.it/94vrrvkevym81.jpg?width=640&crop=smart&auto=webp&s=6329d9587384b64678702e7d424ca3e9d16d2a78",
+    "api_artist_name": "Daft Punk",
+    "tags": "electronic, House, dance, electronica, techno",
+    "spotify_url": "https://open.spotify.com/embed/album/2noRn2Aes5aoNVsU6iWThc"
+  },
+  {
+    "id": "blade-runner",
+    "title": "Blade Runner",
+    "artist": "Vangelis",
+    "year": 1994,
+    "cover": "https://m.media-amazon.com/images/I/91lm-mZmVAL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Vangelis",
+    "tags": "electronic, new age, ambient, Soundtrack, instrumental",
+    "spotify_url": "https://open.spotify.com/embed/album/22HoNWvdaHeyVn8aV10Kjx"
+  },
+  {
+    "id": "one-last-kiss",
+    "title": "One Last Kiss",
+    "artist": "Hikaru Utada",
+    "year": 2021,
+    "cover": "https://m.media-amazon.com/images/I/81awR9XzSgL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Hikaru Utada",
+    "tags": "japanese, j-pop, pop, JPop, rnb, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/track/5RhWszHMSKzb7KiXk4Ae0M"
+  },
+  {
+    "id": "neon-genesis-evangelion",
+    "title": "Neon Genesis Evangelion",
+    "artist": "Shiro Sagisu",
+    "year": 1995,
+    "cover": "https://i.scdn.co/image/ab67616d0000b273564b9a0c99103bf3c5e054f7",
+    "api_artist_name": "Shiro Sagisu",
+    "tags": "Soundtrack, japanese, anime, instrumental, Bleach",
+    "spotify_url": "https://open.spotify.com/embed/album/04lUd54qAo5kWaUcAxbtgA"
+  },
+  {
+    "id": "tmnt-turtles-in-time",
+    "title": "TMNT Turtles in Time",
+    "artist": "Kazuhiko Uehara",
+    "year": 1992,
+    "cover": "https://i.discogs.com/E-c86sYzWOiKzFzvdvy5rT0y-r4wIY0CFSYG_hJI-sQ/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDY2/NDM1LTE3MzMyNTE1/MzItOTMzMy5qcGVn.jpeg",
+    "api_artist_name": "Kazuhiko Uehara",
+    "tags": "video game music",
+    "spotify_url": "https://open.spotify.com/embed/album/1x2x3x4x5x6x7x8x9x0x"
+  },
+  {
+    "id": "cuphead",
+    "title": "Cuphead",
+    "artist": "Kristofer Maddigan",
+    "year": 2017,
+    "cover": "https://f4.bcbits.com/img/a2164104584_10.jpg",
+    "api_artist_name": "Kristofer Maddigan",
+    "tags": "jazz, Big Band, video game music, ragtime, swing, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/3jQ7eqotwovipeZ3j3rMqu"
+  },
+  {
+    "id": "wamono-a-to-z-vol-1",
+    "title": "Wamono A to Z Vol. 1",
+    "artist": "Jiro Inagaki",
+    "year": 2017,
+    "cover": "https://f4.bcbits.com/img/a2067820735_10.jpg",
+    "api_artist_name": "Jiro Inagaki",
+    "tags": "jazz, japanese",
+    "spotify_url": "https://open.spotify.com/embed/album/4x5x6x7x8x9x0x1x2x3x"
+  },
+  {
+    "id": "all-n-all",
+    "title": "All n All",
+    "artist": "Earth, Wind & Fire",
+    "year": 1977,
+    "cover": "https://m.media-amazon.com/images/I/51twS9jdTKL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Earth, Wind & Fire",
+    "tags": "funk, soul, Disco, 70s, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/0w0eT42Gyq6G9yXB0RirWh"
+  },
+  {
+    "id": "funkentelecy-vs-the-placebo-syndrome",
+    "title": "Funkentelecy vs. The Placebo Syndrome",
+    "artist": "Parliament",
+    "year": 1977,
+    "cover": "https://m.media-amazon.com/images/I/81CVSzrBenL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Parliament",
+    "tags": "funk, p-funk, soul, 70s, Psychedelic Soul",
+    "spotify_url": "https://open.spotify.com/embed/album/5zWUM9rsio6pXFl951nCAJ"
+  },
+  {
+    "id": "standing-on-the-verge-of-getting-it-on",
+    "title": "Standing on the Verge of Getting it On",
+    "artist": "Funkadelic",
+    "year": 1974,
+    "cover": "https://f4.bcbits.com/img/a2697316639_16.jpg",
+    "api_artist_name": "Funkadelic",
+    "tags": "funk, soul, psychedelic, p-funk, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/2o1DC3i9barPdh8EcWEnAf"
+  },
+  {
+    "id": "funkadelic",
+    "title": "Funkadelic",
+    "artist": "Funkadelic",
+    "year": 1970,
+    "cover": "https://georgeclinton.com/wp-content/uploads/2012/07/Funkadelic-Funkadelic.jpg",
+    "api_artist_name": "Funkadelic",
+    "tags": "funk, soul, psychedelic, p-funk, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/6QQc2su2sP6vyrZzKa15ok"
+  },
+  {
+    "id": "purple-rain",
+    "title": "Purple Rain",
+    "artist": "Prince",
+    "year": 1984,
+    "cover": "https://www.thisisdig.com/wp-content/uploads/2024/06/Prince-Purple-Rain-album-cover-640x640.jpg",
+    "api_artist_name": "Prince",
+    "tags": "funk, pop, soul, 80s, rock, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/2umoqwMrmjBBPeaqgYu6J9"
+  },
+  {
+    "id": "for-you",
+    "title": "For You",
+    "artist": "Prince",
+    "year": 1978,
+    "cover": "https://i.discogs.com/vjVJcgWc1-ZZwQbNWSt-x2yuvpVouURGpCng7_iR1ek/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTM0/MjYtMTI5Mjc3NzQ3/My5qcGVn.jpeg",
+    "api_artist_name": "Prince",
+    "tags": "funk, pop, soul, 80s, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/5kbRcoeBHpJHe37a9agmfv"
+  },
+  {
+    "id": "the-world-is-a-ghetto",
+    "title": "The World is a Ghetto",
+    "artist": "War",
+    "year": 1972,
+    "cover": "https://i.scdn.co/image/ab67616d0000b27362f7c579da4d8219a0f81bf1",
+    "api_artist_name": "War",
+    "tags": "funk, soul, black metal, classic rock, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/4UZmpGH8kpAgyZ2yqQ8sP9"
+  },
+  {
+    "id": "why-can-t-we-be-friends",
+    "title": "Why Can't we be Friends",
+    "artist": "War",
+    "year": 1975,
+    "cover": "https://m.media-amazon.com/images/I/71bO01SUiZL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "War",
+    "tags": "funk, soul, black metal, classic rock, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/59euB5Ns7yGbS06OYHwxRN"
+  },
+  {
+    "id": "greatest-hits",
+    "title": "Greatest Hits",
+    "artist": "Sly & The Family Stone",
+    "year": 1970,
+    "cover": "https://m.media-amazon.com/images/I/81pfEujtjIL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Sly & The Family Stone",
+    "tags": "funk, soul, rhythm and blues, rock, classic rock",
+    "spotify_url": "https://open.spotify.com/embed/album/0UM9SydcBtsklCTFgGLvcT"
+  },
+  {
+    "id": "boogie-nights",
+    "title": "Boogie Nights",
+    "artist": "Heatwave",
+    "year": 1976,
+    "cover": "https://nextrecordsjapan.net/cdn/shop/products/heatwave_boogienights_can.jpg?v=1706249447",
+    "api_artist_name": "Heatwave",
+    "tags": "funk, Disco, soul, rnb, Heatwave",
+    "spotify_url": "https://open.spotify.com/embed/album/1QeIO9ArYBB9vLiODTtWy8"
+  },
+  {
+    "id": "street-songs",
+    "title": "Street Songs",
+    "artist": "Rick James",
+    "year": 1981,
+    "cover": "https://i.scdn.co/image/ab67616d0000b2732651df923ee64ef8243cb3bd",
+    "api_artist_name": "Rick James",
+    "tags": "funk, soul, 80s, Disco, pop",
+    "spotify_url": "https://open.spotify.com/embed/album/4tLH19xspKRioBIxUqfiPx"
+  },
+  {
+    "id": "the-harder-they-come",
+    "title": "The Harder They Come",
+    "artist": "Jimmy Cliff",
+    "year": 1972,
+    "cover": "https://m.media-amazon.com/images/I/81+Vjm4mZvL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Jimmy Cliff",
+    "tags": "reggae, ska, roots reggae, jamaica, roots",
+    "spotify_url": "https://open.spotify.com/embed/album/4UhiCJRMQrjZ1AQooan47K"
+  },
+  {
+    "id": "exodus",
+    "title": "Exodus",
+    "artist": "Bob Marley",
+    "year": 1977,
+    "cover": "https://m.media-amazon.com/images/I/51wWjRmM0FL._AC_UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Bob Marley",
+    "tags": "reggae, roots reggae, Bob Marley, ska, rock",
+    "spotify_url": "https://open.spotify.com/embed/album/2mBbV0Ad6B4ydHMZlzAY7S"
+  },
+  {
+    "id": "sade-live",
+    "title": "Sade Live",
+    "artist": "Sade",
+    "year": 1994,
+    "cover": "https://i.ebayimg.com/images/g/SMMAAOSwF79mWgeL/s-l1200.jpg",
+    "api_artist_name": "Sade",
+    "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0"
+  },
+  {
+    "id": "live-in-japan",
+    "title": "Live in Japan",
+    "artist": "Earth, Wind & Fire",
+    "year": 1990,
+    "cover": "https://i.ebayimg.com/images/g/KKsAAOSwvnFmWPCg/s-l400.jpg",
+    "api_artist_name": "Earth, Wind & Fire",
+    "tags": "funk, soul, Disco, 70s, rnb",
+    "spotify_url": "https://open.spotify.com/embed/album/5Dd1RuBWv7PFX5IisYMYOq"
+  },
+  {
+    "id": "the-sound-of-miles-davis",
+    "title": "The Sound of Miles Davis",
+    "artist": "Miles Davis",
+    "year": 1968,
+    "cover": "https://i.discogs.com/LIDKGE_L24CZe7z1qONxTBkQ97xgxG0wjdCrvKwPF5U/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjA2/MzIyLTE2MDUyNzAz/NjMtODAzNC5qcGVn.jpeg",
+    "api_artist_name": "Miles Davis",
+    "tags": "jazz, trumpet, Fusion, bebop, blues",
+    "spotify_url": "https://open.spotify.com/embed/album/0JDBCK1VDNacLmb49NCG9V"
+  },
+  {
+    "id": "delicate-sounds-of-thunder",
+    "title": "Delicate Sounds of Thunder",
+    "artist": "Pink Floyd",
+    "year": 1989,
+    "cover": "https://m.media-amazon.com/images/I/81dAdz9MXBL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Pink Floyd",
+    "tags": "Progressive rock, classic rock, Psychedelic Rock, rock, psychedelic",
+    "spotify_url": "https://open.spotify.com/embed/album/45uNWPJUtdxscj6QxOizZN"
+  },
+  
+  
+  
+  
+  {
+    "id": "takanaka-world",
+    "title": "Takanaka World",
+    "artist": "Masayoshi Takanaka",
+    "year": 1974,
+    "cover": "https://i.discogs.com/zYJM7OxdMAD8pPjp_es2qUzvbWMcA1PD5lE77bOYFrY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ0/NzE0LTE1NzQ2Mzk3/ODktMTA4MC5qcGVn.jpeg",
+    "api_artist_name": "Masayoshi Takanaka",
+    "tags": "jazz, instrumental, japan, easy guitar music, jazz fusion",
+    "spotify_url": null
+  },
+  {
+  "id": "kind-of-blue",
+  "title": "Kind of Blue",
+  "artist": "Miles Davis",
+  "year": 1959,
+  "cover": "https://m.media-amazon.com/images/I/71dQKN2UEfL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Miles Davis",
+  "tags": "jazz, trumpet, Fusion, bebop, blues"
+},
+  {
+  "id": "fragile",
+  "title": "Fragile",
+  "artist": "Yes",
+  "year": 1971,
+  "cover": "https://m.media-amazon.com/images/I/818muCDUYRL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Yes",
+  "tags": "Progressive rock, classic rock, rock, Progressive, british"
+},
+  {
+  "id": "upstaris-at-eric-s",
+  "title": "Upstaris at Eric's",
+  "artist": "Yazoo",
+  "year": 1982,
+  "cover": "https://m.media-amazon.com/images/I/71MWeHJdLNL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Yazoo",
+  "tags": "80s, new wave, synthpop, electronic, synth pop"
+},
+  {
+  "id": "are-you-experienced",
+  "title": "Are You Experienced",
+  "artist": "The Jimi Hendrix Experience",
+  "year": 1967,
+  "cover": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040",
+  "api_artist_name": "The Jimi Hendrix Experience",
+  "tags": "classic rock, Psychedelic Rock, rock, blues, psychedelic"
+},
+  {
+  "id": "brothers-in-arms",
+  "title": "Brothers in Arms",
+  "artist": "Dire Straits",
+  "year": 1985,
+  "cover": "https://www.udiscovermusic.com/wp-content/uploads/2025/03/dire-straits-brothers-in-arms-original-artwork.jpg",
+  "api_artist_name": "Dire Straits",
+  "tags": "classic rock, rock, 80s, blues, guitar"
+},
+  {
+  "id": "cosmic-messenger",
+  "title": "Cosmic Messenger",
+  "artist": "Jean-Luc Ponty",
+  "year": 1978,
+  "cover": "https://m.media-amazon.com/images/I/71-3FlvSemL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Jean-Luc Ponty",
+  "tags": "jazz, Fusion, jazz fusion, violin, instrumental"
+},
+  {
+  "id": "the-turn-of-a-friendly-card",
+  "title": "The Turn of a Friendly Card",
+  "artist": "The Alan Parsons Project",
+  "year": 1980,
+  "cover": "https://m.media-amazon.com/images/I/71w-MtJH3fL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "The Alan Parsons Project",
+  "tags": "Progressive rock, classic rock, rock, 80s, electronic"
+},
+  {
+  "id": "ascension",
+  "title": "Ascension",
+  "artist": "John Coltrane",
+  "year": 1966,
+  "cover": "https://i.scdn.co/image/ab67616d0000b273870242be73ff3269f9b86689",
+  "api_artist_name": "John Coltrane",
+  "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde"
+},
+  {
+  "id": "fish-rising",
+  "title": "Fish Rising",
+  "artist": "Steve Hillage",
+  "year": 1975,
+  "cover": "https://i.discogs.com/7Kg_Fcd9Bh3DfmAS3myLVEG9PiMrokFzac9mHAg36Ro/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzk1/Ni0xMTczNDM1MDc2/LmpwZWc.jpeg",
+  "api_artist_name": "Steve Hillage",
+  "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene"
+},
+  {
+  "id": "live",
+  "title": "LIVE!",
+  "artist": "Bob Marley",
+  "year": 1975,
+  "cover": "https://m.media-amazon.com/images/I/71EUrbw6aGL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Bob Marley",
+  "tags": "reggae, roots reggae, Bob Marley, ska, rock"
+},
+  {
+  "id": "genetic-world",
+  "title": "Genetic World",
+  "artist": "Télépopmusik",
+  "year": 2001,
+  "cover": "https://m.media-amazon.com/images/I/71fvOq5SNeL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Télépopmusik",
+  "tags": "electronic, chillout, trip-hop, downtempo, electronica"
+},
+  {
+  "id": "crack-the-skye",
+  "title": "Crack the Skye",
+  "artist": "Mastodon",
+  "year": 2009,
+  "cover": "https://m.media-amazon.com/images/I/91M8-wmgfZL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Mastodon",
+  "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+},
+  {
+  "id": "hushed-and-grim",
+  "title": "Hushed and Grim",
+  "artist": "Mastodon",
+  "year": 2021,
+  "cover": "https://media.pitchfork.com/photos/613a64a57c34b5ffaef74527/master/pass/Mastodon.jpeg",
+  "api_artist_name": "Mastodon",
+  "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+},
+  {
+  "id": "remission",
+  "title": "Remission",
+  "artist": "Mastodon",
+  "year": 2002,
+  "cover": "https://www.relapse.com/cdn/shop/products/d51ebe715fed37de01d62c938e9475ff_1500x.jpg?v=1691939472",
+  "api_artist_name": "Mastodon",
+  "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+},
+  {
+  "id": "oxygene",
+  "title": "Oxygene",
+  "artist": "Jean Michel Jarre",
+  "year": 1976,
+  "cover": "https://m.media-amazon.com/images/I/71lIjU9sJUL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Jean Michel Jarre",
+  "tags": "electronic, ambient, new age, instrumental, french"
+},
+  {
+  "id": "vanilla-fudge",
+  "title": "Vanilla Fudge",
+  "artist": "Vanilla Fudge",
+  "year": 1967,
+  "cover": "https://m.media-amazon.com/images/I/71q0al3UjhL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Vanilla Fudge",
+  "tags": "Psychedelic Rock, classic rock, psychedelic, 60s, rock"
+},
+  {
+  "id": "teaser-and-the-firecat",
+  "title": "Teaser and the Firecat",
+  "artist": "Cat Stevens",
+  "year": 1971,
+  "cover": "https://i0.wp.com/www.gratefulweb.com/sites/default/files/images/articles/unnamed-5_12.jpg",
+  "api_artist_name": "Cat Stevens",
+  "tags": "folk, singer-songwriter, classic rock, acoustic, rock"
+},
+  {
+  "id": "a-tab-in-the-ocean",
+  "title": "A Tab in the Ocean",
+  "artist": "Nektar",
+  "year": 1972,
+  "cover": "https://i.discogs.com/DQHkhSmIKy2sK7mp2Efjkk0rM40sWz_LximC4dnFA0g/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDU2/NjMtMTM0OTE3NTc5/NS0zMDk5LmpwZWc.jpeg",
+  "api_artist_name": "Nektar",
+  "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock"
+},
+  {
+  "id": "chain-gang-songs",
+  "title": "Chain Gang Songs",
+  "artist": "Josh White",
+  "year": 1958,
+  "cover": "https://i.discogs.com/gNgNc0TGcdJvVIazjWFaXUqqyLC3Zt_Nzx4J2nLrylM/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Nzcz/NzExLTE1OTc1MzY3/MzAtNzQ0OC5qcGVn.jpeg",
+  "api_artist_name": "Josh White",
+  "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues"
+},
+  {
+  "id": "phoebe-snow",
+  "title": "Phoebe Snow",
+  "artist": "Phoebe Snow",
+  "year": 1974,
+  "cover": "https://m.media-amazon.com/images/I/61dF6m9jhxL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Phoebe Snow",
+  "tags": "female vocalists, singer-songwriter, blues, folk, pop"
+},
+  {
+  "id": "monk-s-dream",
+  "title": "Monk's Dream",
+  "artist": "Thelonious Monk",
+  "year": 1963,
+  "cover": "https://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpghttps://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Thelonious Monk",
+  "tags": "jazz, bebop, piano, jazz piano, free jazz"
+},
+  {
+  "id": "bitches-brew",
+  "title": "Bitches Brew",
+  "artist": "Miles Davis",
+  "year": 1970,
+  "cover": "https://m.media-amazon.com/images/I/81m3DGSbOIL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Miles Davis",
+  "tags": "jazz, trumpet, Fusion, bebop, blues"
+},
+  {
+  "id": "unplugged",
+  "title": "Unplugged",
+  "artist": "Eric Clapton",
+  "year": 1992,
+  "cover": "https://m.media-amazon.com/images/I/71NthSs0XnL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Eric Clapton",
+  "tags": "classic rock, blues, rock, blues rock, guitar"
+},
+  {
+  "id": "led-zeppelin",
+  "title": "Led Zeppelin",
+  "artist": "Led Zeppelin",
+  "year": 1969,
+  "cover": "https://m.media-amazon.com/images/I/91qw0ldKIKL.jpg",
+  "api_artist_name": "Led Zeppelin",
+  "tags": "classic rock, rock, hard rock, 70s, Progressive rock"
+},
+  {
+  "id": "nursery-cryme",
+  "title": "Nursery Cryme",
+  "artist": "Genesis",
+  "year": 1971,
+  "cover": "https://m.media-amazon.com/images/I/81bX4BZZZPL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Genesis",
+  "tags": "Progressive rock, classic rock, rock, 80s, Progressive"
+},
+  {
+  "id": "at-last",
+  "title": "At Last!",
+  "artist": "Etta James",
+  "year": 1960,
+  "cover": "https://resources.tidal.com/images/a7f257ed/2659/4d03/87c8/95a0f9230826/640x640.jpg",
+  "api_artist_name": "Etta James",
+  "tags": "blues, jazz, soul, female vocalists, rhythm and blues",
+  "spotify_url": "https://open.spotify.com/embed/album/7rd4PorIOPjPTy7qdUeeCt?utm_source=generator" 
+},
+  
+  {
+  "id": "galactic-funk",
+  "title": "Galactic Funk",
+  "artist": "Meco",
+  "year": 1977,
+  "cover": "https://i.ytimg.com/vi/uJ3kV3Icm28/maxresdefault.jpg",
+  "api_artist_name": "Meco",
+  "tags": "Disco, instrumental, Star Wars, pop, funk",
+  "spotify_url":"https://open.spotify.com/embed/album/3RhVd2QtOoRhRGmCnptrOU?utm_source=generator"
+}
+  
+  
+]

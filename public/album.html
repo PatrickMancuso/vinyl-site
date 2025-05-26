@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Album Details</title>
+  <link rel="stylesheet" href="public/style.css" />
+  <style>
+    .detail-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+    .detail-container img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+ 
+    a {
+  color: red !important;  
+}
+
+.back-link {
+  color: #ccc !important;  
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.back-link:hover {
+  color: #8B0000; /* Dark red color */
+  text-decoration: underline;
+}
+    #artist-info {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #eee;
+    }
+    .spotify-embed {
+      margin-top: 20px;
+      width: 100%;
+      height: 80px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>Album Details</header>
+  <div class="detail-container" id="album-container">
+    <a href="/" class="back-link">&larr; Back to Dashboard</a>
+    <p>Loading album...</p>
+  </div>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const albumId = params.get('id');
+
+  fetch('public/records.json')
+    .then(res => res.json())
+    .then(data => {
+      const album = data.find(a => a.id === albumId);
+      if (!album) {
+        document.getElementById('album-container').innerHTML = '<p>Album not found.</p>';
+        return;
+      }
+
+      document.getElementById('album-container').innerHTML = `
+        <a href="/" class="back-link">&larr; Back to Dashboard</a>
+        <img src="${album.cover}" alt="${album.title} album cover">
+        <h2>${album.title}</h2>
+        <h3>${album.artist} (${album.year})</h3>
+        ${album.spotify_url ? `
+          <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="380" style="border-radius:12px; margin-top:20px; margin-bottom:20px;"></iframe>
+        ` : ''}
+        <div id="artist-info"><p>Loading artist info...</p></div>
+      `;
+
+      const apiKey = "e530c016b028fa384b92183344f7526e";
+      fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(album.api_artist_name)}&api_key=${apiKey}&format=json`)
+        .then(res => res.json())
+        .then(data => {
+          const bio = data.artist?.bio?.summary || '';
+          const tags = data.artist?.tags?.tag.map(t => t.name).join(', ') || '';
+          document.getElementById('artist-info').innerHTML = `
+            <h4>About ${album.artist}</h4>
+            <p>${bio}</p>
+            <p><strong>Tags:</strong> ${tags}</p>
+          `;
+        });
+    })
+    .catch(err => {
+      document.getElementById('album-container').innerHTML = '<p>Error loading album.</p>';
+    });
+</script>
+
+</body>
+</html>
