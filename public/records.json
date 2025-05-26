@@ -1223,15 +1223,6 @@
     "api_artist_name": "Meco",
     "tags": "Disco, instrumental, Star Wars, pop, funk",
     "spotify_url": "https://open.spotify.com/embed/album/3RhVd2QtOoRhRGmCnptrOU?utm_source=generator"
-  },
-  {
-    "id": "wrong-trousers",
-    "title": "Wrong Trousers",
-    "artist": "Wallace ",
-    "year": 1993,
-    "cover": "https://m.media-amazon.com/images/M/MV5BZGI0ZjU1ZmUtZmRlZC00Yjg3LWI1MjktM2YwYmU1NGNiYzU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "api_artist_name": "Wallace ",
-    "tags": "",
-    "spotify_url": ""
   }
+
 ]

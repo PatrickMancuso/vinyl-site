@@ -1,5 +1,5 @@
 {
-  "name": "vinyl-server",
+  "name": "vinyl-dashboard",
   "version": "1.0.0",
   "description": "Vinyl record catalog backend with Express",
   "main": "server.js",
