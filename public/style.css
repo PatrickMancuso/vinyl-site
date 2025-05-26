@@ -62,7 +62,7 @@ header {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 8px 14px;
+  padding: 9px 14px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -72,12 +72,12 @@ header {
 }
 
 #add-album {
-  background: rgba(0, 0, 0, 0.7);
+   background: rgba(0, 0, 0, 0.7);
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 8px 15px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
