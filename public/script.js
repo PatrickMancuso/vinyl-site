@@ -125,7 +125,7 @@ function applyFilters() {
   renderCarousel(filteredAlbums);
 }
 
-fetch("public/records.json")
+fetch("records.json")
   .then(res => res.json())
   .then(data => {
     albumsData = data.sort((a, b) => a.artist.localeCompare(b.artist));
