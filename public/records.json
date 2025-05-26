@@ -1223,6 +1223,15 @@
     "api_artist_name": "Meco",
     "tags": "Disco, instrumental, Star Wars, pop, funk",
     "spotify_url": "https://open.spotify.com/embed/album/3RhVd2QtOoRhRGmCnptrOU?utm_source=generator"
+  },
+  {
+    "id": "three-blind-mice",
+    "title": "Three Blind Mice",
+    "artist": "Art Blakey",
+    "year": 1962,
+    "cover": "https://m.media-amazon.com/images/I/71pa0qqdjxL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Art Blakey",
+    "tags": "jazz, Hard Bop, bebop, drums, swing",
+    "spotify_url": "https://open.spotify.com/embed/album/4pUbg9hQSnuzXNFkejX9JM?utm_source=generator"
   }
-
 ]
