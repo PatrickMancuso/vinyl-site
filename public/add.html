@@ -65,6 +65,8 @@
     <input type="text" id="spotify" placeholder="https://open.spotify.com/album/..." />
 
     <button onclick="generateEntry()">Generate Album JSON</button>
+    <button onclick="submitAlbum()">Save Album to Dashboard</button>
+
 
     <pre id="result"></pre>
   </div>
@@ -106,5 +108,41 @@
       document.getElementById('result').textContent = JSON.stringify(entry, null, 2);
     }
   </script>
+  
+  <script>
+  async function submitAlbum() {
+    const result = document.getElementById('result').textContent;
+    if (!result) {
+      alert("Please generate the album entry first!");
+      return;
+    }
+
+    try {
+      const response = await fetch("/add-album", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: result,
+      });
+
+      if (response.ok) {
+        alert("Album added successfully!");
+        document.getElementById("title").value = "";
+        document.getElementById("artist").value = "";
+        document.getElementById("year").value = "";
+        document.getElementById("image").value = "";
+        document.getElementById("spotify").value = "";
+        document.getElementById("result").textContent = "";
+      } else {
+        alert("Failed to save album.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Error submitting album.");
+    }
+  }
+</script>
+
 </body>
 </html>

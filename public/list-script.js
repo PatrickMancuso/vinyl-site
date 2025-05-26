@@ -1,4 +1,4 @@
-fetch("public/records.json")
+fetch("records.json")
   .then(res => res.json())
   .then(data => {
     const listContainer = document.getElementById("list-container");
