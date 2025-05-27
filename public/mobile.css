@@ -9,8 +9,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   padding: 1rem;
   background: #222;
   position: sticky;
@@ -18,9 +18,23 @@ header {
   z-index: 10;
 }
 
+.header-top {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-bottom {
+  display: flex;
+  gap: 0.5rem;
+}
+
 header input {
   flex: 1;
-  margin-right: 1rem;
   padding: 0.5rem;
   border-radius: 4px;
   border: none;
@@ -35,16 +49,44 @@ header button {
   font-size: 1rem;
 }
 
+
+/* Navigation */
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #222;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 60px;
+  z-index: 9;
+}
+
+.mobile-nav button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.mobile-nav button.active {
+  background: #555;
+}
+
 /* Carousel Styles */
-#carouselView {
+#carousel-view {
+  padding: 1rem;
+}
+
+.carousel-container {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 1rem;
   gap: 1rem;
 }
 
-#carouselView .album {
+.carousel-container .album {
   flex: 0 0 auto;
   width: 200px;
   scroll-snap-align: center;
@@ -52,26 +94,42 @@ header button {
   border-radius: 10px;
   overflow: hidden;
   background: #222;
-  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-#carouselView img {
+.carousel-container img {
   width: 100%;
   display: block;
 }
 
-#carouselView h3 {
+.carousel-container h3 {
   text-align: center;
   margin: 0.5rem 0;
 }
 
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.carousel-controls button {
+  background: #333;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
 /* List Styles */
-#listView {
+#list-view {
   display: none;
   padding: 1rem;
 }
 
-#listView .album {
+#mobile-album-list .album {
   margin-bottom: 1rem;
   background: #222;
   padding: 0.8rem;
@@ -81,12 +139,8 @@ header button {
   gap: 1rem;
 }
 
-#listView img {
+#mobile-album-list img {
   width: 60px;
   height: 60px;
   border-radius: 6px;
-}
-
-.toggleViewBtn {
-  margin-left: 1rem;
 }
