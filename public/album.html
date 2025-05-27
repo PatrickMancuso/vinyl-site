@@ -79,6 +79,7 @@
         ${album.spotify_url ? `
           <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="380" style="border-radius:12px; margin-top:20px; margin-bottom:20px;"></iframe>
         ` : ''}
+        <button onclick="deleteAlbum('${album.id}')" style="background-color: red; color: white; padding: 10px; margin-top: 20px;">Delete Album</button>
         <div id="artist-info"><p>Loading artist info...</p></div>
       `;
 
@@ -98,7 +99,28 @@
     .catch(err => {
       document.getElementById('album-container').innerHTML = '<p>Error loading album.</p>';
     });
+
+  function deleteAlbum(id) {
+    if (!confirm("Are you sure you want to delete this album?")) return;
+
+    fetch(`/delete-album/${id}`, {
+      method: "DELETE"
+    })
+      .then(res => {
+        if (res.ok) {
+          alert("Album deleted!");
+          window.location.href = "/";
+        } else {
+          alert("Failed to delete album.");
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert("Error deleting album.");
+      });
+  }
 </script>
+
 
 </body>
 </html>
