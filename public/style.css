@@ -194,39 +194,40 @@ header {
 
 /* Carousel position classes */
 .album.main {
-  transform: scale(1.2);
+  transform: translate3d(0, 0, 0) scale(1.2);
   z-index: 5;
 }
 .album.left1 {
-  transform: translateX(-220px) rotateY(25deg) scale(0.95);
+  transform: translate3d(-220px, 0, 0) rotateY(25deg) scale(0.95);
   z-index: 4;
 }
 .album.right1 {
-  transform: translateX(220px) rotateY(-25deg) scale(0.95);
+  transform: translate3d(220px, 0, 0) rotateY(-25deg) scale(0.95);
   z-index: 4;
 }
 .album.left2 {
-  transform: translateX(-440px) rotateY(25deg) scale(0.85);
+  transform: translate3d(-440px, 0, 0) rotateY(25deg) scale(0.85);
   z-index: 3;
 }
 .album.right2 {
-  transform: translateX(440px) rotateY(-25deg) scale(0.85);
+  transform: translate3d(440px, 0, 0) rotateY(-25deg) scale(0.85);
   z-index: 3;
 }
 .album.left3 {
-  transform: translateX(-660px) rotateY(25deg) scale(0.75);
+  transform: translate3d(-660px, 0, 0) rotateY(25deg) scale(0.75);
   z-index: 2;
 }
 .album.right3 {
-  transform: translateX(660px) rotateY(-25deg) scale(0.75);
+  transform: translate3d(660px, 0, 0) rotateY(-25deg) scale(0.75);
   z-index: 2;
 }
 .album.hidden {
   opacity: 0;
-  transform: scale(0.5);
+  transform: translate3d(0, 0, 0) scale(0.5);
   pointer-events: none;
   z-index: 1;
 }
+
 
 /* NAVIGATION */
 .nav-controls {
