@@ -326,7 +326,7 @@
     "year": 2024,
     "cover": "https://i.scdn.co/image/ab67616d0000b273fc4ffbca719a52819e3ec9f1",
     "api_artist_name": "Colin Stetson",
-    "tags": "experimental, Avant-Garde, seen live , ambient, instrumental, soundtrack",
+    "tags": "experimental, Avant-Garde, seen live, Avant-Garde Jazz, ambient, instrumental, soundtrack",
     "spotify_url": "https://open.spotify.com/embed/album/7jSnAYdc0Aysd2ONzzVwLX?utm_source=generator"
   },
   {
