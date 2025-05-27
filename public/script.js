@@ -2,7 +2,6 @@ let currentIndex = 0;
 let albumsData = [];
 let filteredAlbums = [];
 let favoritesOnly = false;
-const WINDOW_SIZE = 25;  // total albums rendered at once
 
 
 // ---- CAROUSEL (MAIN) ----
@@ -14,12 +13,11 @@ function randomSlide() {
   dice.classList.add("rolling");
 
   setTimeout(() => {
-  const randomIndex = Math.floor(Math.random() * filteredAlbums.length);
-  currentIndex = randomIndex;
-  renderCarousel(filteredAlbums, currentIndex);
-  dice.classList.remove("rolling");
-}, 1000);
-
+    const randomIndex = Math.floor(Math.random() * filteredAlbums.length);
+    currentIndex = randomIndex;
+    updateCarouselClasses(); 
+    dice.classList.remove("rolling");
+  }, 1000);
 }
 
 
@@ -29,61 +27,58 @@ function randomSlide() {
   });
 
 
-function renderCarousel(albums, centerIndex = currentIndex) {
+function renderCarousel(albums) {
   const carousel = document.getElementById("carousel");
+  carousel.innerHTML = "";
 
-  // Only build cards if the count or content changed
-  if (carousel.children.length !== albums.length) {
-    carousel.innerHTML = "";
-    for (let index = 0; index < albums.length; index++) {
-      const album = albums[index];
-      const card = document.createElement("div");
-      card.className = "album";
-      card.setAttribute("data-index", index);
+  albums.forEach((album, index) => {
+    const card = document.createElement("div");
+    card.className = "album";
+    card.setAttribute("data-index", index);
 
-      // Fill card content same as before
-      const key = `fav-${album.id}`;
-      const isFavorite = localStorage.getItem(key) === 'true';
-      const starIcon = isFavorite ? '⭐' : '☆';
+    const key = `fav-${album.id}`;
+    const isFavorite = localStorage.getItem(key) === 'true';
+    const starIcon = isFavorite ? '⭐' : '☆';
 
-      card.innerHTML = `
-        <img src="${album.cover}" alt="${album.title}">
-        <div class="album-info">
-          <strong>${album.title}</strong><br>
-          ${album.artist} (${album.year})
-          <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
-        </div>
-      `;
+    card.innerHTML = `
+      <img src="${album.cover}" alt="${album.title}">
+      <div class="album-info">
+        <strong>${album.title}</strong><br>
+        ${album.artist} (${album.year})
+        <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
+      </div>
+    `;
+    
+    
 
-      const favIcon = card.querySelector('.fav-icon');
-      favIcon.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const current = localStorage.getItem(key) === 'true';
-        const newState = !current;
-        localStorage.setItem(key, newState);
-        favIcon.classList.toggle('active', newState);
-        favIcon.textContent = newState ? '⭐' : '☆';
-      });
+    const favIcon = card.querySelector('.fav-icon');
+    favIcon.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const current = localStorage.getItem(key) === 'true';
+      const newState = !current;
+      localStorage.setItem(key, newState);
+      favIcon.classList.toggle('active', newState);
+      favIcon.textContent = newState ? '⭐' : '☆';
+    });
 
-      card.onclick = () => {
-        window.location.href = `album.html?id=${album.id}`;
-      };
+    card.onclick = () => {
+      window.location.href = `album.html?id=${album.id}`;
+    };
 
-      carousel.appendChild(card);
-    }
-  }
+    carousel.appendChild(card);
+  });
 
-  currentIndex = centerIndex;
   updateCarouselClasses();
 }
-
 
 function updateCarouselClasses() {
   const cards = document.querySelectorAll(".album");
 
-  cards.forEach(card => {
-    const index = Number(card.getAttribute('data-index'));
-    card.className = "album";  // reset classes first
+  cards.forEach((card, index) => {
+    card.className = "album";
+    card.style.willChange = "transform, opacity";
+
+    const offset = index - currentIndex;
 
     if (index === currentIndex) card.classList.add("main");
     else if (index === currentIndex - 1) card.classList.add("left1");
@@ -96,19 +91,17 @@ function updateCarouselClasses() {
   });
 }
 
-
-
 function prevSlide() {
   if (currentIndex > 0) {
     currentIndex--;
-    renderCarousel(filteredAlbums, currentIndex);
+    updateCarouselClasses();
   }
 }
 
 function nextSlide() {
   if (currentIndex < filteredAlbums.length - 1) {
     currentIndex++;
-    renderCarousel(filteredAlbums, currentIndex);
+    updateCarouselClasses();
   }
 }
 

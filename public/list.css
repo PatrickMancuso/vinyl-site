@@ -132,7 +132,7 @@ body {
 }
 
 .album-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   transform: scale(1.02);
 }
 
