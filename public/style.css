@@ -155,8 +155,8 @@ header {
 
 .album {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 550px;
+  height: 550px;
   background: #000;
   border-radius: 12px;
   overflow: hidden;
@@ -194,7 +194,7 @@ header {
 
 /* Carousel position classes */
 .album.main {
-  transform: scale(1.1);
+  transform: scale(1.2);
   z-index: 5;
 }
 .album.left1 {
