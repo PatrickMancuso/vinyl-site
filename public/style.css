@@ -20,7 +20,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.65rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   background-color: #111;
   color: white;
   border-bottom: 5px solid #222;
@@ -111,6 +111,7 @@ header {
 }
 
 #add-album:hover {
+  
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -138,6 +139,7 @@ header {
   display: inline-block;
   width: auto;
   min-width: 80px;
+  
 }
 
 
@@ -158,10 +160,12 @@ header {
   display: inline-block;
   width: auto;
   min-width:45px;
+
 }
 
 #map-view:hover {
   background: rgba(255, 255, 255, 0.2);
+
 }
 
 .filter-group {
