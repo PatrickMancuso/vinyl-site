@@ -100,7 +100,7 @@ header {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 15px;
+  padding: 8px 6px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -111,6 +111,10 @@ header {
 }
 
 #add-album:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#album-stats:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -138,6 +142,25 @@ header {
 
 
 #toggle-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#map-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+}
+
+#map-view:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -363,12 +386,13 @@ header {
   
   padding: 6.5px 10px;
   font-size: 1.1rem;
-  margin-left: 0px;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;  
 
 
 }
+
+
 
 #fav-filter-toggle:hover {
   background: rgba(255, 255, 255, 0.2);
