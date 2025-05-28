@@ -21,9 +21,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 1.5rem;
-  background: url ('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/title%20header.jfif?v=1748472985889') no-repeat center top;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/texture-conteneur-cargo-bleu_222464-650.jpg?v=1748473794354') center top;
   color: white;
-  border-bottom: 7px solid #222;
+  border-bottom: 7px solid #000;
   flex-wrap: wrap;
 }
 
