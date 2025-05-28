@@ -21,9 +21,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 1.5rem;
-  background-color: #111;
+  background-color: #093058;
   color: white;
-  border-bottom: 5px solid #222;
+  border-bottom: 7px solid #222;
   flex-wrap: wrap;
 }
 
