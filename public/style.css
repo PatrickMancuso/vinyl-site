@@ -81,7 +81,7 @@ header {
 
 
 #add-album {
-   background: rgba(0, 0, 0, 0.7);
+   background: #4f4f4f;
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -96,7 +96,7 @@ header {
 }
 
 #album-stats {
-   background: rgba(0, 0, 0, 0.7);
+   background: #0e0d0d;
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -126,7 +126,7 @@ header {
 }
 
 #toggle-view {
-  background: rgba(0, 0, 0, 0.7);
+  background: #4f4f4f;
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -146,7 +146,7 @@ header {
 }
 
 #map-view {
-  background: rgba(0, 0, 0, 0.7);
+  background: #0e0d0d;
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -207,7 +207,7 @@ header {
 }
 
 #fav-filter-toggle {
-  background: rgba(0, 0, 0, 0.7);
+  background: #0e0d0d;
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
