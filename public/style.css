@@ -149,15 +149,15 @@ header {
   background: rgba(0, 0, 0, 0.7);
   color: white;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 6px 15px;
+  border-radius: 8px;
+  padding: 6px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width: 80px;
+  min-width:45px;
 }
 
 #map-view:hover {
@@ -173,6 +173,71 @@ header {
 .filter-group label {
   font-size: 1.5rem;
   font-weight: normal;
+}
+
+
+#search-input {
+  padding: 9.5px 7px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+  width: 220px; /* Make it consistent */
+}
+
+
+.fav-icon {
+  color: #aaa;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  
+  
+  
+  
+}
+
+.fav-icon:hover {
+  color: gold;
+  text-shadow: 0 0 8px gold;
+}
+
+.fav-icon.active {
+  color: gold;
+}
+
+#fav-filter-toggle {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  padding: 6.4px 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;  
+
+
+
+}
+
+
+
+#fav-filter-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: gold;
+}
+
+#fav-filter-toggle.active {
+  color: gold;
+  border-color: gold;
+  
+}
+
+.album-info .fav-icon {
+  line-height: 1.2;
+  position: relative;
+  top: 3px;
 }
 
 
@@ -346,70 +411,6 @@ header {
 }
 
 
-
-
-#search-input {
-  padding: 10px 8px;
-  border-radius: 5px;
-  border: none;
-  font-size: 0.95rem;
-  width: 220px; /* Make it consistent */
-}
-
-
-.fav-icon {
-  color: #aaa;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: color 0.2s ease, text-shadow 0.2s ease;
-  
-  
-  
-  
-}
-
-.fav-icon:hover {
-  color: gold;
-  text-shadow: 0 0 8px gold;
-}
-
-.fav-icon.active {
-  color: gold;
-}
-
-#fav-filter-toggle {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  
-  padding: 6.5px 10px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;  
-
-
-}
-
-
-
-#fav-filter-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: gold;
-}
-
-#fav-filter-toggle.active {
-  color: gold;
-  border-color: gold;
-  
-}
-
-.album-info .fav-icon {
-  line-height: 1.2;
-  position: relative;
-  top: 3px;
-}
 
 /* Responsive Styling */
 @media (max-width: 1024px) {
