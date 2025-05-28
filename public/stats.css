@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/statbackground.jpg?v=1748458311413') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
