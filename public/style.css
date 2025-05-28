@@ -21,7 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 1.5rem;
-  background-color: #093058;
+  background: url ('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/title%20header.jfif?v=1748472985889') no-repeat center top;
   color: white;
   border-bottom: 7px solid #222;
   flex-wrap: wrap;
@@ -167,6 +167,29 @@ header {
   background: rgba(255, 255, 255, 0.2);
 
 }
+
+
+#map-view {
+  background: #000000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6.4px 0px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width:45px;
+
+}
+
+#map-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+}
+
 
 .filter-group {
   display: flex;
