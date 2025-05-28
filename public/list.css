@@ -3,6 +3,12 @@
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
+header {
+  
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/texture-conteneur-cargo-bleu_222464-650.jpg?v=1748473794354') center top;
+  
+}
+
 body {
   margin: 0;
   font-family: 'Garamond', serif;
