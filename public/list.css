@@ -3,9 +3,8 @@
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
-html {
-  overflow-y: scroll; /* always reserve scrollbar space */
-  scrollbar-gutter: stable;
+html, body {
+  overflow-y: hidden !important;
   height: 100%;
 }
 
@@ -91,49 +90,40 @@ header {
   }
 }
 
+/* NEW hidden class to start hidden and shifted down */
+.album-list.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none; /* no transition during hidden */
+}
+
+/* Remove previous fade-in and add forwards so it keeps the end state */
 .album-list.fade-in {
-  animation: fadeIn 0.6s ease-out both;
+  animation: fadeIn 1s ease-out forwards;
 }
 
-/* Control Styling */
-#genre-select,
-#decade-select,
-#search-input,
-#toggle-view,
-.record-count {
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-size: 0.95rem;
-  border: none;
-}
-
-#genre-select,
-#decade-select {
-  background: #fff;
-  color: #000;
-  cursor: pointer;
-  min-width: 110px;
-}
-
-#search-input {
-  width: 200px;
-}
-
-.record-count {
-  color: #ccc;
-  background: transparent;
-  min-width: 100px;
-  text-align: center;
-  font-size: 1.1rem;
-  transform: translateX(-10%);
-}
-
-/* Album Grid */
+/* Set default album-list state so no flicker on initial load */
 .album-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 40px 60px 100px;
+
+  max-height: 80vh; /* or some fixed height */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
+  /* default visible */
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+}
+
+/* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge, Opera) */
+.album-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .album-item {

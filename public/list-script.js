@@ -14,6 +14,10 @@ fetch("records.json")
       const decade = document.getElementById("decade-select").value;
       const search = document.getElementById("search-input").value.toLowerCase();
 
+      // Start with hidden + reset fade-in class for smooth reanimation
+      listContainer.classList.add('hidden');
+      listContainer.classList.remove('fade-in');
+
       const filteredAlbums = albumsData.filter(album => {
         const matchSearch =
           album.title.toLowerCase().includes(search) ||
@@ -50,21 +54,51 @@ fetch("records.json")
       });
 
       countDisplay.textContent = `${filteredAlbums.length} Album${filteredAlbums.length !== 1 ? "s" : ""}`;
+
+      // Wait for all images to load before fade-in
+      const images = listContainer.querySelectorAll('img');
+      let loadedCount = 0;
+
+      if (images.length === 0) {
+        // Force reflow and animate immediately if no images
+        void listContainer.offsetWidth;
+        listContainer.classList.remove('hidden');
+        listContainer.classList.add('fade-in');
+        return;
+      }
+
+      images.forEach(img => {
+        if (img.complete) {
+          loadedCount++;
+        } else {
+          img.onload = img.onerror = () => {
+            loadedCount++;
+            if (loadedCount === images.length) {
+              // All images loaded — animate
+              void listContainer.offsetWidth;
+              listContainer.classList.remove('hidden');
+              listContainer.classList.add('fade-in');
+            }
+          };
+        }
+      });
+
+      // In case all images already complete at start
+      if (loadedCount === images.length) {
+        void listContainer.offsetWidth;
+        listContainer.classList.remove('hidden');
+        listContainer.classList.add('fade-in');
+      }
     }
 
     // Initial display
     applyFilters();
-  
-  listContainer.classList.add("fade-in");
-
 
     // Attach filter handlers
     document.getElementById("search-input").addEventListener("input", applyFilters);
     document.getElementById("genre-select").addEventListener("change", applyFilters);
     document.getElementById("decade-select").addEventListener("change", applyFilters);
   });
-
-
 
 // Vinyl spin logic — after everything (including images) is loaded
 window.onload = () => {
@@ -76,8 +110,4 @@ window.onload = () => {
       setTimeout(() => vinyl.classList.remove('spin'), 5000);
     });
   });
-
-  // Reveal the title after layout is stable
-  document.querySelector('.header-title-container')?.classList.add('ready');
 };
-
