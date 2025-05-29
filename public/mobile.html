@@ -5,12 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vinyl Mobile</title>
   <link rel="stylesheet" href="mobile.css">
+  
+  <style>
+ .form-container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 125px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      margin-left: -5px;
+    }
+    </style>
+
 </head>
 <body>
   <header class="mobile-header">
   <div class="header-top">
     <span class="app-title">Vinyl Vault</span>
   </div>
+    
+    <div class="form-container">
+    <label for="title">Integration of the Vinyl Vault for mobile devices is under development. For now enjoy the fully fledged version on Windows/Mac vinylvault.glitch.me</label>
+      </div>
+
   <div class="header-bottom">
     <input type="text" id="search-bar" placeholder="Search albums...">
     <button id="add-btn">＋</button>
@@ -19,7 +42,6 @@
 
 
   <nav class="mobile-nav">
-    <button id="list-tab">List</button>
   </nav>
 
   <main>
