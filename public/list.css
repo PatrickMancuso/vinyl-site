@@ -3,6 +3,10 @@
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
+html {
+  overflow-y: scroll; /* Always reserve space for scrollbar */
+}
+
 header {
   
   background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990') center top;
@@ -41,7 +45,14 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  pointer-events: none; /* allow clicks on other elements */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  /* remove visibility: hidden */
+}
+
+.header-title-container.ready {
+  opacity: 1;
 }
 
 .header-title {
@@ -78,6 +89,22 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.album-list.fade-in {
+  animation: fadeIn 0.6s ease-out both;
+}
+
 
 /* Control Styling */
 #genre-select,
@@ -192,27 +219,6 @@ body {
 }
 
 
-.spin {
-  animation: spin 5s linear;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-
-.title-with-vinyls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px; /* space between vinyls and text */
-}
-
-.spinnable-vinyl {
-  width: 50px;
-  height: 50px;
-  transition: transform 5s linear;
 }
 
 @media (max-width: 600px) {

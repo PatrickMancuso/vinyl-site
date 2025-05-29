@@ -54,6 +54,9 @@ fetch("records.json")
 
     // Initial display
     applyFilters();
+  
+  listContainer.classList.add("fade-in");
+
 
     // Attach filter handlers
     document.getElementById("search-input").addEventListener("input", applyFilters);
@@ -67,11 +70,14 @@ fetch("records.json")
 window.onload = () => {
   document.querySelectorAll('.spinnable-vinyl').forEach(vinyl => {
     vinyl.addEventListener('click', () => {
-      vinyl.classList.remove('spin'); // reset spin
-      void vinyl.offsetWidth;         // force reflow
-      vinyl.classList.add('spin');    // restart spin
+      vinyl.classList.remove('spin');
+      void vinyl.offsetWidth;
+      vinyl.classList.add('spin');
       setTimeout(() => vinyl.classList.remove('spin'), 5000);
     });
   });
+
+  // Reveal the title after layout is stable
+  document.querySelector('.header-title-container')?.classList.add('ready');
 };
 
