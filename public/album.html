@@ -5,14 +5,29 @@
   <title>Album Details</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    html, body {
-  overflow-y: hidden !important;
+    
+    @font-face {
+  font-family: 'HooeyDemo';
+  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
+}
+
+    
+    html, 
+    
+    body {
+        overflow-x: hidden;
+
   height: 100%;
 }
-/* Hide scrollbar */
-.album-list::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+
+    .header-title {
+  font-family: 'HooeyDemo', serif;
+  font-size: 3rem;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: center;
+  user-select: none;
 }
 
     
