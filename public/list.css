@@ -103,14 +103,6 @@ body {
   width: 200px;
 }
 
-#album-list {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-}
-
-body.loaded #album-list {
-  opacity: 1;
-}
 
 
 .record-count {
