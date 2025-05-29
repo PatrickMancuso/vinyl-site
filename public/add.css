@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;  /* Default font */
-  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/AdobeStock_79897624-2048x1366.jpeg?v=1746078479811') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinylrecordbackground3.jpg?v=1748298290241') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -21,7 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.65rem 1.5rem;
-  background-color: #111;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-174.jpg?v=1748474578626');
   color: white;
   border-bottom: 5px solid #222;
   flex-wrap: wrap;

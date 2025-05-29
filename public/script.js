@@ -29,47 +29,34 @@ function randomSlide() {
 
 function renderCarousel(albums) {
   const carousel = document.getElementById("carousel");
-  carousel.innerHTML = "";
+  carousel.innerHTML = ""; // Only 7 at a time now!
 
-  albums.forEach((album, index) => {
+  const range = 3; // show 3 left/right of center
+  const start = Math.max(0, currentIndex - range);
+  const end = Math.min(albums.length, currentIndex + range + 1);
+
+  for (let i = start; i < end; i++) {
+    const album = albums[i];
     const card = document.createElement("div");
     card.className = "album";
-    card.setAttribute("data-index", index);
-
-    const key = `fav-${album.id}`;
-    const isFavorite = localStorage.getItem(key) === 'true';
-    const starIcon = isFavorite ? '⭐' : '☆';
+    card.setAttribute("data-index", i);
 
     card.innerHTML = `
-      <img src="${album.cover}" alt="${album.title}">
+      <img src="${album.cover}" alt="${album.title}" loading="lazy">
       <div class="album-info">
         <strong>${album.title}</strong><br>
         ${album.artist} (${album.year})
-        <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
+        <span class="fav-icon">${localStorage.getItem(`fav-${album.id}`) === 'true' ? '⭐' : '☆'}</span>
       </div>
     `;
-    
-    
 
-    const favIcon = card.querySelector('.fav-icon');
-    favIcon.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const current = localStorage.getItem(key) === 'true';
-      const newState = !current;
-      localStorage.setItem(key, newState);
-      favIcon.classList.toggle('active', newState);
-      favIcon.textContent = newState ? '⭐' : '☆';
-    });
-
-    card.onclick = () => {
-      window.location.href = `album.html?id=${album.id}`;
-    };
-
+    card.onclick = () => window.location.href = `album.html?id=${album.id}`;
     carousel.appendChild(card);
-  });
+  }
 
   updateCarouselClasses();
 }
+
 
 function updateCarouselClasses() {
   const cards = document.querySelectorAll(".album");

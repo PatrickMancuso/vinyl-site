@@ -3,18 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Add New Album</title>
-  
-    <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
-  
+  <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
   <link rel="stylesheet" href="add.css">
   <style>
-    
-   
-       
     .form-container {
       max-width: 600px;
       margin: 40px auto;
-      padding: 60px;
+      padding: 125px;
       background-color: #1a1a1a;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -23,8 +18,7 @@
       display: block;
       margin-top: 10px;
       font-weight: bold;
-       margin-left: -5px;
-     
+      margin-left: -5px;
     }
     input, textarea, button {
       width: 100%;
@@ -32,10 +26,10 @@
       margin-top: 5px;
       border-radius: 5px;
       border: none;
-       margin-left: -10px;
+      margin-left: -10px;
     }
     button {
-      margin-top: 20px;
+      margin-top: 40px;
       background-color: #3b82f6;
       color: white;
       font-weight: bold;
@@ -53,13 +47,15 @@
   </style>
 </head>
 <body>
+
+  <header>
     <div class="header-left">
+      <a href="index.html" id="toggle-view">← Back to Carousel</a>
+    </div>
+    <div class="header-title">Add a New Album</div>
+    <div class="header-right"></div>
+  </header>
 
-          <a href="index.html" id="toggle-view">← Back to Carousel</a>
-  </div>
-  <div class="header-title">Add a New Album</div>
-
-  
   <div class="form-container">
     <label for="title">Album Title</label>
     <input type="text" id="title" required>
@@ -72,19 +68,18 @@
 
     <label for="image">Cover Image URL</label>
     <input type="text" id="image" required>
-    
+
     <label for="spotify">Spotify Album Embed URL</label>
     <input type="text" id="spotify" placeholder="https://open.spotify.com/album/..." />
 
     <button onclick="generateEntry()">Generate Album JSON</button>
     <button onclick="submitAlbum()">Save Album to Dashboard</button>
 
-
     <pre id="result"></pre>
   </div>
 
   <script>
-    const apiKey = "e530c016b028fa384b92183344f7526e"; // Last.fm API key
+    const apiKey = "e530c016b028fa384b92183344f7526e";
 
     async function fetchArtistInfo(artistName) {
       const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json`);
@@ -102,7 +97,6 @@
       const image = document.getElementById('image').value;
       const spotify_url = document.getElementById('spotify').value;
 
-
       const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
       const info = await fetchArtistInfo(artist);
 
@@ -119,42 +113,40 @@
 
       document.getElementById('result').textContent = JSON.stringify(entry, null, 2);
     }
-  </script>
-  
-  <script>
-  async function submitAlbum() {
-    const result = document.getElementById('result').textContent;
-    if (!result) {
-      alert("Please generate the album entry first!");
-      return;
-    }
 
-    try {
-      const response = await fetch("/add-album", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: result,
-      });
-
-      if (response.ok) {
-        alert("Album added successfully!");
-        document.getElementById("title").value = "";
-        document.getElementById("artist").value = "";
-        document.getElementById("year").value = "";
-        document.getElementById("image").value = "";
-        document.getElementById("spotify").value = "";
-        document.getElementById("result").textContent = "";
-      } else {
-        alert("Failed to save album.");
+    async function submitAlbum() {
+      const result = document.getElementById('result').textContent;
+      if (!result) {
+        alert("Please generate the album entry first!");
+        return;
       }
-    } catch (err) {
-      console.error(err);
-      alert("Error submitting album.");
+
+      try {
+        const response = await fetch("/add-album", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: result,
+        });
+
+        if (response.ok) {
+          alert("Album added successfully!");
+          document.getElementById("title").value = "";
+          document.getElementById("artist").value = "";
+          document.getElementById("year").value = "";
+          document.getElementById("image").value = "";
+          document.getElementById("spotify").value = "";
+          document.getElementById("result").textContent = "";
+        } else {
+          alert("Failed to save album.");
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Error submitting album.");
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
 </html>
