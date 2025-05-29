@@ -8,13 +8,27 @@
   
   <style>
  .form-container {
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 125px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    }
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px; /* Reduced padding */
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 90%; /* Ensures it stretches better on mobile */
+}
+
+.dev-message {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+.dev-message a {
+  color: #88f;
+  text-decoration: underline;
+}
+
     label {
       display: block;
       margin-top: 10px;
@@ -31,8 +45,11 @@
   </div>
     
     <div class="form-container">
-    <label for="title">Integration of the Vinyl Vault for mobile devices is under development. For now enjoy the fully fledged version on Windows/Mac vinylvault.glitch.me</label>
-      </div>
+  <p class="dev-message">
+    Integration of the Vinyl Vault for mobile devices is under development. For now enjoy the fully fledged version on Windows/Mac at <a href="https://vinylvault.glitch.me">vinylvault.glitch.me</a>.
+  </p>
+</div>
+
 
   <div class="header-bottom">
     <input type="text" id="search-bar" placeholder="Search albums...">
@@ -47,10 +64,6 @@
   <main>
     <section id="carousel-view" class="view active">
       <div id="mobile-carousel" class="carousel-container"></div>
-      <div class="carousel-controls">
-        <button id="mobile-prev">⟨</button>
-        <button id="mobile-next">⟩</button>
-      </div>
     </section>
 
     <section id="list-view" class="view">
