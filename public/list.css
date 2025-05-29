@@ -21,7 +21,7 @@ body {
 }
 
 .list-header {
-  background-color: #111;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990');
   border-bottom: 7px solid #222;
   padding: 1.2rem 1.5rem 1rem;
   color: white;
@@ -58,6 +58,10 @@ body {
   right: 1.5rem;
   gap: 8px;
 }
+
+
+
+
 
 /* Title centered */
 .header-title {
@@ -125,7 +129,6 @@ body {
 .header-bottom {
   display: flex;
   justify-content: center;
-  padding-bottom: 0.5rem;
 }
 
 /* Album list container */
