@@ -34,7 +34,7 @@ body {
   justify-content: center; /* center the title */
   align-items: center;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* LEFT and RIGHT - absolutely positioned, vertically centered */
@@ -78,7 +78,7 @@ body {
 .record-count {
   margin-left: 1rem;
   font-size: 1.1rem;
-  color: #ccc;
+  color: white;
 }
 
 /* Back button styling */
