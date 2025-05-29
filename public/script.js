@@ -105,6 +105,21 @@ function nextSlide() {
   }
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("vault-header");
+  header.style.pointerEvents = "none";
+
+  setTimeout(() => {
+    header.style.pointerEvents = "auto";
+  }, 1500); // Wait until slide animation finishes
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("loaded");
+});
+
+
 // ---- FILTERING & INIT ----
 
 function applyFilters() {

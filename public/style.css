@@ -27,6 +27,23 @@ header {
   flex-wrap: wrap;
 }
 
+.slide-up {
+  position: relative;
+  transform: translateY(100vh);
+  opacity: 0;
+  animation: slideUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+  z-index: 10;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .header-left,
 .header-right {
   display: flex;
@@ -251,6 +268,15 @@ header {
 
 
 /* CAROUSEL */
+
+#carousel-view {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+body.loaded #carousel-view {
+  opacity: 1;
+}
 
 
 .carousel {
