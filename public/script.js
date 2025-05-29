@@ -111,7 +111,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     header.style.pointerEvents = "auto";
-  }, 1500); // Wait until slide animation finishes
+  }, 0); // Wait until slide animation finishes
 });
 
 

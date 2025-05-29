@@ -63,6 +63,9 @@ fetch("records.json")
 
 
 
+
+
+
 // Vinyl spin logic — after everything (including images) is loaded
 window.onload = () => {
   document.querySelectorAll('.spinnable-vinyl').forEach(vinyl => {
