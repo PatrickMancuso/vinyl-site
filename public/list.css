@@ -8,124 +8,148 @@ html, body {
   height: 100%;
 }
 
+
+
 body {
   margin: 0;
   font-family: 'Garamond', serif;
   background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pexels-mike-468229-1181769.jpg?v=1746487508518') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  overflow-x: hidden; /* prevent horizontal scroll */
+  overflow-x: hidden;
   height: 100%;
 }
 
-header {
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990') center top;
-}
-
-/* Header Layout */
-/* Header Container */
 .list-header {
   background-color: #111;
   border-bottom: 7px solid #222;
   padding: 1.2rem 1.5rem 1rem;
   color: white;
+  position: relative;
 }
 
-/* Top Row: Back on left, title centered, filters on right */
+/* HEADER TOP - flex container centered */
 .header-top {
   display: flex;
+  justify-content: center; /* center the title */
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap; /* prevent wrapping */
+  position: relative;
   margin-bottom: 1rem;
-  position: relative; /* if you still want relative context */
-  padding: 0 0.5rem; /* optional padding */
 }
 
-/* Remove .header-title-container entirely: no absolute positioning */
-/* Move .header-title out and let flexbox center it */
-
-/* Centered Title */
-.header-title {
-  font-size: 3rem;
-  font-family: 'HooeyDemo', serif;
-  margin: 0;
-  text-align: center;
-  white-space: nowrap;
-  font-weight: normal;
-  flex: 1 1 auto; /* let it grow and shrink */
-  /* center text */
-}
-
-/* Left + Right Sections */
+/* LEFT and RIGHT - absolutely positioned, vertically centered */
 .header-left,
 .header-right {
-  flex: 0 0 auto; /* shrink to fit content */
-  min-width: 120px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 120px;
+  font-size: 1rem;
+}
+
+.header-left {
+  left: 1.5rem;
 }
 
 .header-right {
-  justify-content: flex-end;
+  right: 1.5rem;
+  gap: 8px;
 }
 
-/* Bottom Row: Search and Record Count Centered */
+/* Title centered */
+.header-title {
+  font-family: 'HooeyDemo', serif;
+  font-size: 3rem;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: center;
+  user-select: none;
+}
+
+/* Record count styling */
+.record-count {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Back button styling */
+/* Back Button */
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+}
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Control Styling */
+#genre-select,
+#decade-select,
+#search-input
+{
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border: none;
+}
+
+#genre-select,
+#decade-select {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+#search-input {
+  width: 200px;
+}
+
+/* HEADER BOTTOM - search bar centered */
 .header-bottom {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* NEW hidden class to start hidden and shifted down */
-.album-list.hidden {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: none; /* no transition during hidden */
-}
-
-/* Remove previous fade-in and add forwards so it keeps the end state */
-.album-list.fade-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-
-/* Set default album-list state so no flicker on initial load */
+/* Album list container */
 .album-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 40px 60px 100px;
-
-  max-height: 80vh; /* or some fixed height */
+  max-height: 80vh;
   overflow-y: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-
-  /* default visible */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   opacity: 1;
   transform: translateY(0);
   transition: none;
 }
 
-/* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge, Opera) */
+/* Hide scrollbar */
 .album-list::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
+/* Album item */
 .album-item {
   will-change: transform;
   display: flex;
@@ -161,39 +185,9 @@ header {
   color: #ccc;
 }
 
-/* Back Button */
-#toggle-view {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 8px 15px;
-  font-size: 1.1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  min-width: 80px;
-}
-
-#toggle-view:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Utility Navigation (if used) */
-.nav a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.nav a:hover {
-  color: #fff;
-}
-
+/* Responsive tweaks */
 @media (max-width: 600px) {
   .spinnable-vinyl {
-    display: none; /* hide vinyls on narrow screens if needed */
+    display: none;
   }
 }
