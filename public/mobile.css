@@ -2,26 +2,10 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/istockphoto-1147018643-612x612.jpg?v=1748473394256');
   color: #fff;
-  background-color: #000; 
   overflow-x: hidden;
 }
-
-
-.background-bottom {
-  height: 50vh;
-  background: 
-    url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/istockphoto-1147018643-612x612.jpg?v=1748473394256') 
-    no-repeat center center;
-  background-size: cover;
-  background-color: #000; /* Backup fill */
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-
-
-
 
 header {
   display: flex;
