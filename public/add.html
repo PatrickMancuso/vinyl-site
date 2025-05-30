@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+  <script type="module" src="/firebase-init.js"></script>
+
+  
 <head>
   <meta charset="UTF-8" />
   <title>Add New Album</title>
@@ -69,7 +73,7 @@
     <label for="image">Cover Image URL</label>
     <input type="text" id="image" required>
 
-    <label for="spotify">Spotify Album Embed URL</label>
+    <label for="spotify">Spotify Album Embed URL (Optional)</label>
     <input type="text" id="spotify" placeholder="https://open.spotify.com/album/..." />
 
     <button onclick="generateEntry()">Generate Album JSON</button>
