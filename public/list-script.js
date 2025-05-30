@@ -1,11 +1,11 @@
-import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 
-const auth = getAuth();
+//import { auth, onAuthStateChanged } from './firebase-init.js';
 
-onAuthStateChanged(auth, (user) => {
+
+/*onAuthStateChanged(auth, (user) => {
   if (user) {
     const uid = user.uid;
-
+*/
     fetch("records.json")
       .then(res => res.json())
       .then(data => {
