@@ -175,7 +175,11 @@ document.getElementById("toggle-view").onclick = () => {
 
 
 
-document.getElementById("carousel").addEventListener("wheel", (event) => {
+window.addEventListener("wheel", (event) => {
+  // prevent scrolling only if carousel is visible
+  const carouselVisible = document.getElementById("carousel-view").style.display !== "none";
+  if (!carouselVisible) return;
+
   event.preventDefault();
   event.deltaY > 0 ? nextSlide() : prevSlide();
 }, { passive: false });
