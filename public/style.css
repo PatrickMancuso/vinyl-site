@@ -302,7 +302,7 @@ body.loaded #carousel-view {
   overflow: hidden;
   cursor: pointer;
   will-change: transform, opacity;
-  transition: transform 0.7s cubic-bezier(0.20, 0.8, 0.20, 1), opacity 0.4s ease;
+  transition: transform 0.5s cubic-bezier(0.02, 0.8, 0.20, 1), opacity 0.5s ease;
 }
 
 
