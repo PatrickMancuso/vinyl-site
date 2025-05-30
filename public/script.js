@@ -21,10 +21,18 @@ function randomSlide() {
 }
 
 
-  // Fade in on load
   window.addEventListener("DOMContentLoaded", () => {
-    document.body.classList.add("fade-in");
-  });
+  document.body.classList.add("fade-in");
+  document.body.classList.add("loaded");
+
+  const header = document.getElementById("vault-header");
+  if (header) {
+    header.style.pointerEvents = "none";
+    setTimeout(() => {
+      header.style.pointerEvents = "auto";
+    }, 0);
+  }
+});
 
 
 function renderCarousel(albums) {
@@ -91,33 +99,34 @@ function updateCarouselClasses() {
   });
 }
 
+let canNavigate = true;
+
+function throttleSlide(fn) {
+  if (!canNavigate) return;
+  fn();
+  canNavigate = false;
+  setTimeout(() => {
+    canNavigate = true;
+  }, 20); // adjust based on transition speed
+}
+
 function prevSlide() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarouselClasses();
-  }
+  throttleSlide(() => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarouselClasses();
+    }
+  });
 }
 
 function nextSlide() {
-  if (currentIndex < filteredAlbums.length - 1) {
-    currentIndex++;
-    updateCarouselClasses();
-  }
+  throttleSlide(() => {
+    if (currentIndex < filteredAlbums.length - 1) {
+      currentIndex++;
+      updateCarouselClasses();
+    }
+  });
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  const header = document.getElementById("vault-header");
-  header.style.pointerEvents = "none";
-
-  setTimeout(() => {
-    header.style.pointerEvents = "auto";
-  }, 0); // Wait until slide animation finishes
-});
-
-
-window.addEventListener("DOMContentLoaded", () => {
-  document.body.classList.add("loaded");
-});
 
 
 // ---- FILTERING & INIT ----
