@@ -850,16 +850,6 @@
     "spotify_url": "https://open.spotify.com/embed/album/2umoqwMrmjBBPeaqgYu6J9"
   },
   {
-    "id": "for-you",
-    "title": "For You",
-    "artist": "Prince",
-    "year": 1978,
-    "cover": "https://i.discogs.com/vjVJcgWc1-ZZwQbNWSt-x2yuvpVouURGpCng7_iR1ek/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTM0/MjYtMTI5Mjc3NzQ3/My5qcGVn.jpeg",
-    "api_artist_name": "Prince",
-    "tags": "funk, pop, soul, 80s, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/5kbRcoeBHpJHe37a9agmfv"
-  },
-  {
     "id": "the-world-is-a-ghetto",
     "title": "The World is a Ghetto",
     "artist": "War",
