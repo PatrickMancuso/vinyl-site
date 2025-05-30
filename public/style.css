@@ -49,7 +49,6 @@ header {
 .header-title {
   flex: 2;
   text-align: center;
-  display: 
   font-size: 3.2rem;
   font-family: 'HooeyDemo', sans-serif;
   transform: translateY(10%);
@@ -243,6 +242,14 @@ header {
   color: gold;
 }
 
+#fav-filter-toggle.active {
+  color: gold;
+  border: 1px solid;
+  border-color: gold; 
+  background: #1e8b1c;
+
+}
+
 .fav-icon:hover {
   color: gold;
   text-shadow: 0 0 8px gold;
@@ -254,13 +261,7 @@ header {
 
 
 
-#fav-filter-toggle.active {
-  color: gold;
-  border: 2px solid;
-  border-color: gold;
 
-  
-}
 
 .album-info .fav-icon {
   line-height: 1.2;
