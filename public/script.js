@@ -3,31 +3,25 @@ let albumsData = [];
 let filteredAlbums = [];
 let favoritesOnly = false;
 
+
 import { auth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from './firebase-init.js';
 
 const provider = new GoogleAuthProvider();
+
+
 const signInBtn = document.getElementById('sign-in-btn');
 const signOutBtn = document.getElementById('sign-out-btn');
 
 signInBtn.onclick = () => {
   signInWithPopup(auth, provider)
-    .then(result => console.log("Signed in:", result.user))
-    .catch(err => console.error(err));
+    .then(result => console.log("Signed in:", result.user.email))
+    .catch(err => console.error("Sign-in error:", err));
 };
 
 signOutBtn.onclick = () => {
   signOut(auth).then(() => console.log("Signed out."));
 };
 
-onAuthStateChanged(auth, user => {
-  if (user) {
-    console.log("User logged in:", user.email);
-    // Show album add UI or user-specific albums
-  } else {
-    console.log("No user.");
-    // Hide personal album options
-  }
-});
 
 // ---- CAROUSEL (MAIN) ----
 
@@ -44,6 +38,17 @@ function randomSlide() {
     dice.classList.remove("rolling");
   }, 1000);
 }
+
+
+onAuthStateChanged(auth, user => {
+  if (user) {
+    console.log("Logged in as:", user.email);
+    document.body.classList.add("user-logged-in");
+  } else {
+    console.log("User is not logged in.");
+    document.body.classList.remove("user-logged-in");
+  }
+});
 
 
   // Fade in on load
