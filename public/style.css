@@ -242,13 +242,21 @@ header {
   color: gold;
 }
 
+@keyframes rainbowFade {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 #fav-filter-toggle.active {
   color: gold;
-  border: 1px solid;
-  border-color: gold; 
-  background: #1e8b1c;
-
+  border: 1px solid gold;
+  background: linear-gradient(270deg, 
+    red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 1400% 1400%;
+  animation: rainbowFade 8s ease infinite;
 }
+
 
 .fav-icon:hover {
   color: gold;
@@ -298,8 +306,8 @@ body.loaded #carousel-view {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
-  width: 525px;
-  height: 525px;
+  width: 550px;
+  height: 550px;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
