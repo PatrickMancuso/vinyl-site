@@ -49,6 +49,7 @@ header {
 .header-title {
   flex: 2;
   text-align: center;
+  display: 
   font-size: 3.2rem;
   font-family: 'HooeyDemo', sans-serif;
   transform: translateY(10%);
@@ -255,7 +256,9 @@ header {
 
 #fav-filter-toggle.active {
   color: gold;
+  border: 2px solid;
   border-color: gold;
+
   
 }
 
