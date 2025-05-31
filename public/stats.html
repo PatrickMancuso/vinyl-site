@@ -128,23 +128,27 @@
       });
 
       // Create genre chart (sorted descending)
-      const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
-      new Chart(document.getElementById("genreChart"), {
-        type: "bar",
-        data: {
-          labels: sortedGenres.map(g => g[0]),
-          datasets: [{
-            label: "Albums",
-            data: sortedGenres.map(g => g[1]),
-            backgroundColor: "#36a2eb"
-          }]
-        },
-        options: {
-          indexAxis: "y",
-          scales: { x: { beginAtZero: true } },
-          plugins: { legend: { display: false } }
-        }
-      });
+      const topN = 20;
+const sortedGenres = Object.entries(genreCounts)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, topN);
+
+new Chart(document.getElementById("genreChart"), {
+  type: "bar",
+  data: {
+    labels: sortedGenres.map(g => g[0]),
+    datasets: [{
+      label: "Albums",
+      data: sortedGenres.map(g => g[1]),
+      backgroundColor: "#36a2eb"
+    }]
+  },
+  options: {
+    indexAxis: "y",
+    scales: { x: { beginAtZero: true } },
+    plugins: { legend: { display: false } }
+  }
+});
 
       // Create origin chart (sorted descending)
       const sortedOrigins = Object.entries(originCounts).sort((a, b) => b[1] - a[1]);
