@@ -101,22 +101,31 @@ function updateCarouselClasses() {
 
 let canNavigate = true;
 
-
+function throttleSlide(fn) {
+  if (!canNavigate) return;
+  fn();
+  canNavigate = false;
+  setTimeout(() => {
+    canNavigate = true;
+  }, 15); // adjust based on transition speed
+}
 
 function prevSlide() {
+  throttleSlide(() => {
     if (currentIndex > 0) {
       currentIndex--;
       updateCarouselClasses();
     }
-  
+  });
 }
 
 function nextSlide() {
+  throttleSlide(() => {
     if (currentIndex < filteredAlbums.length - 1) {
       currentIndex++;
       updateCarouselClasses();
     }
-  
+  });
 }
 
 
