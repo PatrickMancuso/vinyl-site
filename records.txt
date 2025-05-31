@@ -7,7 +7,8 @@
     "cover": "https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/Love-Deluxe.jpg?v=1746070864210",
     "api_artist_name": "Sade",
     "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/2PfGKHtqEX58bHtkQxJnWG?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/2PfGKHtqEX58bHtkQxJnWG?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "adam-s-apple",
@@ -17,7 +18,8 @@
     "cover": "https://m.media-amazon.com/images/I/71UmMKS8m3L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Wayne Shorter",
     "tags": "jazz, saxophone, Hard Bop, bebop, Fusion",
-    "spotify_url": "https://open.spotify.com/embed/album/4sxvTow8IffB0lisGJWb6Z?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4sxvTow8IffB0lisGJWb6Z?utm_source=generator",
+    "artist_origin": "Newark, New Jersey, USA"
   },
   {
     "id": "back-at-the-chicken-shack",
@@ -27,7 +29,8 @@
     "cover": "https://m.media-amazon.com/images/I/81VZURwjq2L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jimmy Smith",
     "tags": "jazz, organ, funk, Hammond, blues",
-    "spotify_url": "https://open.spotify.com/embed/album/6YhvR14clg0yibdTKB5aBv?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/6YhvR14clg0yibdTKB5aBv?utm_source=generator",
+    "artist_origin": "Norristown, Pennsylvania, USA"
   },
   {
     "id": "blues-roots",
@@ -37,7 +40,8 @@
     "cover": "https://m.media-amazon.com/images/I/91fJ7HjopTL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Charles Mingus",
     "tags": "jazz, bebop, bass, Avant-Garde, Post-Bop",
-    "spotify_url": "https://open.spotify.com/embed/album/7EOQggjtK8JCqeRz9IG33e?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7EOQggjtK8JCqeRz9IG33e?utm_source=generator",
+    "artist_origin": "Nogales, Arizona, USA"
   },
   {
     "id": "round-about-midnight",
@@ -47,7 +51,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2737df8c70e41f248299b4224a1",
     "api_artist_name": "Miles Davis",
     "tags": "jazz, trumpet, Fusion, bebop, blues",
-    "spotify_url": "https://open.spotify.com/embed/album/4VUawqEDCHHfrUe77ScQ2K?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4VUawqEDCHHfrUe77ScQ2K?utm_source=generator",
+    "artist_origin": "Alton, Illinois, USA"
   },
   {
     "id": "mingus-ah-um",
@@ -57,7 +62,8 @@
     "cover": "https://m.media-amazon.com/images/I/81DmDMv-VzL._SL1500_.jpg",
     "api_artist_name": "Charles Mingus",
     "tags": "jazz, bebop, bass, Avant-Garde, Post-Bop",
-    "spotify_url": "https://open.spotify.com/embed/album/7pojWP7x9uEFSJgw765khA?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7pojWP7x9uEFSJgw765khA?utm_source=generator",
+    "artist_origin": "Nogales, Arizona, USA"
   },
   {
     "id": "one-nation-under-a-groove",
@@ -67,7 +73,8 @@
     "cover": "https://m.media-amazon.com/images/I/71CcyoKo8EL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Funkadelic",
     "tags": "funk, soul, psychedelic, p-funk, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/0QLGc9YYoHIKpnprRURTdm?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/0QLGc9YYoHIKpnprRURTdm?utm_source=generator",
+    "artist_origin": "Plainfield, New Jersey, USA"
   },
   {
     "id": "eye-in-the-sky",
@@ -77,7 +84,8 @@
     "cover": "https://m.media-amazon.com/images/I/61SzMHIYPfL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "The Alan Parsons Project",
     "tags": "Progressive rock, classic rock, rock, 80s, electronic",
-    "spotify_url": "https://open.spotify.com/embed/album/71Y6kburF8k1qyHycovHy8?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/71Y6kburF8k1qyHycovHy8?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "remember-the-future",
@@ -87,7 +95,8 @@
     "cover": "https://m.media-amazon.com/images/I/818QU0JBF1L.jpg",
     "api_artist_name": "Nektar",
     "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
-    "spotify_url": "https://open.spotify.com/embed/album/1BQYS7PTIxgYFY4mv5P8M0?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/1BQYS7PTIxgYFY4mv5P8M0?utm_source=generator",
+    "artist_origin": "Hamburg, Germany"
   },
   {
     "id": "maiden-voyage",
@@ -97,7 +106,8 @@
     "cover": "https://i0.wp.com/bestofjazz.org/wp-content/uploads/Herbie-Hancock-Maiden-Voyage.png?resize=600%2C600&ssl=1",
     "api_artist_name": "Herbie Hancock",
     "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/7huPJTTsWVt854oZkr88mf?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7huPJTTsWVt854oZkr88mf?utm_source=generator",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "live-at-carnegie-hall",
@@ -107,7 +117,8 @@
     "cover": "https://m.media-amazon.com/images/I/61LHfVOjEkL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Bill Withers",
     "tags": "soul, funk, 70s, rhythm and blues, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/0Stnb66v5cibvR22sFdLYx?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/0Stnb66v5cibvR22sFdLYx?utm_source=generator",
+    "artist_origin": "Slab Fork, West Virginia, USA"
   },
   {
     "id": "giant-steps",
@@ -117,7 +128,8 @@
     "cover": "https://artrockstore.com/cdn/shop/products/artrockstore-john-coltrane-giant-steps-album_1024x1024.jpg?v=1683171328",
     "api_artist_name": "John Coltrane",
     "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/7cZ6oBx0SEUPDAoxJtxNDh?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7cZ6oBx0SEUPDAoxJtxNDh?utm_source=generator",
+    "artist_origin": "Hamlet, North Carolina, USA"
   },
   {
     "id": "josh-at-midnight",
@@ -127,7 +139,8 @@
     "cover": "https://m.media-amazon.com/images/I/71xO8ChJ3aL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Josh White",
     "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues",
-    "spotify_url": "https://open.spotify.com/embed/album/5ZvkLS9KmiDSdW9MbEWwLV?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5ZvkLS9KmiDSdW9MbEWwLV?utm_source=generator",
+    "artist_origin": "Greenville, South Carolina, USA"
   },
   {
     "id": "cowboy-bebop",
@@ -137,7 +150,8 @@
     "cover": "https://i.discogs.com/MmbF8Musstn8k4n5kUr9UErm3jJNYXuOJlE46EVq1PY/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyMDY0/My0xMTYyMTgxNDIw/LmpwZWc.jpeg",
     "api_artist_name": "Seatbelts",
     "tags": "jazz, blues, japanese, funk, instrumental, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/album/1XoE7ZirQ3gjxq8HIzTJU9?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/1XoE7ZirQ3gjxq8HIzTJU9?utm_source=generator",
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "a-silent-voice",
@@ -147,7 +161,8 @@
     "cover": "https://blackscreenrecords.com/cdn/shop/files/aSilentVoiceVinyl_2D_FLAT_Withbellyband_2048x.jpg?v=1737535341",
     "api_artist_name": "Kensuke Ushio",
     "tags": "Soundtrack, japanese, ambient, anime, electronic, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/3WlmFFtmePwfhN9pQdVJ5v?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3WlmFFtmePwfhN9pQdVJ5v?utm_source=generator",
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "crumbling",
@@ -157,7 +172,8 @@
     "cover": "https://i.ytimg.com/vi/rDMiwWfclTs/maxresdefault.jpg",
     "api_artist_name": "Mid-Air Thief",
     "tags": "folktronica, psychedelic, Neo-Psychedelia, psychedelic pop, Korean, ambient",
-    "spotify_url": "https://open.spotify.com/embed/album/4n9J61IrlrEFswxTu0MJIo?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4n9J61IrlrEFswxTu0MJIo?utm_source=generator",
+    "artist_origin": "South Korea"
   },
   {
     "id": "what-s-going-on",
@@ -167,7 +183,8 @@
     "cover": "https://d.newsweek.com/en/full/1802884/marvin-gayes-whats-going-turns-50.webp",
     "api_artist_name": "Marvin Gaye",
     "tags": "soul, motown, funk, rhythm and blues, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/2v6ANhWhZBUKkg6pJJBs3B?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/2v6ANhWhZBUKkg6pJJBs3B?utm_source=generator",
+    "artist_origin": "Washington, D.C., USA"
   },
   {
     "id": "baduizm",
@@ -177,7 +194,8 @@
     "cover": "https://m.media-amazon.com/images/I/713Hbj16ASL.jpg",
     "api_artist_name": "Erykah Badu",
     "tags": "soul, Neo-Soul, female vocalists, rnb, jazz",
-    "spotify_url": "https://open.spotify.com/embed/album/3qr4pTBWEU1SVf01j6RAx3?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3qr4pTBWEU1SVf01j6RAx3?utm_source=generator",
+    "artist_origin": "Dallas, Texas, USA"
   },
   {
     "id": "innervisions",
@@ -187,7 +205,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273ea8ab1a548312b79ac955266",
     "api_artist_name": "Stevie Wonder",
     "tags": "soul, funk, motown, pop, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/5jgI8Eminx9MmLBontDWq8?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5jgI8Eminx9MmLBontDWq8?utm_source=generator",
+    "artist_origin": "Saginaw, Michigan, USA"
   },
   {
     "id": "songs-in-the-key-of-life",
@@ -197,7 +216,8 @@
     "cover": "https://m.media-amazon.com/images/I/71hVRbO+KHL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Stevie Wonder",
     "tags": "soul, funk, motown, pop, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/6YUCc2RiXcEKS9ibuZxjt0?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/6YUCc2RiXcEKS9ibuZxjt0?utm_source=generator",
+    "artist_origin": "Saginaw, Michigan, USA"
   },
   {
     "id": "rise",
@@ -207,7 +227,8 @@
     "cover": "https://i.ebayimg.com/images/g/12kAAOSwHahmRDOi/s-l1200.jpg",
     "api_artist_name": "Herb Alpert",
     "tags": "jazz, instrumental, easy listening, trumpet, chill",
-    "spotify_url": "https://open.spotify.com/embed/album/7HY0aAzDNhAqmFHATtABPY?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7HY0aAzDNhAqmFHATtABPY?utm_source=generator",
+    "artist_origin": "Los Angeles, California, USA"
   },
   {
     "id": "mysterious-traveler",
@@ -217,7 +238,8 @@
     "cover": "https://m.media-amazon.com/images/I/71yrT-bvEpL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Weather Report",
     "tags": "jazz, Fusion, jazz fusion, instrumental, funk",
-    "spotify_url": "https://open.spotify.com/embed/album/2JARH6A2TX28OzcPwJnD1p?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/2JARH6A2TX28OzcPwJnD1p?utm_source=generator",
+    "artist_origin": "New York, New York, USA"
   },
   {
     "id": "black-market",
@@ -227,7 +249,8 @@
     "cover": "https://m.media-amazon.com/images/I/81MQAN7-0EL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Weather Report",
     "tags": "jazz, Fusion, jazz fusion, instrumental, funk",
-    "spotify_url": "https://open.spotify.com/embed/album/4COZn5okauxP5luXkwEPLd?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4COZn5okauxP5luXkwEPLd?utm_source=generator",
+    "artist_origin": "New York, New York, USA"
   },
   {
     "id": "empyrean-isles",
@@ -237,7 +260,8 @@
     "cover": "https://www.herbiehancock.com/wp-content/uploads/2017/02/Empyrean-Isles.jpg",
     "api_artist_name": "Herbie Hancock",
     "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/11TXHm0xqob0K697Fz8cSo?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/11TXHm0xqob0K697Fz8cSo?utm_source=generator",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "headhunters",
@@ -247,7 +271,8 @@
     "cover": "https://www.herbiehancock.com/wp-content/uploads/2017/02/Head-Hunters.jpg",
     "api_artist_name": "Herbie Hancock",
     "tags": "jazz, funk, Fusion, piano, jazz fusion, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/5fmIolILp5NAtNYiRPjhzA?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5fmIolILp5NAtNYiRPjhzA?utm_source=generator",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "justments",
@@ -257,7 +282,8 @@
     "cover": "https://m.media-amazon.com/images/I/8143pir8TVL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Bill Withers",
     "tags": "soul, funk, 70s, rhythm and blues, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/10jKkqtTI0cblOQjJfDUpt?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/10jKkqtTI0cblOQjJfDUpt?utm_source=generator",
+    "artist_origin": "Slab Fork, West Virginia, USA"
   },
   {
     "id": "still-bill",
@@ -267,7 +293,8 @@
     "cover": "https://m.media-amazon.com/images/I/7108IhubsnL.jpg",
     "api_artist_name": "Bill Withers",
     "tags": "soul, funk, 70s, rhythm and blues, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/5EClNCnI8hnAbelstFbiU9?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5EClNCnI8hnAbelstFbiU9?utm_source=generator",
+    "artist_origin": "Slab Fork, West Virginia, USA"
   },
   {
     "id": "superfly",
@@ -277,7 +304,8 @@
     "cover": "https://m.media-amazon.com/images/I/81hBKihuLkL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Curtis Mayfield",
     "tags": "soul, funk, 70s, rhythm and blues, rnb, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/album/295ykF5lEp4sZseuob1qTu?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/295ykF5lEp4sZseuob1qTu?utm_source=generator",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "curtis",
@@ -287,7 +315,8 @@
     "cover": "https://m.media-amazon.com/images/I/91d1E9ZjkuL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Curtis Mayfield",
     "tags": "soul, funk, 70s, rhythm and blues, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/3tgJmEz0R0ZsRSrpwafp4R?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3tgJmEz0R0ZsRSrpwafp4R?utm_source=generator",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "diamond-life",
@@ -297,7 +326,8 @@
     "cover": "https://m.media-amazon.com/images/I/71T3-lHvXxL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Sade",
     "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "can-t-buy-a-thrill",
@@ -307,7 +337,8 @@
     "cover": "https://m.media-amazon.com/images/I/613fQ0Vi++L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Steely Dan",
     "tags": "classic rock, Jazz Rock, rock, 70s, jazz",
-    "spotify_url": "https://open.spotify.com/embed/album/6DlSUW5gmq6Byc3osKDJ2p?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/6DlSUW5gmq6Byc3osKDJ2p?utm_source=generator",
+    "artist_origin": "Annandale-on-Hudson, New York, USA"
   },
   {
     "id": "aja",
@@ -317,7 +348,8 @@
     "cover": "https://m.media-amazon.com/images/I/51Or8sHTe-L.jpg",
     "api_artist_name": "Steely Dan",
     "tags": "classic rock, Jazz Rock, rock, 70s, jazz",
-    "spotify_url": "https://open.spotify.com/embed/album/1hOK2ey9W76x9GnftSRgrw?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/1hOK2ey9W76x9GnftSRgrw?utm_source=generator",
+    "artist_origin": "Annandale-on-Hudson, New York, USA"
   },
   {
     "id": "uzumaki",
@@ -326,8 +358,9 @@
     "year": 2024,
     "cover": "https://i.scdn.co/image/ab67616d0000b273fc4ffbca719a52819e3ec9f1",
     "api_artist_name": "Colin Stetson",
-    "tags": "experimental, Avant-Garde, seen live, Avant-Garde Jazz, ambient, instrumental, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/album/7jSnAYdc0Aysd2ONzzVwLX?utm_source=generator"
+    "tags": "experimental, Avant-Garde, seen live , ambient, instrumental, soundtrack",
+    "spotify_url": "https://open.spotify.com/embed/album/7jSnAYdc0Aysd2ONzzVwLX?utm_source=generator",
+    "artist_origin": "Ann Arbor, Michigan, USA"
   },
   {
     "id": "solid-state-survivor",
@@ -337,7 +370,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273c70aa05c55b6fb116863f6f5",
     "api_artist_name": "Yellow Magic Orchestra",
     "tags": "electronic, japanese, synthpop, techno, electronica",
-    "spotify_url": "https://open.spotify.com/embed/album/5TmpFE7Xus70ko1QYGxFIe?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5TmpFE7Xus70ko1QYGxFIe?utm_source=generator",
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "thousand-knives",
@@ -347,7 +381,8 @@
     "cover": "https://m.media-amazon.com/images/I/81rKz1yPPBL.jpg",
     "api_artist_name": "Ryuichi Sakamoto",
     "tags": "japanese, piano, ambient, experimental, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/0EwjDAYbgBNtS3zY7uPCh7?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/0EwjDAYbgBNtS3zY7uPCh7?utm_source=generator",
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "yellow-magic-orchestra",
@@ -357,7 +392,8 @@
     "cover": "https://m.media-amazon.com/images/I/71tNdtNw70L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Yellow Magic Orchestra",
     "tags": "electronic, japanese, synthpop, techno, electronica",
-    "spotify_url": "https://open.spotify.com/embed/album/76xjrDclKxWzJdDz3isxBX?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/76xjrDclKxWzJdDz3isxBX?utm_source=generator",
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "floating",
@@ -367,7 +403,8 @@
     "cover": "https://www.progarchives.com/progressive_rock_discography_covers/95/cover_2412692016_r.jpg",
     "api_artist_name": "Eloy",
     "tags": "Progressive rock, space rock, krautrock, Psychedelic Rock, german",
-    "spotify_url": "https://open.spotify.com/embed/album/7zhuy8vqMtMJF73gQN0lvi?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7zhuy8vqMtMJF73gQN0lvi?utm_source=generator",
+    "artist_origin": "Hannover, Germany"
   },
   {
     "id": "silent-cries-and-mighty-echoes",
@@ -377,7 +414,8 @@
     "cover": "https://www.progarchives.com/progressive_rock_discography_covers/95/cover_55287892016_r.jpg",
     "api_artist_name": "Eloy",
     "tags": "Progressive rock, space rock, krautrock, Psychedelic Rock, german",
-    "spotify_url": "https://open.spotify.com/embed/album/6XAES0j2QM7gPjLsEEKPVn?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/6XAES0j2QM7gPjLsEEKPVn?utm_source=generator",
+    "artist_origin": "Hannover, Germany"
   },
   {
     "id": "recycled",
@@ -387,7 +425,8 @@
     "cover": "https://cleorecs.com/cdn/shop/files/9296-NEKTAR.jpg?v=1712953156",
     "api_artist_name": "Nektar",
     "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
-    "spotify_url": "https://open.spotify.com/embed/album/4D5ZGmqizLUdRUZkHZi0Tn?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4D5ZGmqizLUdRUZkHZi0Tn?utm_source=generator",
+    "artist_origin": "Hamburg, Germany"
   },
   {
     "id": "rainbow-dome-musick",
@@ -397,7 +436,8 @@
     "cover": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F641cd1ee-051d-4460-ba1a-983b33f17b34_1184x1180.jpeg",
     "api_artist_name": "Steve Hillage",
     "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene, ambient",
-    "spotify_url": "https://open.spotify.com/embed/album/67m5VTJCEDpxDz5WH2upcz?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/67m5VTJCEDpxDz5WH2upcz?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "green",
@@ -407,7 +447,8 @@
     "cover": "https://m.media-amazon.com/images/I/61BJT9XXAgL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Steve Hillage",
     "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene",
-    "spotify_url": "https://open.spotify.com/embed/album/3EiyPffQse15BhPxfOYN0r"
+    "spotify_url": "https://open.spotify.com/embed/album/3EiyPffQse15BhPxfOYN0r",
+    "artist_origin": "London, UK"
   },
   {
     "id": "flying-teapot",
@@ -417,7 +458,8 @@
     "cover": "https://m.media-amazon.com/images/I/91d8f0UrY6L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Gong",
     "tags": "Progressive rock, Psychedelic Rock, psychedelic, space rock, Canterbury",
-    "spotify_url": "https://open.spotify.com/embed/album/47tuhYAVX2ELCONy10VOLX"
+    "spotify_url": "https://open.spotify.com/embed/album/47tuhYAVX2ELCONy10VOLX",
+    "artist_origin": "France"
   },
   {
     "id": "gong-live-at-sheffield",
@@ -427,7 +469,8 @@
     "cover": "https://i.discogs.com/4EOmEkoXlI8_U4xKdAYpwjXu__hmsPYRHsnUwQ_SUcU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODA0/OTc1LTE1MjI2Nzg3/MDktMTY0NS5qcGVn.jpeg",
     "api_artist_name": "Gong",
     "tags": "Progressive rock, Psychedelic Rock, psychedelic, space rock, Canterbury",
-    "spotify_url": "https://open.spotify.com/embed/album/3pkBSd9WV2J3oDFDpPZ66A"
+    "spotify_url": "https://open.spotify.com/embed/album/3pkBSd9WV2J3oDFDpPZ66A",
+    "artist_origin": "France"
   },
   {
     "id": "wish-you-were-here",
@@ -437,7 +480,8 @@
     "cover": "https://media.pitchfork.com/photos/673362c0fc837d4b9b27db8a/16:9/w_1280,c_limit/Pink%20Floyd:%20Wish%20You%20Were%20Here.jpg",
     "api_artist_name": "Pink Floyd",
     "tags": "Progressive rock, classic rock, Psychedelic Rock, rock, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/0bCAjiUamIFqKJsekOYuRw"
+    "spotify_url": "https://open.spotify.com/embed/album/0bCAjiUamIFqKJsekOYuRw",
+    "artist_origin": "London, UK"
   },
   {
     "id": "houses-of-the-holy",
@@ -447,7 +491,8 @@
     "cover": "https://experiencevinyl.com/cdn/shop/products/R-4817946-1420758524-8571_jpeg-716391.jpg?v=1619200300",
     "api_artist_name": "Led Zeppelin",
     "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
-    "spotify_url": "https://open.spotify.com/embed/album/0GqpoHJREPp0iuXK3HzrHk?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/0GqpoHJREPp0iuXK3HzrHk?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "physical-graffiti",
@@ -457,7 +502,8 @@
     "cover": "https://m.media-amazon.com/images/I/91nQIviADKL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Led Zeppelin",
     "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5F"
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5F",
+    "artist_origin": "London, UK"
   },
   {
     "id": "demons-and-wizards",
@@ -467,7 +513,8 @@
     "cover": "https://m.media-amazon.com/images/I/A1palN6Z3IL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Uriah Heep",
     "tags": "classic rock, hard rock, Progressive rock, rock, 70s",
-    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5G"
+    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5G",
+    "artist_origin": "London, UK"
   },
   {
     "id": "machine-head",
@@ -477,7 +524,8 @@
     "cover": "https://m.media-amazon.com/images/I/71fU7JDo9DL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Deep Purple",
     "tags": "hard rock, classic rock, rock, Progressive rock, heavy metal",
-    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5H"
+    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5H",
+    "artist_origin": "Hertford, England"
   },
   {
     "id": "nightingales-and-bombers",
@@ -487,7 +535,8 @@
     "cover": "https://images.genius.com/e15a442e517a1a53b338a985a13a94b3.600x602x1.jpg",
     "api_artist_name": "Manfred Mann's Earth Band",
     "tags": "classic rock, Progressive rock, rock, 70s, art rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2nE8G9u3XbO3q1I0p1zF8I"
+    "spotify_url": "https://open.spotify.com/embed/album/2nE8G9u3XbO3q1I0p1zF8I",
+    "artist_origin": "London, UK"
   },
   {
     "id": "silver",
@@ -497,7 +546,8 @@
     "cover": "https://e.snmc.io/i/1200/s/b6b9abde70e8207a82ff0686c5dd6e26/4051943",
     "api_artist_name": "Silver",
     "tags": "rock, folk rock, classic rock, 70s",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5J"
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5J",
+    "artist_origin": "Los Angeles, California, USA"
   },
   {
     "id": "dire-straits",
@@ -507,7 +557,8 @@
     "cover": "https://m.media-amazon.com/images/I/61rF8+Xsd4L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Dire Straits",
     "tags": "classic rock, rock, 80s, blues, guitar",
-    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5K"
+    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5K",
+    "artist_origin": "London, UK"
   },
   {
     "id": "golden-biscuits",
@@ -517,7 +568,8 @@
     "cover": "https://i.discogs.com/p53bKY4rM5I2YSy7sQ_eKWDlI7RP9RmkjWVepK35iR0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDEy/NTExLTE2MDE4NTkx/ODQtOTg0NC5qcGVn.jpeg",
     "api_artist_name": "Three Dog Night",
     "tags": "classic rock, rock, 70s, oldies, Southern Rock",
-    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5L"
+    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5L",
+    "artist_origin": "Los Angeles, California, USA"
   },
   {
     "id": "dreamboat-annie",
@@ -527,7 +579,8 @@
     "cover": "https://m.media-amazon.com/images/I/71AS649ysgL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Heart",
     "tags": "classic rock, rock, female vocalists, 80s, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2Q8v3y0Kz0Qh7xX1K1sLkX5M"
+    "spotify_url": "https://open.spotify.com/embed/album/2Q8v3y0Kz0Qh7xX1K1sLkX5M",
+    "artist_origin": "Seattle, Washington, USA"
   },
   {
     "id": "time",
@@ -537,7 +590,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2731083325e2f648767a49ddfad",
     "api_artist_name": "Electric Light Orchestra",
     "tags": "classic rock, Progressive rock, rock, 70s, british",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5N?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5N?utm_source=generator",
+    "artist_origin": "Birmingham, England"
   },
   {
     "id": "breakfast-in-america",
@@ -547,27 +601,30 @@
     "cover": "https://m.media-amazon.com/images/I/71Gz3u2htNL.jpg",
     "api_artist_name": "Supertramp",
     "tags": "classic rock, Progressive rock, rock, 70s, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/1J1ghdI9ILb9eZp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/1J1ghdI9ILb9eZp6xGkKkF?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "fire-of-unknown-origin",
     "title": "Fire of Unknown Origin",
-    "artist": "Blue Oyster Cult",
+    "artist": "Blue \u00d6yster Cult",
     "year": 1981,
     "cover": "https://i.scdn.co/image/ab67616d0000b2736895da04b237964b95c2a166",
-    "api_artist_name": "Blue Oyster Cult",
+    "api_artist_name": "Blue \u00d6yster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Stony Brook, New York, USA"
   },
   {
     "id": "agents-of-fortune",
     "title": "Agents of Fortune",
-    "artist": "Blue Oyster Cult",
+    "artist": "Blue \u00d6yster Cult",
     "year": 1976,
     "cover": "https://i.scdn.co/image/ab67616d0000b2733ac318439ae56ce048d7bf5d",
-    "api_artist_name": "Blue Oyster Cult",
+    "api_artist_name": "Blue \u00d6yster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Stony Brook, New York, USA"
   },
   {
     "id": "eliminator",
@@ -577,7 +634,8 @@
     "cover": "https://m.media-amazon.com/images/I/91hXfCFcIOL.jpg",
     "api_artist_name": "ZZ Top",
     "tags": "classic rock, blues rock, rock, Southern Rock, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Houston, Texas, USA"
   },
   {
     "id": "ritchie-blackmore-s-rainbow",
@@ -587,7 +645,8 @@
     "cover": "https://m.media-amazon.com/images/I/81jJzi9yMiL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Rainbow",
     "tags": "hard rock, classic rock, heavy metal, rock, metal",
-    "spotify_url": "https://open.spotify.com/embed/album/6v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/6v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "asia",
@@ -597,7 +656,8 @@
     "cover": "https://autographcentral.net/wp-content/uploads/Asia.jpg",
     "api_artist_name": "Asia",
     "tags": "Progressive rock, classic rock, rock, 80s, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/7v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "love-at-first-sting",
@@ -607,7 +667,8 @@
     "cover": "https://i.discogs.com/qM8fORa62C4Scl2ke2jo0oXI_xxathT5quSFkYIf9uc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNDkx/NTEtMTQ2Mzk2MTMz/Ny05MTA1LmpwZWc.jpeg",
     "api_artist_name": "Scorpions",
     "tags": "hard rock, classic rock, rock, heavy metal, 80s",
-    "spotify_url": "https://open.spotify.com/embed/album/8v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/8v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Hanover, Germany"
   },
   {
     "id": "music-for-the-masses",
@@ -617,7 +678,8 @@
     "cover": "https://lunchboxrecords.com/cdn/shop/files/MFTM_Cover.jpg?v=1743725621",
     "api_artist_name": "Depeche Mode",
     "tags": "electronic, new wave, 80s, synthpop, synth pop",
-    "spotify_url": "https://open.spotify.com/embed/album/9v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/9v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Basildon, Essex, England"
   },
   {
     "id": "violator",
@@ -627,7 +689,8 @@
     "cover": "https://cdn-images.dzcdn.net/images/cover/2632e326fac7c48c2fbef198f295995a/0x1900-000000-80-0-0.jpg",
     "api_artist_name": "Depeche Mode",
     "tags": "electronic, new wave, 80s, synthpop, synth pop",
-    "spotify_url": "https://open.spotify.com/embed/album/0v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/0v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Basildon, Essex, England"
   },
   {
     "id": "i-robot",
@@ -637,7 +700,8 @@
     "cover": "https://i.ebayimg.com/images/g/dUgAAOSw~pll2jNs/s-l1200.jpg",
     "api_artist_name": "The Alan Parsons Project",
     "tags": "Progressive rock, classic rock, rock, 80s, electronic",
-    "spotify_url": "https://open.spotify.com/embed/album/1v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/1v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "London, UK"
   },
   {
     "id": "cargo",
@@ -647,7 +711,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2733b67a6855fed4af6088ee72a",
     "api_artist_name": "Men at Work",
     "tags": "80s, new wave, rock, australian, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/2v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/2v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Melbourne, Australia"
   },
   {
     "id": "business-as-usual",
@@ -657,7 +722,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273aa5e4c9da271951ac0b31fa2",
     "api_artist_name": "Men at Work",
     "tags": "80s, new wave, rock, australian, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Melbourne, Australia"
   },
   {
     "id": "frontiers",
@@ -667,7 +733,8 @@
     "cover": "https://m.media-amazon.com/images/I/81RPFmr49sL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Journey",
     "tags": "classic rock, rock, 80s, hard rock, Progressive rock",
-    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "San Francisco, California, USA"
   },
   {
     "id": "dead-man-s-party",
@@ -677,7 +744,8 @@
     "cover": "https://i.discogs.com/CPtMk0l_qT05befircmRA7kihhf8qY-qppoiw5eJdZA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODQ3/NTktMTM2MTc2Mzgx/OC0yNzM0LmpwZWc.jpeg",
     "api_artist_name": "Oingo Boingo",
     "tags": "new wave, 80s, rock, alternative, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "artist_origin": "Los Angeles, California, USA"
   },
   {
     "id": "seven-and-the-ragged-tiger",
@@ -687,7 +755,8 @@
     "cover": "https://m.media-amazon.com/images/I/81P2GDOmp2L._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Duran Duran",
     "tags": "new wave, 80s, pop, synth pop, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/1A1AKj7tAopU9MIZgWdSP9"
+    "spotify_url": "https://open.spotify.com/embed/album/1A1AKj7tAopU9MIZgWdSP9",
+    "artist_origin": "Birmingham, England"
   },
   {
     "id": "duran-duran",
@@ -697,7 +766,8 @@
     "cover": "https://e.snmc.io/i/1200/s/93c8a55218632223a3086f5d0c91ad6b/6973916",
     "api_artist_name": "Duran Duran",
     "tags": "new wave, 80s, pop, synth pop, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/7rCjItVh49HVMaHqxFKPRZ"
+    "spotify_url": "https://open.spotify.com/embed/album/7rCjItVh49HVMaHqxFKPRZ",
+    "artist_origin": "Birmingham, England"
   },
   {
     "id": "rio",
@@ -707,7 +777,8 @@
     "cover": "https://m.media-amazon.com/images/I/91Xu+eLZOqL.jpg",
     "api_artist_name": "Duran Duran",
     "tags": "new wave, 80s, pop, synth pop, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/0vndiSM8xxlb8CQFOMMO9h"
+    "spotify_url": "https://open.spotify.com/embed/album/0vndiSM8xxlb8CQFOMMO9h",
+    "artist_origin": "Birmingham, England"
   },
   {
     "id": "substance-1987",
@@ -717,7 +788,8 @@
     "cover": "https://i.discogs.com/mFUHM6O8W2wNfV4GUhNxUG5JBlRF3yPSO6UuK0SWBjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjYy/LTE2MTQxNTQ3ODAt/ODU0MC5qcGVn.jpeg",
     "api_artist_name": "New Order",
     "tags": "new wave, electronic, post-punk, 80s, alternative",
-    "spotify_url": "https://open.spotify.com/embed/album/6iHuSGy6pq4tNGFV3ZVPtl"
+    "spotify_url": "https://open.spotify.com/embed/album/6iHuSGy6pq4tNGFV3ZVPtl",
+    "artist_origin": "Salford, Greater Manchester, England"
   },
   {
     "id": "random-access-memories",
@@ -727,7 +799,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
     "api_artist_name": "Daft Punk",
     "tags": "electronic, House, dance, electronica, techno",
-    "spotify_url": "https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa"
+    "spotify_url": "https://open.spotify.com/embed/album/4m2880jivSbbyEGAKfITCa",
+    "artist_origin": "Paris, France"
   },
   {
     "id": "discovery",
@@ -737,7 +810,8 @@
     "cover": "https://preview.redd.it/94vrrvkevym81.jpg?width=640&crop=smart&auto=webp&s=6329d9587384b64678702e7d424ca3e9d16d2a78",
     "api_artist_name": "Daft Punk",
     "tags": "electronic, House, dance, electronica, techno",
-    "spotify_url": "https://open.spotify.com/embed/album/2noRn2Aes5aoNVsU6iWThc"
+    "spotify_url": "https://open.spotify.com/embed/album/2noRn2Aes5aoNVsU6iWThc",
+    "artist_origin": "Paris, France"
   },
   {
     "id": "blade-runner",
@@ -747,7 +821,8 @@
     "cover": "https://m.media-amazon.com/images/I/91lm-mZmVAL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Vangelis",
     "tags": "electronic, new age, ambient, Soundtrack, instrumental",
-    "spotify_url": "https://open.spotify.com/embed/album/22HoNWvdaHeyVn8aV10Kjx"
+    "spotify_url": "https://open.spotify.com/embed/album/22HoNWvdaHeyVn8aV10Kjx",
+    "artist_origin": "Volos, Greece"
   },
   {
     "id": "one-last-kiss",
@@ -757,7 +832,8 @@
     "cover": "https://m.media-amazon.com/images/I/81awR9XzSgL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Hikaru Utada",
     "tags": "japanese, j-pop, pop, JPop, rnb, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/track/5RhWszHMSKzb7KiXk4Ae0M"
+    "spotify_url": "https://open.spotify.com/embed/track/5RhWszHMSKzb7KiXk4Ae0M",
+    "artist_origin": "New York City, New York, USA"
   },
   {
     "id": "neon-genesis-evangelion",
@@ -767,7 +843,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273564b9a0c99103bf3c5e054f7",
     "api_artist_name": "Shiro Sagisu",
     "tags": "Soundtrack, japanese, anime, instrumental, Bleach",
-    "spotify_url": "https://open.spotify.com/embed/album/04lUd54qAo5kWaUcAxbtgA"
+    "spotify_url": "https://open.spotify.com/embed/album/04lUd54qAo5kWaUcAxbtgA",
+    "artist_origin": "Setagaya, Tokyo, Japan"
   },
   {
     "id": "tmnt-turtles-in-time",
@@ -777,7 +854,8 @@
     "cover": "https://i.discogs.com/E-c86sYzWOiKzFzvdvy5rT0y-r4wIY0CFSYG_hJI-sQ/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDY2/NDM1LTE3MzMyNTE1/MzItOTMzMy5qcGVn.jpeg",
     "api_artist_name": "Kazuhiko Uehara",
     "tags": "video game music",
-    "spotify_url": "https://open.spotify.com/embed/album/1x2x3x4x5x6x7x8x9x0x"
+    "spotify_url": "https://open.spotify.com/embed/album/1x2x3x4x5x6x7x8x9x0x",
+    "artist_origin": "Japan"
   },
   {
     "id": "cuphead",
@@ -787,7 +865,8 @@
     "cover": "https://f4.bcbits.com/img/a2164104584_10.jpg",
     "api_artist_name": "Kristofer Maddigan",
     "tags": "jazz, Big Band, video game music, ragtime, swing, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/album/3jQ7eqotwovipeZ3j3rMqu"
+    "spotify_url": "https://open.spotify.com/embed/album/3jQ7eqotwovipeZ3j3rMqu",
+    "artist_origin": "Toronto, Ontario, Canada"
   },
   {
     "id": "wamono-a-to-z-vol-1",
@@ -797,7 +876,8 @@
     "cover": "https://f4.bcbits.com/img/a2067820735_10.jpg",
     "api_artist_name": "Jiro Inagaki",
     "tags": "jazz, japanese",
-    "spotify_url": "https://open.spotify.com/embed/album/4x5x6x7x8x9x0x1x2x3x"
+    "spotify_url": "https://open.spotify.com/embed/album/4x5x6x7x8x9x0x1x2x3x",
+    "artist_origin": "Sendai, Japan"
   },
   {
     "id": "all-n-all",
@@ -807,7 +887,8 @@
     "cover": "https://m.media-amazon.com/images/I/51twS9jdTKL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Earth, Wind & Fire",
     "tags": "funk, soul, Disco, 70s, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/0w0eT42Gyq6G9yXB0RirWh"
+    "spotify_url": "https://open.spotify.com/embed/album/0w0eT42Gyq6G9yXB0RirWh",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "funkentelecy-vs-the-placebo-syndrome",
@@ -817,7 +898,8 @@
     "cover": "https://m.media-amazon.com/images/I/81CVSzrBenL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Parliament",
     "tags": "funk, p-funk, soul, 70s, Psychedelic Soul",
-    "spotify_url": "https://open.spotify.com/embed/album/5zWUM9rsio6pXFl951nCAJ"
+    "spotify_url": "https://open.spotify.com/embed/album/5zWUM9rsio6pXFl951nCAJ",
+    "artist_origin": "Plainfield, New Jersey, USA"
   },
   {
     "id": "standing-on-the-verge-of-getting-it-on",
@@ -827,7 +909,8 @@
     "cover": "https://f4.bcbits.com/img/a2697316639_16.jpg",
     "api_artist_name": "Funkadelic",
     "tags": "funk, soul, psychedelic, p-funk, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2o1DC3i9barPdh8EcWEnAf"
+    "spotify_url": "https://open.spotify.com/embed/album/2o1DC3i9barPdh8EcWEnAf",
+    "artist_origin": "Plainfield, New Jersey, USA"
   },
   {
     "id": "funkadelic",
@@ -837,7 +920,8 @@
     "cover": "https://georgeclinton.com/wp-content/uploads/2012/07/Funkadelic-Funkadelic.jpg",
     "api_artist_name": "Funkadelic",
     "tags": "funk, soul, psychedelic, p-funk, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/6QQc2su2sP6vyrZzKa15ok"
+    "spotify_url": "https://open.spotify.com/embed/album/6QQc2su2sP6vyrZzKa15ok",
+    "artist_origin": "Plainfield, New Jersey, USA"
   },
   {
     "id": "purple-rain",
@@ -847,17 +931,8 @@
     "cover": "https://www.thisisdig.com/wp-content/uploads/2024/06/Prince-Purple-Rain-album-cover-640x640.jpg",
     "api_artist_name": "Prince",
     "tags": "funk, pop, soul, 80s, rock, soundtrack",
-    "spotify_url": "https://open.spotify.com/embed/album/2umoqwMrmjBBPeaqgYu6J9"
-  },
-  {
-    "id": "for-you",
-    "title": "For You",
-    "artist": "Prince",
-    "year": 1978,
-    "cover": "https://i.discogs.com/vjVJcgWc1-ZZwQbNWSt-x2yuvpVouURGpCng7_iR1ek/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTM0/MjYtMTI5Mjc3NzQ3/My5qcGVn.jpeg",
-    "api_artist_name": "Prince",
-    "tags": "funk, pop, soul, 80s, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/5kbRcoeBHpJHe37a9agmfv"
+    "spotify_url": "https://open.spotify.com/embed/album/2umoqwMrmjBBPeaqgYu6J9",
+    "artist_origin": "Minneapolis, Minnesota, USA"
   },
   {
     "id": "the-world-is-a-ghetto",
@@ -867,7 +942,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b27362f7c579da4d8219a0f81bf1",
     "api_artist_name": "War",
     "tags": "funk, soul, black metal, classic rock, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/4UZmpGH8kpAgyZ2yqQ8sP9"
+    "spotify_url": "https://open.spotify.com/embed/album/4UZmpGH8kpAgyZ2yqQ8sP9",
+    "artist_origin": "Long Beach, California, USA"
   },
   {
     "id": "why-can-t-we-be-friends",
@@ -877,7 +953,8 @@
     "cover": "https://m.media-amazon.com/images/I/71bO01SUiZL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "War",
     "tags": "funk, soul, black metal, classic rock, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/59euB5Ns7yGbS06OYHwxRN"
+    "spotify_url": "https://open.spotify.com/embed/album/59euB5Ns7yGbS06OYHwxRN",
+    "artist_origin": "Long Beach, California, USA"
   },
   {
     "id": "greatest-hits",
@@ -887,7 +964,8 @@
     "cover": "https://m.media-amazon.com/images/I/81pfEujtjIL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Sly & The Family Stone",
     "tags": "funk, soul, rhythm and blues, rock, classic rock",
-    "spotify_url": "https://open.spotify.com/embed/album/0UM9SydcBtsklCTFgGLvcT"
+    "spotify_url": "https://open.spotify.com/embed/album/0UM9SydcBtsklCTFgGLvcT",
+    "artist_origin": "San Francisco, California, USA"
   },
   {
     "id": "boogie-nights",
@@ -897,7 +975,8 @@
     "cover": "https://nextrecordsjapan.net/cdn/shop/products/heatwave_boogienights_can.jpg?v=1706249447",
     "api_artist_name": "Heatwave",
     "tags": "funk, Disco, soul, rnb, Heatwave",
-    "spotify_url": "https://open.spotify.com/embed/album/1QeIO9ArYBB9vLiODTtWy8"
+    "spotify_url": "https://open.spotify.com/embed/track/4NTSDu34al733aIuUWVJHo?utm_source=generator",
+    "artist_origin": "Dayton, Ohio, USA"
   },
   {
     "id": "street-songs",
@@ -907,7 +986,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2732651df923ee64ef8243cb3bd",
     "api_artist_name": "Rick James",
     "tags": "funk, soul, 80s, Disco, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/4tLH19xspKRioBIxUqfiPx"
+    "spotify_url": "https://open.spotify.com/embed/album/4tLH19xspKRioBIxUqfiPx",
+    "artist_origin": "Buffalo, New York, USA"
   },
   {
     "id": "the-harder-they-come",
@@ -917,7 +997,8 @@
     "cover": "https://m.media-amazon.com/images/I/81+Vjm4mZvL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jimmy Cliff",
     "tags": "reggae, ska, roots reggae, jamaica, roots",
-    "spotify_url": "https://open.spotify.com/embed/album/4UhiCJRMQrjZ1AQooan47K"
+    "spotify_url": "https://open.spotify.com/embed/album/4UhiCJRMQrjZ1AQooan47K",
+    "artist_origin": "St. James Parish, Jamaica"
   },
   {
     "id": "exodus",
@@ -927,7 +1008,8 @@
     "cover": "https://m.media-amazon.com/images/I/51wWjRmM0FL._AC_UF1000,1000_QL80_.jpg",
     "api_artist_name": "Bob Marley",
     "tags": "reggae, roots reggae, Bob Marley, ska, rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2mBbV0Ad6B4ydHMZlzAY7S"
+    "spotify_url": "https://open.spotify.com/embed/album/2mBbV0Ad6B4ydHMZlzAY7S",
+    "artist_origin": "Nine Mile, Saint Ann Parish, Jamaica"
   },
   {
     "id": "sade-live",
@@ -937,7 +1019,8 @@
     "cover": "https://i.ebayimg.com/images/g/SMMAAOSwF79mWgeL/s-l1200.jpg",
     "api_artist_name": "Sade",
     "tags": "soul, female vocalists, jazz, chillout, pop, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0"
+    "spotify_url": "https://open.spotify.com/embed/album/3JcNnjMVSKiNpqhErZarW0",
+    "artist_origin": "London, UK"
   },
   {
     "id": "live-in-japan",
@@ -947,7 +1030,8 @@
     "cover": "https://i.ebayimg.com/images/g/KKsAAOSwvnFmWPCg/s-l400.jpg",
     "api_artist_name": "Earth, Wind & Fire",
     "tags": "funk, soul, Disco, 70s, rnb",
-    "spotify_url": "https://open.spotify.com/embed/album/5Dd1RuBWv7PFX5IisYMYOq"
+    "spotify_url": "https://open.spotify.com/embed/album/5Dd1RuBWv7PFX5IisYMYOq",
+    "artist_origin": "Chicago, Illinois, USA"
   },
   {
     "id": "the-sound-of-miles-davis",
@@ -957,7 +1041,8 @@
     "cover": "https://i.discogs.com/LIDKGE_L24CZe7z1qONxTBkQ97xgxG0wjdCrvKwPF5U/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjA2/MzIyLTE2MDUyNzAz/NjMtODAzNC5qcGVn.jpeg",
     "api_artist_name": "Miles Davis",
     "tags": "jazz, trumpet, Fusion, bebop, blues",
-    "spotify_url": "https://open.spotify.com/embed/album/0JDBCK1VDNacLmb49NCG9V"
+    "spotify_url": "https://open.spotify.com/embed/album/0JDBCK1VDNacLmb49NCG9V",
+    "artist_origin": "Alton, Illinois, USA"
   },
   {
     "id": "delicate-sounds-of-thunder",
@@ -967,7 +1052,8 @@
     "cover": "https://m.media-amazon.com/images/I/81dAdz9MXBL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Pink Floyd",
     "tags": "Progressive rock, classic rock, Psychedelic Rock, rock, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/45uNWPJUtdxscj6QxOizZN"
+    "spotify_url": "https://open.spotify.com/embed/album/45uNWPJUtdxscj6QxOizZN",
+    "artist_origin": "London, UK"
   },
   {
     "id": "takanaka-world",
@@ -977,7 +1063,8 @@
     "cover": "https://i.discogs.com/zYJM7OxdMAD8pPjp_es2qUzvbWMcA1PD5lE77bOYFrY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ0/NzE0LTE1NzQ2Mzk3/ODktMTA4MC5qcGVn.jpeg",
     "api_artist_name": "Masayoshi Takanaka",
     "tags": "jazz, instrumental, japan, easy guitar music, jazz fusion",
-    "spotify_url": null
+    "spotify_url": null,
+    "artist_origin": "Tokyo, Japan"
   },
   {
     "id": "kind-of-blue",
@@ -986,7 +1073,8 @@
     "year": 1959,
     "cover": "https://m.media-amazon.com/images/I/71dQKN2UEfL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Miles Davis",
-    "tags": "jazz, trumpet, Fusion, bebop, blues"
+    "tags": "jazz, trumpet, Fusion, bebop, blues",
+    "artist_origin": "Alton, Illinois, USA"
   },
   {
     "id": "fragile",
@@ -995,7 +1083,8 @@
     "year": 1971,
     "cover": "https://m.media-amazon.com/images/I/818muCDUYRL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Yes",
-    "tags": "Progressive rock, classic rock, rock, Progressive, british"
+    "tags": "Progressive rock, classic rock, rock, Progressive, british",
+    "artist_origin": "London, UK"
   },
   {
     "id": "upstaris-at-eric-s",
@@ -1004,7 +1093,8 @@
     "year": 1982,
     "cover": "https://m.media-amazon.com/images/I/71MWeHJdLNL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Yazoo",
-    "tags": "80s, new wave, synthpop, electronic, synth pop"
+    "tags": "80s, new wave, synthpop, electronic, synth pop",
+    "artist_origin": "Basildon, Essex, England"
   },
   {
     "id": "are-you-experienced",
@@ -1013,7 +1103,8 @@
     "year": 1967,
     "cover": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040",
     "api_artist_name": "The Jimi Hendrix Experience",
-    "tags": "classic rock, Psychedelic Rock, rock, blues, psychedelic"
+    "tags": "classic rock, Psychedelic Rock, rock, blues, psychedelic",
+    "artist_origin": "London, UK"
   },
   {
     "id": "brothers-in-arms",
@@ -1022,7 +1113,8 @@
     "year": 1985,
     "cover": "https://www.udiscovermusic.com/wp-content/uploads/2025/03/dire-straits-brothers-in-arms-original-artwork.jpg",
     "api_artist_name": "Dire Straits",
-    "tags": "classic rock, rock, 80s, blues, guitar"
+    "tags": "classic rock, rock, 80s, blues, guitar",
+    "artist_origin": "London, UK"
   },
   {
     "id": "cosmic-messenger",
@@ -1031,7 +1123,8 @@
     "year": 1978,
     "cover": "https://m.media-amazon.com/images/I/71-3FlvSemL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jean-Luc Ponty",
-    "tags": "jazz, Fusion, jazz fusion, violin, instrumental"
+    "tags": "jazz, Fusion, jazz fusion, violin, instrumental",
+    "artist_origin": "Avranches, France"
   },
   {
     "id": "the-turn-of-a-friendly-card",
@@ -1040,7 +1133,8 @@
     "year": 1980,
     "cover": "https://m.media-amazon.com/images/I/71w-MtJH3fL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "The Alan Parsons Project",
-    "tags": "Progressive rock, classic rock, rock, 80s, electronic"
+    "tags": "Progressive rock, classic rock, rock, 80s, electronic",
+    "artist_origin": "London, UK"
   },
   {
     "id": "ascension",
@@ -1049,7 +1143,8 @@
     "year": 1966,
     "cover": "https://i.scdn.co/image/ab67616d0000b273870242be73ff3269f9b86689",
     "api_artist_name": "John Coltrane",
-    "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde"
+    "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde",
+    "artist_origin": "Hamlet, North Carolina, USA"
   },
   {
     "id": "fish-rising",
@@ -1058,7 +1153,8 @@
     "year": 1975,
     "cover": "https://i.discogs.com/7Kg_Fcd9Bh3DfmAS3myLVEG9PiMrokFzac9mHAg36Ro/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzk1/Ni0xMTczNDM1MDc2/LmpwZWc.jpeg",
     "api_artist_name": "Steve Hillage",
-    "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene"
+    "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene",
+    "artist_origin": "London, UK"
   },
   {
     "id": "live",
@@ -1067,16 +1163,18 @@
     "year": 1975,
     "cover": "https://m.media-amazon.com/images/I/71EUrbw6aGL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Bob Marley",
-    "tags": "reggae, roots reggae, Bob Marley, ska, rock"
+    "tags": "reggae, roots reggae, Bob Marley, ska, rock",
+    "artist_origin": "Nine Mile, Saint Ann Parish, Jamaica"
   },
   {
     "id": "genetic-world",
     "title": "Genetic World",
-    "artist": "Télépopmusik",
+    "artist": "T\u00e9l\u00e9popmusik",
     "year": 2001,
     "cover": "https://m.media-amazon.com/images/I/71fvOq5SNeL._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "Télépopmusik",
-    "tags": "electronic, chillout, trip-hop, downtempo, electronica"
+    "api_artist_name": "T\u00e9l\u00e9popmusik",
+    "tags": "electronic, chillout, trip-hop, downtempo, electronica",
+    "artist_origin": "Paris, France"
   },
   {
     "id": "crack-the-skye",
@@ -1085,7 +1183,8 @@
     "year": 2009,
     "cover": "https://m.media-amazon.com/images/I/91M8-wmgfZL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Mastodon",
-    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
+    "artist_origin": "Atlanta, Georgia, USA"
   },
   {
     "id": "hushed-and-grim",
@@ -1094,7 +1193,8 @@
     "year": 2021,
     "cover": "https://media.pitchfork.com/photos/613a64a57c34b5ffaef74527/master/pass/Mastodon.jpeg",
     "api_artist_name": "Mastodon",
-    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
+    "artist_origin": "Atlanta, Georgia, USA"
   },
   {
     "id": "remission",
@@ -1103,7 +1203,8 @@
     "year": 2002,
     "cover": "https://www.relapse.com/cdn/shop/products/d51ebe715fed37de01d62c938e9475ff_1500x.jpg?v=1691939472",
     "api_artist_name": "Mastodon",
-    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal"
+    "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
+    "artist_origin": "Atlanta, Georgia, USA"
   },
   {
     "id": "oxygene",
@@ -1112,7 +1213,8 @@
     "year": 1976,
     "cover": "https://m.media-amazon.com/images/I/71lIjU9sJUL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jean Michel Jarre",
-    "tags": "electronic, ambient, new age, instrumental, french"
+    "tags": "electronic, ambient, new age, instrumental, french",
+    "artist_origin": "Lyon, France"
   },
   {
     "id": "vanilla-fudge",
@@ -1121,7 +1223,8 @@
     "year": 1967,
     "cover": "https://m.media-amazon.com/images/I/71q0al3UjhL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Vanilla Fudge",
-    "tags": "Psychedelic Rock, classic rock, psychedelic, 60s, rock"
+    "tags": "Psychedelic Rock, classic rock, psychedelic, 60s, rock",
+    "artist_origin": "Long Island, New York, USA"
   },
   {
     "id": "teaser-and-the-firecat",
@@ -1130,7 +1233,8 @@
     "year": 1971,
     "cover": "https://i0.wp.com/www.gratefulweb.com/sites/default/files/images/articles/unnamed-5_12.jpg",
     "api_artist_name": "Cat Stevens",
-    "tags": "folk, singer-songwriter, classic rock, acoustic, rock"
+    "tags": "folk, singer-songwriter, classic rock, acoustic, rock",
+    "artist_origin": "London, UK"
   },
   {
     "id": "a-tab-in-the-ocean",
@@ -1139,7 +1243,8 @@
     "year": 1972,
     "cover": "https://i.discogs.com/DQHkhSmIKy2sK7mp2Efjkk0rM40sWz_LximC4dnFA0g/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDU2/NjMtMTM0OTE3NTc5/NS0zMDk5LmpwZWc.jpeg",
     "api_artist_name": "Nektar",
-    "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock"
+    "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
+    "artist_origin": "Hamburg, Germany"
   },
   {
     "id": "chain-gang-songs",
@@ -1148,7 +1253,8 @@
     "year": 1958,
     "cover": "https://i.discogs.com/gNgNc0TGcdJvVIazjWFaXUqqyLC3Zt_Nzx4J2nLrylM/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Nzcz/NzExLTE1OTc1MzY3/MzAtNzQ0OC5qcGVn.jpeg",
     "api_artist_name": "Josh White",
-    "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues"
+    "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues",
+    "artist_origin": "Greenville, South Carolina, USA"
   },
   {
     "id": "phoebe-snow",
@@ -1157,7 +1263,8 @@
     "year": 1974,
     "cover": "https://m.media-amazon.com/images/I/61dF6m9jhxL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Phoebe Snow",
-    "tags": "female vocalists, singer-songwriter, blues, folk, pop"
+    "tags": "female vocalists, singer-songwriter, blues, folk, pop",
+    "artist_origin": "unknown"
   },
   {
     "id": "monk-s-dream",
@@ -1166,7 +1273,8 @@
     "year": 1963,
     "cover": "https://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpghttps://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Thelonious Monk",
-    "tags": "jazz, bebop, piano, jazz piano, free jazz"
+    "tags": "jazz, bebop, piano, jazz piano, free jazz",
+    "artist_origin": "unknown"
   },
   {
     "id": "bitches-brew",
@@ -1175,7 +1283,8 @@
     "year": 1970,
     "cover": "https://m.media-amazon.com/images/I/81m3DGSbOIL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Miles Davis",
-    "tags": "jazz, trumpet, Fusion, bebop, blues"
+    "tags": "jazz, trumpet, Fusion, bebop, blues",
+    "artist_origin": "Alton, Illinois, USA"
   },
   {
     "id": "unplugged",
@@ -1184,7 +1293,8 @@
     "year": 1992,
     "cover": "https://m.media-amazon.com/images/I/71NthSs0XnL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Eric Clapton",
-    "tags": "classic rock, blues, rock, blues rock, guitar"
+    "tags": "classic rock, blues, rock, blues rock, guitar",
+    "artist_origin": "unknown"
   },
   {
     "id": "led-zeppelin",
@@ -1193,7 +1303,8 @@
     "year": 1969,
     "cover": "https://m.media-amazon.com/images/I/91qw0ldKIKL.jpg",
     "api_artist_name": "Led Zeppelin",
-    "tags": "classic rock, rock, hard rock, 70s, Progressive rock"
+    "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
+    "artist_origin": "London, UK"
   },
   {
     "id": "nursery-cryme",
@@ -1202,7 +1313,8 @@
     "year": 1971,
     "cover": "https://m.media-amazon.com/images/I/81bX4BZZZPL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Genesis",
-    "tags": "Progressive rock, classic rock, rock, 80s, Progressive"
+    "tags": "Progressive rock, classic rock, rock, 80s, Progressive",
+    "artist_origin": "unknown"
   },
   {
     "id": "at-last",
@@ -1212,7 +1324,8 @@
     "cover": "https://resources.tidal.com/images/a7f257ed/2659/4d03/87c8/95a0f9230826/640x640.jpg",
     "api_artist_name": "Etta James",
     "tags": "blues, jazz, soul, female vocalists, rhythm and blues",
-    "spotify_url": "https://open.spotify.com/embed/album/7rd4PorIOPjPTy7qdUeeCt?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/7rd4PorIOPjPTy7qdUeeCt?utm_source=generator",
+    "artist_origin": "unknown"
   },
   {
     "id": "galactic-funk",
@@ -1222,7 +1335,8 @@
     "cover": "https://i.ytimg.com/vi/uJ3kV3Icm28/maxresdefault.jpg",
     "api_artist_name": "Meco",
     "tags": "Disco, instrumental, Star Wars, pop, funk",
-    "spotify_url": "https://open.spotify.com/embed/album/3RhVd2QtOoRhRGmCnptrOU?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/3RhVd2QtOoRhRGmCnptrOU?utm_source=generator",
+    "artist_origin": "unknown"
   },
   {
     "id": "three-blind-mice",
@@ -1232,6 +1346,18 @@
     "cover": "https://m.media-amazon.com/images/I/71pa0qqdjxL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Art Blakey",
     "tags": "jazz, Hard Bop, bebop, drums, swing",
-    "spotify_url": "https://open.spotify.com/embed/album/4pUbg9hQSnuzXNFkejX9JM?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/4pUbg9hQSnuzXNFkejX9JM?utm_source=generator",
+    "artist_origin": "unknown"
+  },
+  {
+    "id": "yesyears",
+    "title": "Yesyears",
+    "artist": "Yes",
+    "year": 1991,
+    "cover": "https://www.yesworld.com/wp-content/uploads/2018/05/yesyears.jpg",
+    "api_artist_name": "Yes",
+    "tags": "Progressive rock, classic rock, rock, Progressive, british",
+    "spotify_url": "https://open.spotify.com/embed/album/252LyflX4wUeISSzgL392F?utm_source=generator",
+    "artist_origin": "London, UK"
   }
 ]
