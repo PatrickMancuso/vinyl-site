@@ -21,8 +21,8 @@ body {
 }
 
 .list-header {
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990');
-  border-bottom: 7px solid #222;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  backdrop-filter: blur(4px); /* optional blur for a modern effect */
   padding: 1.2rem 1.5rem 1rem;
   color: white;
   position: relative;

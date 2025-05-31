@@ -21,9 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.65rem 1.5rem;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990');
   color: white;
-  border-bottom: 5px solid #222;
   flex-wrap: wrap;
 }
 
