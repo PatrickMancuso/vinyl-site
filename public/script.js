@@ -2,6 +2,8 @@ let currentIndex = 0;
 let albumsData = [];
 let filteredAlbums = [];
 let favoritesOnly = false;
+const WINDOW_SIZE = 10; // number of albums before and after currentIndex to render
+
 
 
 // ---- CAROUSEL (MAIN) ----
@@ -35,57 +37,73 @@ function randomSlide() {
 });
 
 
-function renderCarousel(albums) {
+function renderCarousel() {
   const carousel = document.getElementById("carousel");
-  carousel.innerHTML = "";
+  const start = Math.max(0, currentIndex - WINDOW_SIZE);
+  const end = Math.min(filteredAlbums.length - 1, currentIndex + WINDOW_SIZE);
 
-  albums.forEach((album, index) => {
-    const card = document.createElement("div");
-    card.className = "album";
-    card.setAttribute("data-index", index);
+  // Keep track of which indexes should remain
+  const neededIndexes = new Set();
+  for (let i = start; i <= end; i++) neededIndexes.add(i);
 
-    const key = `fav-${album.id}`;
-    const isFavorite = localStorage.getItem(key) === 'true';
-    const starIcon = isFavorite ? '⭐' : '☆';
-
-    card.innerHTML = `
-      <img src="${album.cover}" alt="${album.title}">
-      <div class="album-info">
-        <strong>${album.title}</strong><br>
-        ${album.artist} (${album.year})
-        <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
-      </div>
-    `;
-    
-    
-
-    const favIcon = card.querySelector('.fav-icon');
-    favIcon.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const current = localStorage.getItem(key) === 'true';
-      const newState = !current;
-      localStorage.setItem(key, newState);
-      favIcon.classList.toggle('active', newState);
-      favIcon.textContent = newState ? '⭐' : '☆';
-    });
-
-    card.onclick = () => {
-      window.location.href = `album.html?id=${album.id}`;
-    };
-
-    carousel.appendChild(card);
+  // Remove elements not in window
+  [...carousel.children].forEach(child => {
+    const idx = Number(child.getAttribute('data-index'));
+    if (!neededIndexes.has(idx)) {
+      carousel.removeChild(child);
+    }
   });
+
+  // Add missing elements
+  for (let i = start; i <= end; i++) {
+    if (!carousel.querySelector(`.album[data-index='${i}']`)) {
+      const album = filteredAlbums[i];
+      const card = document.createElement("div");
+      card.className = "album";
+      card.setAttribute("data-index", i);
+
+      const key = `fav-${album.id}`;
+      const isFavorite = localStorage.getItem(key) === 'true';
+      const starIcon = isFavorite ? '⭐' : '☆';
+
+      card.innerHTML = `
+        <img src="${album.cover}" alt="${album.title}">
+        <div class="album-info">
+          <strong>${album.title}</strong><br>
+          ${album.artist} (${album.year})
+          <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
+        </div>
+      `;
+
+      card.querySelector('.fav-icon').addEventListener('click', (e) => {
+        e.stopPropagation();
+        const current = localStorage.getItem(key) === 'true';
+        const newState = !current;
+        localStorage.setItem(key, newState);
+        e.target.classList.toggle('active', newState);
+        e.target.textContent = newState ? '⭐' : '☆';
+      });
+
+      card.onclick = () => {
+        window.location.href = `album.html?id=${album.id}`;
+      };
+
+      carousel.appendChild(card);
+    }
+  }
 
   updateCarouselClasses();
 }
 
+
+
 function updateCarouselClasses() {
   const cards = document.querySelectorAll(".album");
 
-  cards.forEach((card, index) => {
-    card.className = "album";
-    card.style.willChange = "transform, opacity";
+  cards.forEach(card => {
+    card.className = "album"; // reset classes
 
+    const index = Number(card.getAttribute('data-index'));
     const offset = index - currentIndex;
 
     if (index === currentIndex) card.classList.add("main");
@@ -99,6 +117,7 @@ function updateCarouselClasses() {
   });
 }
 
+
 let canNavigate = true;
 
 function throttleSlide(fn) {
@@ -107,14 +126,14 @@ function throttleSlide(fn) {
   canNavigate = false;
   setTimeout(() => {
     canNavigate = true;
-  }, 15); // adjust based on transition speed
+  }, 17); // adjust based on transition speed
 }
 
 function prevSlide() {
   throttleSlide(() => {
     if (currentIndex > 0) {
       currentIndex--;
-      updateCarouselClasses();
+      renderCarousel();
     }
   });
 }
@@ -123,10 +142,11 @@ function nextSlide() {
   throttleSlide(() => {
     if (currentIndex < filteredAlbums.length - 1) {
       currentIndex++;
-      updateCarouselClasses();
+      renderCarousel();
     }
   });
 }
+
 
 
 // ---- FILTERING & INIT ----
