@@ -76,6 +76,9 @@
     <label for="spotify">Spotify Album Embed URL (Optional)</label>
     <input type="text" id="spotify" placeholder="https://open.spotify.com/album/..." />
     
+    <label for="origin">Artist Origin (Optional)</label>
+<input type="text" id="origin" placeholder="e.g., London, UK or Detroit, USA" />
+    
 
     <button onclick="generateEntry()">Generate Album Entry</button>
         <button onclick="submitAlbum()">Save Album to Dashboard</button>
@@ -97,28 +100,35 @@
     }
 
     async function generateEntry() {
-      const title = document.getElementById('title').value;
-      const artist = document.getElementById('artist').value;
-      const year = document.getElementById('year').value;
-      const image = document.getElementById('image').value;
-      const spotify_url = document.getElementById('spotify').value;
+  const title = document.getElementById('title').value;
+  const artist = document.getElementById('artist').value;
+  const year = document.getElementById('year').value;
+  const image = document.getElementById('image').value;
+  const spotify_url = document.getElementById('spotify').value;
+  const origin = document.getElementById('origin').value.trim();  // NEW
 
-      const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-      const info = await fetchArtistInfo(artist);
+  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  const info = await fetchArtistInfo(artist);
 
-      const entry = {
-        id: id,
-        title: title,
-        artist: artist,
-        year: parseInt(year),
-        cover: image,
-        api_artist_name: artist,
-        tags: info.tags,
-        spotify_url: spotify_url
-      };
+  const entry = {
+    id: id,
+    title: title,
+    artist: artist,
+    year: parseInt(year),
+    cover: image,
+    api_artist_name: artist,
+    tags: info.tags,
+    spotify_url: spotify_url
+  };
 
-      document.getElementById('result').textContent = JSON.stringify(entry, null, 2);
-    }
+  // Add origin only if it exists
+  if (origin) {
+    entry.artist_origin = origin;
+  }
+
+  document.getElementById('result').textContent = JSON.stringify(entry, null, 2);
+}
+
 
     async function submitAlbum() {
       const result = document.getElementById('result').textContent;
