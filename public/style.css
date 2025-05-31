@@ -17,16 +17,29 @@ body {
 /* Header styles */
 /* Header styles */
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.7rem 1.5rem;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990') center top;
   color: white;
-  border-bottom: 7px solid #000;
   flex-wrap: wrap;
+  overflow: hidden; /* ensures background doesn't spill */
+  z-index: 1;
 }
 
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990') center top;
+  background-size: cover;
+  opacity: 0; /* adjust this to your liking */
+  z-index: -1;
+}
 
 
 
@@ -412,40 +425,6 @@ body.loaded #carousel-view {
   background: #333;
 }
 
-#randomBtn {
-  position: fixed;
-  bottom: -7px;
-  left: 49.5%;
-  transform: translateX(-50%);
-  background: transparent;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 2.3rem;
-  cursor: pointer;
-  z-index: 15;
-  line-height: 1;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-origin: center center;
-  will-change: transform;
-  text-align: center;             
-}
-
-#randomBtn.rolling {
-  animation: rollDice 0.25s linear infinite;
-}
-
-@keyframes rollDice {
-  0%   { transform: translateX(-50%) rotate(0deg); }
-  25%  { transform: translateX(-50%) rotate(90deg); }
-  50%  { transform: translateX(-50%) rotate(180deg); }
-  75%  { transform: translateX(-50%) rotate(270deg); }
-  100% { transform: translateX(-50%) rotate(360deg); }
-}
 
 /* BOOKSHELF */
 .bookshelf {
@@ -453,11 +432,13 @@ body.loaded #carousel-view {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* reduce height */
+  height: 90px; /* reduce height */
   background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
   background-size: cover;
-  border-top: 7px solid #000;
+  border-top: 1px solid #000;
   box-shadow: inset 0 20px 12px rgba(0, 0, 0, 0.8);
+    opacity: 0.8; /* adjust this to your liking */
+
   z-index: 1;
 }
 
