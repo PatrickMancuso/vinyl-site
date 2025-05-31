@@ -413,27 +413,38 @@ body.loaded #carousel-view {
 
 /* NAVIGATION */
 .nav-controls {
-  position: fixed;
-  bottom: 20px; /* was 40px */
-  left: 50%;
-  transform: translateX(-45%); /* center it properly */
-  display: flex;
-  gap: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
   z-index: 10;
+  pointer-events: none; /* pass clicks through the container */
 }
 
-
 .nav-btn {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 6px rgba(0,0,0,0.6);
   color: white;
   border: none;
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
   cursor: pointer;
   transition: background 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+}
+
+.nav-left {
+  left: 185px; /* push into the blue background */
+}
+
+.nav-right {
+  right: 185px; /* pull it fully onto the screen */
 }
 
 .nav-btn:hover {
