@@ -19,14 +19,16 @@
   </header>
 
   <main>
-    <section class="chart-section">
-      <h2>Albums by Decade</h2>
-      <canvas id="decadeChart" width="300" height="150"></canvas>
-    </section>
+   
 
     <section class="chart-section">
       <h2>Albums by Genre</h2>
       <canvas id="genreChart" width="300" height="200"></canvas>
+    </section>
+    
+     <section class="chart-section">
+      <h2>Albums by Decade</h2>
+      <canvas id="decadeChart" width="300" height="150"></canvas>
     </section>
     
     <section class="chart-section">
@@ -108,7 +110,24 @@
         originCounts[origin] = (originCounts[origin] || 0) + 1;
       });
 
-     
+      // Create decade chart
+      new Chart(document.getElementById("decadeChart"), {
+        type: "bar",
+        data: {
+          labels: Object.keys(decadeCounts).sort(),
+          datasets: [{
+            label: "Albums",
+            data: Object.values(decadeCounts),
+            backgroundColor: "#ff6384"
+          }]
+        },
+        options: {
+          scales: {
+            y: { beginAtZero: true }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
 
       // Create genre chart (sorted descending)
       const topN = 20;
@@ -132,25 +151,6 @@ new Chart(document.getElementById("genreChart"), {
     plugins: { legend: { display: false } }
   }
 });
-    
-     // Create decade chart
-      new Chart(document.getElementById("decadeChart"), {
-        type: "bar",
-        data: {
-          labels: Object.keys(decadeCounts).sort(),
-          datasets: [{
-            label: "Albums",
-            data: Object.values(decadeCounts),
-            backgroundColor: "#ff6384"
-          }]
-        },
-        options: {
-          scales: {
-            y: { beginAtZero: true }
-          },
-          plugins: { legend: { display: false } }
-        }
-      });
 
       // Create origin chart (sorted descending)
       const sortedOrigins = Object.entries(originCounts).sort((a, b) => b[1] - a[1]);

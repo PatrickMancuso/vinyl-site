@@ -166,7 +166,7 @@ function applyFilters() {
   });
 
   currentIndex = 0;
-  renderCarousel(filteredAlbums);
+  renderCarousel();
 }
 
 fetch("records.json")
@@ -174,7 +174,7 @@ fetch("records.json")
   .then(data => {
     albumsData = data.sort((a, b) => a.artist.localeCompare(b.artist));
     filteredAlbums = [...albumsData];
-    renderCarousel(filteredAlbums);
+    renderCarousel();
   });
 
 // ---- EVENT BINDINGS ----
