@@ -1,17 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100vh; width: 100vw;">
-  
-  <script type="module" src="/firebase-init.js"></script>
-
-
-  <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl Stats</title>
   <link rel="stylesheet" href="stats.css" />
-  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
   <header>
-  <div class="header-top">
-    <span class="app-title">Album Statistics in Development</span>
-  </div>
-</header>
-  
+    <div class="header-left">
+      <a href="index.html" id="toggle-view">← Back to Carousel</a>
+            <div class="record-count" id="record-count">0 Albums</div>
+
+    </div>
+    <div class="header-title">Vinyl Insights</div>
+    <div class="header-right">
+    </div>
+  </header>
+
+  <main>
+    <section class="chart-section">
+      <h2>Albums by Decade</h2>
+      <canvas id="decadeChart" width="300" height="150"></canvas>
+    </section>
+
+    <section class="chart-section">
+      <h2>Albums by Genre</h2>
+      <canvas id="genreChart" width="300" height="200"></canvas>
+    </section>
+  </main>
+<script src="list-script.js"></script>
+
+  <script>
+    fetch("records.json")
+      .then(res => res.json())
+      .then(data => {
+        const decadeCounts = {};
+        const genreCounts = {};
+
+        data.forEach(album => {
+          if (album.year) {
+            const decade = Math.floor(album.year / 10) * 10;
+            decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
+          }
+
+          if (album.tags) {
+            album.tags.toLowerCase().split(',').map(tag => tag.trim()).forEach(tag => {
+              if (tag) genreCounts[tag] = (genreCounts[tag] || 0) + 1;
+            });
+          }
+        });
+
+        new Chart(document.getElementById("decadeChart"), {
+          type: "bar",
+          data: {
+            labels: Object.keys(decadeCounts).sort(),
+            datasets: [{
+              label: "Albums",
+              data: Object.values(decadeCounts),
+              backgroundColor: "#ff6384"
+            }]
+          },
+          options: {
+            scales: {
+              y: { beginAtZero: true }
+            },
+            plugins: {
+              legend: { display: false }
+            }
+          }
+        });
+
+        const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
+        new Chart(document.getElementById("genreChart"), {
+          type: "bar",
+          data: {
+            labels: sortedGenres.map(g => g[0]),
+            datasets: [{
+              label: "Albums",
+              data: sortedGenres.map(g => g[1]),
+              backgroundColor: "#36a2eb"
+            }]
+          },
+          options: {
+            indexAxis: "y",
+            scales: {
+              x: { beginAtZero: true }
+            },
+            plugins: {
+              legend: { display: false }
+            }
+          }
+        });
+      });
+  </script>
+</body>
 </html>
