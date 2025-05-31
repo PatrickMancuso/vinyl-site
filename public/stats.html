@@ -28,71 +28,143 @@
       <h2>Albums by Genre</h2>
       <canvas id="genreChart" width="300" height="200"></canvas>
     </section>
+    
+    <section class="chart-section">
+  <h2>Albums by Artist Origin</h2>
+  <canvas id="originChart" width="300" height="200"></canvas>
+</section>
+    
   </main>
 <script src="list-script.js"></script>
 
-  <script>
-    fetch("records.json")
-      .then(res => res.json())
-      .then(data => {
-        const decadeCounts = {};
-        const genreCounts = {};
+ <script>
+  const usStates = [
+    "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+    "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
+    "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi",
+    "Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico",
+    "New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+    "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont",
+    "Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+  ];
 
-        data.forEach(album => {
-          if (album.year) {
-            const decade = Math.floor(album.year / 10) * 10;
-            decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
-          }
+  const usKeywords = ["USA", "United States", "U.S.", "US"];
 
-          if (album.tags) {
-            album.tags.toLowerCase().split(',').map(tag => tag.trim()).forEach(tag => {
-              if (tag) genreCounts[tag] = (genreCounts[tag] || 0) + 1;
-            });
-          }
-        });
+  function cleanOrigin(origin) {
+    if (!origin) return "Unknown";
+    const parts = origin.split(",").map(p => p.trim());
+    const usStateFullNames = usStates.map(s => s.toLowerCase());
+    const usStateAbbrevs = [
+      "al","ak","az","ar","ca","co","ct","de","fl","ga","hi","id","il","in","ia",
+      "ks","ky","la","me","md","ma","mi","mn","ms","mo","mt","ne","nv","nh","nj",
+      "nm","ny","nc","nd","oh","ok","or","pa","ri","sc","sd","tn","tx","ut","vt",
+      "va","wa","wv","wi","wy"
+    ];
+    const partsLower = parts.map(p => p.toLowerCase());
 
-        new Chart(document.getElementById("decadeChart"), {
-          type: "bar",
-          data: {
-            labels: Object.keys(decadeCounts).sort(),
-            datasets: [{
-              label: "Albums",
-              data: Object.values(decadeCounts),
-              backgroundColor: "#ff6384"
-            }]
-          },
-          options: {
-            scales: {
-              y: { beginAtZero: true }
-            },
-            plugins: {
-              legend: { display: false }
-            }
-          }
-        });
+    const isUSState = partsLower.some(part =>
+      usStateFullNames.includes(part) || usStateAbbrevs.includes(part)
+    );
 
-        const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
-        new Chart(document.getElementById("genreChart"), {
-          type: "bar",
-          data: {
-            labels: sortedGenres.map(g => g[0]),
-            datasets: [{
-              label: "Albums",
-              data: sortedGenres.map(g => g[1]),
-              backgroundColor: "#36a2eb"
-            }]
-          },
-          options: {
-            indexAxis: "y",
-            scales: {
-              x: { beginAtZero: true }
-            },
-            plugins: {
-              legend: { display: false }
-            }
-          }
-        });
+    const isUSKeyword = partsLower.some(part =>
+      usKeywords.map(k => k.toLowerCase()).includes(part)
+    );
+
+    if (isUSState || isUSKeyword) {
+      const statePart = parts.find(p => 
+        usStateFullNames.includes(p.toLowerCase()) || usStateAbbrevs.includes(p.toLowerCase())
+      );
+      return statePart || "USA";
+    } else {
+      // Return last part as country (or Unknown if none)
+      return parts[parts.length - 1] || "Unknown";
+    }
+  }
+
+  fetch("records.json")
+    .then(res => res.json())
+    .then(data => {
+      const decadeCounts = {};
+      const genreCounts = {};
+      const originCounts = {};
+
+      data.forEach(album => {
+        // Decade counting
+        if (album.year) {
+          const decade = Math.floor(album.year / 10) * 10;
+          decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
+        }
+
+        // Genre counting
+        if (album.tags) {
+          album.tags.toLowerCase().split(',').map(tag => tag.trim()).forEach(tag => {
+            if (tag) genreCounts[tag] = (genreCounts[tag] || 0) + 1;
+          });
+        }
+
+        // Origin counting with parsing
+        const originRaw = album.artist_origin ? album.artist_origin.trim() : "Unknown";
+        const origin = cleanOrigin(originRaw);
+        originCounts[origin] = (originCounts[origin] || 0) + 1;
       });
-  </script>
+
+      // Create decade chart
+      new Chart(document.getElementById("decadeChart"), {
+        type: "bar",
+        data: {
+          labels: Object.keys(decadeCounts).sort(),
+          datasets: [{
+            label: "Albums",
+            data: Object.values(decadeCounts),
+            backgroundColor: "#ff6384"
+          }]
+        },
+        options: {
+          scales: {
+            y: { beginAtZero: true }
+          },
+          plugins: { legend: { display: false } }
+        }
+      });
+
+      // Create genre chart (sorted descending)
+      const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
+      new Chart(document.getElementById("genreChart"), {
+        type: "bar",
+        data: {
+          labels: sortedGenres.map(g => g[0]),
+          datasets: [{
+            label: "Albums",
+            data: sortedGenres.map(g => g[1]),
+            backgroundColor: "#36a2eb"
+          }]
+        },
+        options: {
+          indexAxis: "y",
+          scales: { x: { beginAtZero: true } },
+          plugins: { legend: { display: false } }
+        }
+      });
+
+      // Create origin chart (sorted descending)
+      const sortedOrigins = Object.entries(originCounts).sort((a, b) => b[1] - a[1]);
+      new Chart(document.getElementById("originChart"), {
+        type: "bar",
+        data: {
+          labels: sortedOrigins.map(o => o[0]),
+          datasets: [{
+            label: "Albums",
+            data: sortedOrigins.map(o => o[1]),
+            backgroundColor: "#ffce56"
+          }]
+        },
+        options: {
+          indexAxis: "y",
+          scales: { x: { beginAtZero: true } },
+          plugins: { legend: { display: false } }
+        }
+      });
+    });
+</script>
 </body>
 </html>
