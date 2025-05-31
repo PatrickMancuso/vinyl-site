@@ -209,28 +209,6 @@ header::before {
 
 
 
-#map-view {
-  background: #000000;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 6.4px 0px;
-  font-size: 1.1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  min-width:45px;
-    transition: background 0.3s ease, color 0.3s ease;  
-
-
-}
-
-#map-view:hover {
-  background: rgba(255, 255, 255, 0.4);
-
-}
 
 
 
@@ -358,8 +336,8 @@ body.loaded #carousel-view {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
-  width: 550px;
-  height: 550px;
+  width: 575px;
+  height: 575px;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
