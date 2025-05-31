@@ -306,7 +306,6 @@ body.loaded #carousel-view {
 
 .album {
   backface-visibility: hidden;
-  transform-style: preserve-3d;
   position: absolute;
   width: 550px;
   height: 550px;
@@ -314,10 +313,8 @@ body.loaded #carousel-view {
   overflow: hidden;
   cursor: pointer;
   will-change: transform, opacity;
-    contain: layout paint;
 
-  transform: translateZ(0); /* GPU nudge */
-  transition: transform 0.8s cubic-bezier(0.1, 0.8, 0.20, 1), opacity 0.4s ease;
+  transition: transform 1s cubic-bezier(0.1, 0.8, 0.20, 1);
 }
 
 
