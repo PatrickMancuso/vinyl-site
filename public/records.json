@@ -607,10 +607,10 @@
   {
     "id": "fire-of-unknown-origin",
     "title": "Fire of Unknown Origin",
-    "artist": "Blue \u00d6yster Cult",
+    "artist": "Blue Öyster Cult",
     "year": 1981,
     "cover": "https://i.scdn.co/image/ab67616d0000b2736895da04b237964b95c2a166",
-    "api_artist_name": "Blue \u00d6yster Cult",
+    "api_artist_name": "Blue Öyster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
     "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
     "artist_origin": "Stony Brook, New York, USA"
@@ -618,10 +618,10 @@
   {
     "id": "agents-of-fortune",
     "title": "Agents of Fortune",
-    "artist": "Blue \u00d6yster Cult",
+    "artist": "Blue Öyster Cult",
     "year": 1976,
     "cover": "https://i.scdn.co/image/ab67616d0000b2733ac318439ae56ce048d7bf5d",
-    "api_artist_name": "Blue \u00d6yster Cult",
+    "api_artist_name": "Blue Öyster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
     "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
     "artist_origin": "Stony Brook, New York, USA"
@@ -1169,10 +1169,10 @@
   {
     "id": "genetic-world",
     "title": "Genetic World",
-    "artist": "T\u00e9l\u00e9popmusik",
+    "artist": "Télépopmusik",
     "year": 2001,
     "cover": "https://m.media-amazon.com/images/I/71fvOq5SNeL._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "T\u00e9l\u00e9popmusik",
+    "api_artist_name": "Télépopmusik",
     "tags": "electronic, chillout, trip-hop, downtempo, electronica",
     "artist_origin": "Paris, France"
   },
@@ -1359,5 +1359,16 @@
     "tags": "Progressive rock, classic rock, rock, Progressive, british",
     "spotify_url": "https://open.spotify.com/embed/album/252LyflX4wUeISSzgL392F?utm_source=generator",
     "artist_origin": "London, UK"
+  },
+  {
+    "id": "speak-no-evil",
+    "title": "Speak No Evil",
+    "artist": "Wayne Shorter",
+    "year": 1966,
+    "cover": "https://i.scdn.co/image/ab67616d0000b273bdd696feff94e70314535022",
+    "api_artist_name": "Wayne Shorter",
+    "tags": "jazz, saxophone, Hard Bop, bebop, Fusion",
+    "spotify_url": "https://open.spotify.com/embed/album/27Rl7A8jXEQOkIfUKOa6ZU?utm_source=generator",
+    "artist_origin": "Newark, New Jersey"
   }
 ]
