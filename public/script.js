@@ -1,4 +1,4 @@
-let currentIndex = 0;
+let currentIndex = 3;
 let albumsData = [];
 let filteredAlbums = [];
 let favoritesOnly = false;
