@@ -283,7 +283,7 @@ header::before {
   background: linear-gradient(270deg, 
     red, orange, yellow, green, cyan, blue, violet, red);
   background-size: 1400% 1400%;
-  animation: rainbowFade 8s ease infinite;
+  animation: rainbowFade 4s ease;
 }
 
 
