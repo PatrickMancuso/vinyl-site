@@ -2,6 +2,8 @@ let currentIndex = 3;
 let albumsData = [];
 let filteredAlbums = [];
 let favoritesOnly = false;
+const PLACEHOLDER_IMAGE = "img/placeholder.webp"; // or any small blank image
+const IMAGE_LOAD_RANGE = 5; // only load real covers within ±5 positions
 
 
 // ---- CAROUSEL (MAIN) ----
@@ -49,15 +51,13 @@ function renderCarousel(albums) {
     const starIcon = isFavorite ? '⭐' : '☆';
 
     card.innerHTML = `
-      <img src="${album.cover}" alt="${album.title}">
+      <img src="${album.cover}" alt="${album.title}" loading="lazy">
       <div class="album-info">
         <strong>${album.title}</strong><br>
         ${album.artist} (${album.year})
         <span class="fav-icon ${isFavorite ? 'active' : ''}" title="Toggle Favorite">${starIcon}</span>
       </div>
     `;
-    
-    
 
     const favIcon = card.querySelector('.fav-icon');
     favIcon.addEventListener('click', (e) => {
@@ -107,7 +107,7 @@ function throttleSlide(fn) {
   canNavigate = false;
   setTimeout(() => {
     canNavigate = true;
-  }, 20); // adjust based on transition speed
+  }, 17); // adjust based on transition speed
 }
 
 function prevSlide() {
