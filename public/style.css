@@ -418,7 +418,7 @@ body.loaded #carousel-view {
   top: 50%;
   left: 0;
   width: 100%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
   z-index: 10;
   pointer-events: none; /* pass clicks through the container */
 }
@@ -436,7 +436,7 @@ body.loaded #carousel-view {
   transition: background 0.3s ease;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   pointer-events: auto;
 }
 
