@@ -59,12 +59,14 @@ header::before {
 }
 
 .header-title {
-  flex: 2;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(8%);
   font-size: 3.3rem;
   font-family: 'HooeyDemo', sans-serif;
-  transform: translateY(8%);
   margin: 0;
+  text-align: center;
+  pointer-events: none; /* Optional: ignore clicks so it doesn’t block UI */
 }
 
 /* Optional: for tighter layout grouping */
