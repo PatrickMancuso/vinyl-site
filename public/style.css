@@ -177,6 +177,10 @@ header::before {
   background: rgba(255, 255, 255, 0.4);
 }
 
+#album-map:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
 /* Flex container styles */
 .container {
   max-width: 1200px;
