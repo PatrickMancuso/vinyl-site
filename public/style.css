@@ -35,7 +35,6 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/iron-fence-with-bright-red-ribs-cogs_128945-1742.jpg?v=1748533650990') center top;
   background-size: cover;
   opacity: 0; /* adjust this to your liking */
   z-index: -1;
@@ -78,7 +77,7 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 11px 15px;
+  padding: 12px 13px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -101,7 +100,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 9px 18.5px;
+  padding: 9px 21px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -120,6 +119,23 @@ header::before {
   border-radius: 8px;
   padding: 9.5px 1px;
   font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width:45px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+#album-map {
+   background: #000000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8.5px 1px;
+  font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -233,7 +249,7 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 10.7px 8px;
+  padding: 10.7px 10px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -466,8 +482,7 @@ body.loaded #carousel-view {
   height: 90px; /* reduce height */
   background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
   background-size: cover;
-  border-top: 1px solid #000;
-  box-shadow: inset 0 20px 12px rgba(0, 0, 0, 0.8);
+  border-top: 6px solid #ccc;
 
   z-index: 1;
 }
