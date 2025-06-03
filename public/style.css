@@ -484,7 +484,7 @@ body.loaded #carousel-view {
   height: 90px; /* reduce height */
   background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
   background-size: cover;
-  border-top: 4px solid #000;
+  border-top: 7px solid #240f03;
   box-shadow: inset 0 20px 12px rgba(0, 0, 0, 0.8);
 
   z-index: 1;
