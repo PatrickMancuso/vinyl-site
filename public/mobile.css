@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/istockphoto-1147018643-612x612.jpg?v=1748473394256');
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/mobile%20background.png?v=1748974723722');
   color: white;
   overflow-x: hidden;
 }
@@ -28,7 +28,7 @@ header {
 
 
 .header-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'HooeyDemo', sans-serif;
   margin: 0.3rem 0;
 }
@@ -57,7 +57,9 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.4rem;
+    font-size: 1rem;
+
 }
 
 select {

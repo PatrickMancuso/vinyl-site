@@ -52,14 +52,14 @@ function applyFilters() {
     return matchFav && matchSearch && matchGenre && matchDecade;
   });
 
-  renderCarousel(filteredAlbums);
+renderCarousel(filteredAlbums);
 }
 
 fetch("records.json")
   .then(res => res.json())
   .then(data => {
     albumsData = data;
-  albumsData = data.sort((a, b) => a.title.localeCompare(b.title));
+  albumsData = data.sort((a, b) => a.artist.localeCompare(b.artist));
     applyFilters();
   });
 
