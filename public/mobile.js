@@ -59,6 +59,7 @@ fetch("records.json")
   .then(res => res.json())
   .then(data => {
     albumsData = data;
+  albumsData = data.sort((a, b) => a.title.localeCompare(b.title));
     applyFilters();
   });
 

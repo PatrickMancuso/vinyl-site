@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background: #121212;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinylrecordbackground3.jpg?v=1748298290241');
   color: white;
   overflow-x: hidden;
 }
@@ -84,6 +84,8 @@ select {
   background: #333;
 }
 
+
+
 /* CAROUSEL CONTAINER */
 #carousel-container {
   overflow-x: auto;
@@ -100,13 +102,15 @@ select {
   gap: 1rem;
 }
 
-#carousel-view {
-  height: 70vh; /* Remaining 70% */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.album-detail {
+  font-size: 1rem;
+  padding: 1rem;
 }
+
+.album-detail h2 {
+  font-size: 1.5rem;
+}
+
 
 
 /* INDIVIDUAL ALBUM CARD */
