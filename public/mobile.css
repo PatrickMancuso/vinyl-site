@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinylrecordbackground3.jpg?v=1748298290241');
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/istockphoto-1147018643-612x612.jpg?v=1748473394256');
   color: white;
   overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   font-family: 'HooeyDemo', sans-serif;
   color: white;
   padding: 1rem 0.5rem;
@@ -28,7 +28,7 @@ header {
 
 
 .header-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'HooeyDemo', sans-serif;
   margin: 0.3rem 0;
 }
@@ -43,12 +43,12 @@ header {
 }
 
 #search-input {
-  flex: 1;
-  min-width: 160px;
-  padding: 0.5rem;
-  border-radius: 6px;
+  top: 10px;
+  padding: 9px 10px;
+  border-radius: 5px;
   border: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  width: 220px; /* Make it consistent */
 }
 
 /* FILTERS */
@@ -70,7 +70,7 @@ select {
 }
 
 #fav-filter-toggle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background: #000;
   color: white;
   border: 1px solid #ccc;
@@ -115,15 +115,25 @@ select {
 
 /* INDIVIDUAL ALBUM CARD */
 .album {
-  width: 60vw;
-  max-width: 240px;
-  height: 60vw;
-  max-height: 240px;
+  width: 140vw;
+  max-width: 350px;
+  height: 140vw;
+  max-height: 350px;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
   scroll-snap-align: center;
   position: relative; /* <-- changed from absolute */
+}
+
+.album div {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 
@@ -168,6 +178,9 @@ button {
   border: none;
   cursor: pointer;
 }
+
+
+
 
 html {
   scroll-behavior: smooth;
