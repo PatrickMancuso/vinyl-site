@@ -2,71 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vinyl Mobile</title>
   <link rel="stylesheet" href="mobile.css" />
-  <style>
-    .form-container {
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-      width: 90%;
-    }
-
-    .dev-message {
-      font-size: 1rem;
-      line-height: 1.5;
-      text-align: center;
-      margin: 0;
-    }
-
-    .dev-message a {
-      color: #88f;
-      text-decoration: underline;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-      margin-left: -5px;
-    }
-  </style>
 </head>
 <body>
-  <header class="mobile-header">
-    <div class="header-top">
-      <span class="app-title">Vinyl Vault</span>
+  <header>
+    <h1>My Vinyl Vault</h1>
+    <div class="top-bar">
+      <input type="text" id="search-input" placeholder="Search albums..." />
+      <button id="fav-filter-toggle">★</button>
     </div>
+    <div class="filters">
+      <select id="genre-select">
+        <option value="all">All Genres</option>
+        <option value="rock">Rock</option>
+        <option value="funk">Funk</option>
+        <option value="soul">Soul</option>
+        <option value="rnb">R&B</option>
+        <option value="jazz">Jazz</option>
+        <option value="electronic">Electronic</option>
+        <option value="ambient">Ambient</option>
+        <option value="psychedelic">Psychedelic</option>
+        <option value="progressive rock">Progressive Rock</option>
+        <option value="new wave">New Wave</option>
+        <option value="pop">Pop</option>
+        <option value="disco">Disco</option>
+        <option value="blues">Blues</option>
+        <option value="folk">Folk</option>
+        <option value="reggae">Reggae</option>
+        <option value="soundtrack">Soundtrack</option>
+        <option value="instrumental">Instrumental</option>
 
-    <div class="form-container">
-      <p class="dev-message">
-        Integration of the Vinyl Vault for mobile devices is under development.
-        For now enjoy the fully fledged version on Windows/Mac at
-        <a href="https://vinylvault.glitch.me">vinylvault.glitch.me</a>.
-      </p>
-    </div>
+      </select>
 
-    <div class="header-bottom">
-      <input type="text" id="search-bar" placeholder="Search albums..." />
-      <button id="add-btn">＋</button>
+      <select id="decade-select">
+        <option value="all">All Decades</option>
+        <option value="1950">1950s</option>
+        <option value="1960">1960s</option>
+        <option value="1970">1970s</option>
+        <option value="1980">1980s</option>
+        <option value="1990">1990s</option>
+        <option value="2000">2000s</option>
+        <option value="2010">2010s</option>
+        <option value="2020">2020s</option>
+      </select>
     </div>
   </header>
 
-  <nav class="mobile-nav"></nav>
-
   <main>
-    <section id="carousel-view" class="view active">
-      <div id="mobile-carousel" class="carousel-container"></div>
-      <div class="background-bottom"></div>
-    </section>
-
-    <section id="list-view" class="view">
-      <ul id="mobile-album-list"></ul>
-    </section>
+    <div id="carousel-container">
+      <button id="prevBtn">‹</button>
+      <div id="carousel"></div>
+      <button id="nextBtn">›</button>
+    </div>
   </main>
 
   <script src="mobile.js"></script>

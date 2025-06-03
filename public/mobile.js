@@ -1,64 +1,89 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const carouselView = document.getElementById("carouselView");
-  const listView = document.getElementById("listView");
-  const toggleViewBtn = document.getElementById("toggleViewBtn");
-  const addAlbumBtn = document.getElementById("addAlbumBtn");
-  const searchBar = document.getElementById("searchBar");
+let currentIndex = 0;
+let albumsData = [];
+let filteredAlbums = [];
+let favoritesOnly = false;
 
-  let currentView = "carousel";
+function renderCarousel(albums) {
+  const carousel = document.getElementById("carousel");
+  carousel.innerHTML = "";
 
-  toggleViewBtn.addEventListener("click", () => {
-    if (currentView === "carousel") {
-      carouselView.style.display = "none";
-      listView.style.display = "block";
-      currentView = "list";
-      toggleViewBtn.textContent = "Carousel";
-    } else {
-      listView.style.display = "none";
-      carouselView.style.display = "flex";
-      currentView = "carousel";
-      toggleViewBtn.textContent = "List";
-    }
-  });
+  albums.forEach((album, index) => {
+    const key = `fav-${album.id}`;
+    const isFavorite = localStorage.getItem(key) === 'true';
+    const star = isFavorite ? '⭐' : '☆';
 
-  addAlbumBtn.addEventListener("click", () => {
-    const albumTitle = prompt("Enter album title:");
-    if (albumTitle) {
-      addAlbum({ title: albumTitle, cover: "default-cover.jpg" });
-    }
-  });
-
-  searchBar.addEventListener("input", () => {
-    const query = searchBar.value.toLowerCase();
-    document.querySelectorAll(".album").forEach((album) => {
-      const title = album.getAttribute("data-title").toLowerCase();
-      album.style.display = title.includes(query) ? "" : "none";
-    });
-  });
-
-  function addAlbum({ title, cover }) {
-    // Create carousel item
-    const carouselItem = document.createElement("div");
-    carouselItem.className = "album";
-    carouselItem.setAttribute("data-title", title);
-    carouselItem.innerHTML = `
-      <img src="${cover}" alt="${title}">
-      <h3>${title}</h3>
+    const card = document.createElement("div");
+    card.className = "album";
+    card.innerHTML = `
+      <img src="${album.cover}" alt="${album.title}">
+      <div>
+        <strong>${album.title}</strong><br>
+        ${album.artist} (${album.year})<br>
+        <span class="fav-icon">${star}</span>
+      </div>
     `;
-    carouselView.appendChild(carouselItem);
 
-    // Create list item
-    const listItem = document.createElement("div");
-    listItem.className = "album";
-    listItem.setAttribute("data-title", title);
-    listItem.innerHTML = `
-      <img src="${cover}" alt="${title}">
-      <span>${title}</span>
-    `;
-    listView.appendChild(listItem);
-  }
+    card.querySelector(".fav-icon").onclick = (e) => {
+      e.stopPropagation();
+      const newState = !isFavorite;
+      localStorage.setItem(key, newState);
+      applyFilters();
+    };
 
-  // Example seed albums
-  addAlbum({ title: "Rumours", cover: "rumours.jpg" });
-  addAlbum({ title: "The Wall", cover: "thewall.jpg" });
+    card.onclick = () => {
+      window.location.href = `album.html?id=${album.id}`;
+    };
+
+    carousel.appendChild(card);
+  });
+}
+
+function applyFilters() {
+  const search = document.getElementById("search-input").value.toLowerCase();
+  const genre = document.getElementById("genre-select").value.toLowerCase();
+  const decade = document.getElementById("decade-select").value;
+
+  filteredAlbums = albumsData.filter(album => {
+    const isFav = localStorage.getItem(`fav-${album.id}`) === 'true';
+    const matchFav = !favoritesOnly || isFav;
+    const matchSearch = album.title.toLowerCase().includes(search) || album.artist.toLowerCase().includes(search);
+    const matchGenre = genre === "all" || (album.tags && album.tags.toLowerCase().includes(genre));
+    const matchDecade = decade === "all" || Math.floor(album.year / 10) * 10 == parseInt(decade);
+    return matchFav && matchSearch && matchGenre && matchDecade;
+  });
+
+  renderCarousel(filteredAlbums);
+}
+
+fetch("records.json")
+  .then(res => res.json())
+  .then(data => {
+    albumsData = data;
+    applyFilters();
+  });
+
+document.getElementById("search-input").addEventListener("input", applyFilters);
+document.getElementById("genre-select").addEventListener("change", applyFilters);
+document.getElementById("decade-select").addEventListener("change", applyFilters);
+
+document.getElementById("fav-filter-toggle").addEventListener("click", () => {
+  favoritesOnly = !favoritesOnly;
+  document.getElementById("fav-filter-toggle").classList.toggle("active", favoritesOnly);
+  applyFilters();
 });
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  if (currentIndex > 0) currentIndex--;
+  scrollCarouselTo(currentIndex);
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (currentIndex < filteredAlbums.length - 1) currentIndex++;
+  scrollCarouselTo(currentIndex);
+});
+
+function scrollCarouselTo(index) {
+  const carousel = document.getElementById("carousel");
+  const cards = carousel.querySelectorAll(".album");
+  if (cards[index]) cards[index].scrollIntoView({ behavior: "smooth", inline: "center" });
+}
