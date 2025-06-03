@@ -1,0 +1,142 @@
+{
+  "Art Blakey": {
+    "origin": "Pittsburgh, PA, USA",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Asia": {
+    "origin": "London, UK",
+    "coordinates": [
+      1450,
+      550
+    ]
+  },
+  "Bill Withers": {
+    "origin": "Slab Fork, WV, USA",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Blue \u00d6yster Cult": {
+    "origin": "Stony Brook, NY, USA",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Bob Marley": {
+    "origin": "Kingston, Jamaica",
+    "coordinates": [
+      950,
+      1100
+    ]
+  },
+  "Cat Stevens": {
+    "origin": "London, UK",
+    "coordinates": [
+      1450,
+      550
+    ]
+  },
+  "Charles Mingus": {
+    "origin": "Nogales, AZ, USA",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Colin Stetson": {
+    "origin": "Ann Arbor, MI, USA",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Curtis Mayfield": {
+    "origin": "Chicago, IL, USA",
+    "coordinates": [
+      700,
+      800
+    ]
+  },
+  "Daft Punk": {
+    "origin": "Paris, France",
+    "coordinates": [
+      1500,
+      600
+    ]
+  },
+  "Deep Purple": {
+    "origin": "Hertford, UK",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Depeche Mode": {
+    "origin": "Basildon, UK",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Dire Straits": {
+    "origin": "London, UK",
+    "coordinates": [
+      1450,
+      550
+    ]
+  },
+  "Duran Duran": {
+    "origin": "Birmingham, UK",
+    "coordinates": [
+      1420,
+      540
+    ]
+  },
+  "Earth, Wind & Fire": {
+    "origin": "Chicago, IL, USA",
+    "coordinates": [
+      700,
+      800
+    ]
+  },
+  "Electric Light Orchestra": {
+    "origin": "Birmingham, UK",
+    "coordinates": [
+      1420,
+      540
+    ]
+  },
+  "Eloy": {
+    "origin": "Hannover, Germany",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Eric Clapton": {
+    "origin": "Ripley, Surrey, UK",
+    "coordinates": [
+      50,
+      1950
+    ]
+  },
+  "Erykah Badu": {
+    "origin": "Dallas, TX, USA",
+    "coordinates": [
+      600,
+      1000
+    ]
+  },
+  "Etta James": {
+    "origin": "Los Angeles, CA, USA",
+    "coordinates": [
+      500,
+      950
+    ]
+  }
+}

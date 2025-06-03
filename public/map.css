@@ -1,10 +1,20 @@
-#map-container {
-  position: relative;
+#viewport {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: #000; /* or any map-neutral color */
+}
+
+#map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
+  height: 2000px;
+  transform-origin: 0 0;
   cursor: grab;
 }
+
 
 #base-map {
   width: 2000px; /* adjust based on your map image size */
