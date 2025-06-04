@@ -79,10 +79,10 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 11px 12px;
+  padding: 10px 11px;
   border-radius: 5px;
   border: none;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   background: #fff;
   color: #000;
   cursor: pointer;
@@ -102,14 +102,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 20px;
+  padding: 7px 19px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width: 84px;
+  min-width: 83px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -119,14 +119,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 8.5px 0px;
+  padding: 7.5px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width:44px;
+  min-width:43px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -136,14 +136,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 7.5px 0px;
+  padding: 6.5px 0px;
   font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width:44px;
+  min-width:43px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -153,7 +153,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 5.5px 3px;
+  padding: 4.5px 2px;
   font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
@@ -211,7 +211,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 4px;
+  padding: 7px 3px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -251,7 +251,7 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 9.7px 13px;
+  padding: 8.7px 13px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -277,7 +277,7 @@ header::before {
   border: 1px solid #ccc;
   border-radius: 8px;
   
-  padding: 7px 8px;
+  padding: 6px 7px;
   font-size: 1.3rem;
   cursor: pointer;
   transition: background 0.3s ease, color 0.5s ease;  
@@ -356,8 +356,8 @@ body.loaded #carousel-view {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -406,19 +406,19 @@ body.loaded #carousel-view {
   z-index: 4;
 }
 .album.left2 {
-  transform: translate3d(-440px, 0, 0)  scale(0.7);
+  transform: translate3d(-420px, 0, 0)  scale(0.7);
   z-index: 3;
 }
 .album.right2 {
-  transform: translate3d(440px, 0, 0)  scale(0.7);
+  transform: translate3d(420px, 0, 0)  scale(0.7);
   z-index: 3;
 }
 .album.left3 {
-  transform: translate3d(-560px, 0, 0)  scale(0.5);
+  transform: translate3d(-540px, 0, 0)  scale(0.5);
   z-index: 2;
 }
 .album.right3 {
-  transform: translate3d(560px, 0, 0)  scale(0.5);
+  transform: translate3d(540px, 0, 0)  scale(0.5);
   z-index: 2;
 }
 .album.hidden {
