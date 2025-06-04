@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/backgroundvinylvault2.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.header-title {
+  font-family: 'HooeyDemo', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Main layout */
+.now-spinning-layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.info-column {
+  width: 50%;
+  font-family: 'HooeyDemo', sans-serif;
+}
+
+#album-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#album-artist {
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+#artist-info {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.spotify-embed {
+  width: 100%;
+  max-width: 500px;
+  height: 80px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Vinyl section */
+.vinyl-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinyl-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 6px solid #000;
+  overflow: hidden;
+  position: relative;
+  animation: spin 6s linear infinite;
+}
+
+.vinyl img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
