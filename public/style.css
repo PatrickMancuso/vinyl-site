@@ -79,7 +79,7 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 12px 13px;
+  padding: 11px 12px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -102,14 +102,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 9px 21px;
+  padding: 8px 20px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width: 85px;
+  min-width: 84px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -119,14 +119,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 9.5px 1px;
+  padding: 8.5px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width:45px;
+  min-width:44px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -136,14 +136,14 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 8.5px 1px;
+  padding: 7.5px 0px;
   font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width:45px;
+  min-width:44px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -153,7 +153,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 6.5px 4px;
+  padding: 5.5px 3px;
   font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
@@ -211,7 +211,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 9px 5px;
+  padding: 8px 4px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -251,7 +251,7 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 10.7px 14px;
+  padding: 9.7px 13px;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
@@ -277,7 +277,7 @@ header::before {
   border: 1px solid #ccc;
   border-radius: 8px;
   
-  padding: 8px 9px;
+  padding: 7px 8px;
   font-size: 1.3rem;
   cursor: pointer;
   transition: background 0.3s ease, color 0.5s ease;  
@@ -356,8 +356,8 @@ body.loaded #carousel-view {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
-  width: 575px;
-  height: 575px;
+  width: 550px;
+  height: 550px;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -495,16 +495,20 @@ body.loaded #carousel-view {
   }
   .album.left1,
   .album.right1 {
-    transform: translateX(180px) rotateY(25deg) scale(0.9);
+    transform: translateX(180px) rotateY(25deg) scale(0.8);
   }
   .album.left2,
   .album.right2 {
-    transform: translateX(360px) rotateY(25deg) scale(0.8);
+    transform: translateX(360px) rotateY(25deg) scale(0.7);
   }
   .album.left3,
   .album.right3 {
-    transform: translateX(540px) rotateY(25deg) scale(0.7);
+    transform: translateX(540px) rotateY(25deg) scale(0.6);
   }
+  
+.nav-controls {
+    gap: 40px;
+  }  
 }
 
 @media (max-width: 768px) {
@@ -550,7 +554,7 @@ body.loaded #carousel-view {
   }
 
   .nav-controls {
-    gap: 30px;
+    gap: 40px;
   }
 
   .nav-btn,
@@ -593,6 +597,9 @@ body.loaded #carousel-view {
   .bookshelf {
     height: 50px;
     background-size: cover;
+  }
+  .nav-controls {
+    gap: 40px;
   }
 }
 
