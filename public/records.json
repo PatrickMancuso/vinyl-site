@@ -1370,5 +1370,27 @@
     "tags": "jazz, saxophone, Hard Bop, bebop, Fusion",
     "spotify_url": "https://open.spotify.com/embed/album/27Rl7A8jXEQOkIfUKOa6ZU?utm_source=generator",
     "artist_origin": "Newark, New Jersey"
+  },
+  {
+    "id": "thriller",
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "year": 1982,
+    "cover": "https://e.snmc.io/i/1200/s/d368744216afb5a3b28eb219994f85be/11486295",
+    "api_artist_name": "Michael Jackson",
+    "tags": "pop, 80s, dance, soul, funk",
+    "spotify_url": "https://open.spotify.com/embed/track/3S2R0EVwBSAVMd5UMgKTL0?utm_source=generator",
+    "artist_origin": "Gary, Indiana"
+  },
+  {
+    "id": "sister-sweetly",
+    "title": "Sister Sweetly",
+    "artist": "Big Head Todd and the Monsters",
+    "year": 1993,
+    "cover": "https://m.media-amazon.com/images/I/810Pn6OCZwL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Big Head Todd and the Monsters",
+    "tags": "rock, Jam, seen live, alternative, blues",
+    "spotify_url": "https://open.spotify.com/embed/album/6sTKCXNE3sOCgwS9mahfiO?utm_source=generator",
+    "artist_origin": "Boulder, Colorado"
   }
 ]
