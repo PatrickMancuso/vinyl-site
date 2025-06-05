@@ -524,7 +524,7 @@
     "cover": "https://m.media-amazon.com/images/I/71fU7JDo9DL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Deep Purple",
     "tags": "hard rock, classic rock, rock, Progressive rock, heavy metal",
-    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5H",
+    "spotify_url": "https://open.spotify.com/embed/album/1EK3a0Yctg4d3nGQzE4Uty?utm_source=generator",
     "artist_origin": "Hertford, England"
   },
   {
@@ -612,7 +612,7 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2736895da04b237964b95c2a166",
     "api_artist_name": "Blue Öyster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/7v4kEpVtppoMm80m43lGzt?utm_source=generator",
     "artist_origin": "Stony Brook, New York, USA"
   },
   {
@@ -623,7 +623,7 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2733ac318439ae56ce048d7bf5d",
     "api_artist_name": "Blue Öyster Cult",
     "tags": "classic rock, rock, hard rock, american, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/6C9WzlQANeoD0GW5B41YJt?utm_source=generator",
     "artist_origin": "Stony Brook, New York, USA"
   },
   {
@@ -634,7 +634,7 @@
     "cover": "https://m.media-amazon.com/images/I/91hXfCFcIOL.jpg",
     "api_artist_name": "ZZ Top",
     "tags": "classic rock, blues rock, rock, Southern Rock, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/4KW6YVbF8E3kexYcl0k4IK?utm_source=generator",
     "artist_origin": "Houston, Texas, USA"
   },
   {
@@ -656,7 +656,7 @@
     "cover": "https://autographcentral.net/wp-content/uploads/Asia.jpg",
     "api_artist_name": "Asia",
     "tags": "Progressive rock, classic rock, rock, 80s, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/7v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/5TkfP3cqWgeBvCugPeiGNl?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -678,7 +678,7 @@
     "cover": "https://lunchboxrecords.com/cdn/shop/files/MFTM_Cover.jpg?v=1743725621",
     "api_artist_name": "Depeche Mode",
     "tags": "electronic, new wave, 80s, synthpop, synth pop",
-    "spotify_url": "https://open.spotify.com/embed/album/9v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/5Yyx661Ksxl2pmRUuGLzw3?utm_source=generator",
     "artist_origin": "Basildon, Essex, England"
   },
   {
@@ -1164,7 +1164,8 @@
     "cover": "https://m.media-amazon.com/images/I/71EUrbw6aGL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Bob Marley",
     "tags": "reggae, roots reggae, Bob Marley, ska, rock",
-    "artist_origin": "Nine Mile, Saint Ann Parish, Jamaica"
+    "artist_origin": "Nine Mile, Saint Ann Parish, Jamaica",
+    "spotify_url": "https://open.spotify.com/embed/album/5KXVSpRSGl544F0KKEaNxO?utm_source=generator"
   },
   {
     "id": "genetic-world",
@@ -1234,7 +1235,8 @@
     "cover": "https://i0.wp.com/www.gratefulweb.com/sites/default/files/images/articles/unnamed-5_12.jpg",
     "api_artist_name": "Cat Stevens",
     "tags": "folk, singer-songwriter, classic rock, acoustic, rock",
-    "artist_origin": "London, UK"
+    "artist_origin": "London, UK",
+    "spotify_url": "https://open.spotify.com/embed/album/7ez8WRX4sGhKHZryJPJCNg?utm_source=generator"
   },
   {
     "id": "a-tab-in-the-ocean",
