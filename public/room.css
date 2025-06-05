@@ -115,18 +115,18 @@ body {
 .player-display {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* changed from column */
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem; /* spacing between image and embed */
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   background: rgba(0, 0, 0, 0.4);
 }
 
 .player-display img {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -134,21 +134,54 @@ body {
 
 .player-display iframe {
   border: none;
-  width: 300px;
-  height: 80px;
+  width: 100%;
+  max-width: 400px;
+  height: 500px; /* this shows full album */
   border-radius: 8px;
 }
 
-/* Bookshelf Footer */
-.bookshelf {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
-  background-size: cover;
-  border-top: 10px solid #000;
-  box-shadow: inset 0 80px 12px rgba(0, 0, 0, 0.5);
-  z-index: 10;
+
+/* Back Button */
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Control Styling */
+#genre-select,
+#decade-select,
+#search-input
+{
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border: none;
+}
+
+#genre-select,
+#decade-select {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  min-width: 110px;
+}
+
+#search-input {
+  width: 200px;
 }
