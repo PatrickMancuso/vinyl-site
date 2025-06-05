@@ -79,7 +79,7 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 10px 11px;
+  padding: 11px 15px;
   border-radius: 5px;
   border: none;
   font-size: 0.8rem;
@@ -109,7 +109,7 @@ header::before {
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width: 83px;
+  min-width: 80px;
     transition: background 0.3s ease, color 0.3s ease;  
 
 }
@@ -143,6 +143,23 @@ header::before {
   text-decoration: none;
   display: inline-block;
   width: auto;
+  min-width:42.5px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+#music-room {
+   background: #000000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
   min-width:43px;
     transition: background 0.3s ease, color 0.3s ease;  
 
@@ -160,7 +177,7 @@ header::before {
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width:47px;
+  min-width:45px;
     transition: background 0.3s ease, color 0.3s ease;  
 }
 
@@ -218,7 +235,7 @@ header::before {
   text-decoration: none;
   display: inline-block;
   width: auto;
-  min-width: 80px;
+  min-width: 75px;
     transition: background 0.3s ease, color 0.3s ease;  
 
   
