@@ -7,29 +7,48 @@
   <script type="module" src="/firebase-init.js"></script>
 </head>
 <body>
-  <header class="room-header">Listening Station
+  <header class="room-header">
+        <div class="header-left">
 
-  <!-- Filters container -->
-  <div id="filters" style="display: flex; gap: 1rem; padding: 0.5rem 1rem; background: rgba(0,0,0,0.5);">
-    <input
-      type="text"
-      id="search-input"
-      placeholder="Search by title or artist..."
-      autocomplete="off"
-      style="flex: 1; padding: 0.4rem 0.8rem; border-radius: 5px; border: none;"
-    />
+                <a href="index.html" id="toggle-view" title="Menu">Back to Carousel</a>
+</div>
+    <div class="header-title">Listening Station</div>
+    <div class="header-right filters-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title or artist..."
+        autocomplete="off"
+      />
 
-    <select id="genre-select" aria-label="Filter by genre" style="min-width: 140px;">
-      <option value="">All Genres</option>
-      <!-- genres will be added dynamically -->
-    </select>
+      <select id="genre-select">
+        <option value="all">All Genres</option>
+        <option value="rock">Rock</option>
+        <option value="funk">Funk</option>
+        <option value="soul">Soul</option>
+        <option value="rnb">R&B</option>
+        <option value="jazz">Jazz</option>
+        <option value="electronic">Electronic</option>
+        <option value="ambient">Ambient</option>
+        <option value="psychedelic">Psychedelic</option>
+        <option value="progressive rock">Progressive Rock</option>
+        <option value="new wave">New Wave</option>
+        <option value="pop">Pop</option>
+        <option value="disco">Disco</option>
+        <option value="blues">Blues</option>
+        <option value="folk">Folk</option>
+        <option value="reggae">Reggae</option>
+        <option value="soundtrack">Soundtrack</option>
+        <option value="instrumental">Instrumental</option>
 
-    <select id="decade-select" aria-label="Filter by decade" style="min-width: 140px;">
-      <option value="">All Decades</option>
-      <!-- decades will be added dynamically -->
-    </select>
-  </div>
-    </header>
+      </select>
+
+      <select id="decade-select" aria-label="Filter by decade">
+        <option value="all">All Decades</option>
+        <!-- decades populated dynamically -->
+      </select>
+    </div>
+  </header>
 
   <!-- Horizontal scrollable album strip -->
   <div id="album-list" class="album-strip"></div>
@@ -70,25 +89,20 @@
       return [...decadeSet].sort((a,b) => a - b);
     }
 
-    fetch('records.json')
-      .then(res => res.json())
-      .then(data => {
-        albums = data.sort((a, b) => a.artist.localeCompare(b.artist));
-        filteredAlbums = albums;
-
-        populateFilters();
-        renderAlbumList();
-      });
-
-    // Populate genre and decade dropdowns dynamically
+    // Populate filters with options
     function populateFilters() {
       const genreSelect = document.getElementById('genre-select');
       const decadeSelect = document.getElementById('decade-select');
+
+      // Clear existing dynamic options (keep "All")
+      genreSelect.querySelectorAll('option.dynamic').forEach(opt => opt.remove());
+      decadeSelect.querySelectorAll('option.dynamic').forEach(opt => opt.remove());
 
       getUniqueGenres().forEach(genre => {
         const option = document.createElement('option');
         option.value = genre;
         option.textContent = genre.charAt(0).toUpperCase() + genre.slice(1);
+        option.classList.add('dynamic');
         genreSelect.appendChild(option);
       });
 
@@ -96,6 +110,7 @@
         const option = document.createElement('option');
         option.value = decade;
         option.textContent = decade + 's';
+        option.classList.add('dynamic');
         decadeSelect.appendChild(option);
       });
     }
@@ -111,10 +126,10 @@
           album.title.toLowerCase().includes(searchText) ||
           album.artist.toLowerCase().includes(searchText);
 
-        const matchesGenre = selectedGenre === '' || 
+        const matchesGenre = selectedGenre === 'all' || 
           (Array.isArray(album.tags) && album.tags.some(t => t.toLowerCase() === selectedGenre));
 
-        const matchesDecade = selectedDecade === '' ||
+        const matchesDecade = selectedDecade === 'all' ||
           (album.year && Math.floor(album.year / 10) * 10 == selectedDecade);
 
         return matchesSearch && matchesGenre && matchesDecade;
@@ -157,7 +172,7 @@
       }
     }, { passive: false });
 
-    // Listen for changes on filters
+    // Event listeners for filters
     document.getElementById('search-input').addEventListener('input', filterAlbums);
     document.getElementById('genre-select').addEventListener('change', filterAlbums);
     document.getElementById('decade-select').addEventListener('change', filterAlbums);
@@ -166,7 +181,11 @@
       const playerArea = document.getElementById('player-area');
       playerArea.innerHTML = `
         <img src="${album.cover}" alt="${album.title}" />
-        <iframe src="${album.spotify_url}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe 
+          src="${album.spotify_url}" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
       `;
     }
 
@@ -192,6 +211,17 @@
           `;
         });
     }
+
+    // Load albums on page load
+    fetch('records.json')
+      .then(res => res.json())
+      .then(data => {
+        albums = data.sort((a, b) => a.artist.localeCompare(b.artist));
+        filteredAlbums = albums;
+
+        populateFilters();
+        renderAlbumList();
+      });
   </script>
 </body>
 </html>
