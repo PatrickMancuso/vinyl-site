@@ -458,7 +458,7 @@ body.loaded #carousel-view {
   top: 50%;
   left: 0;
   width: 100%;
-  transform: translateY(-40%);
+  transform: translateY(-70%);
   z-index: 10;
   pointer-events: none; /* pass clicks through the container */
 }
@@ -475,17 +475,17 @@ body.loaded #carousel-view {
   cursor: pointer;
   transition: background 0.3s ease;
   position: absolute;
-  top: 50%;
-  transform: translateY(-60%);
+  top: 60%;
+  transform: translateY(-75%);
   pointer-events: auto;
 }
 
 .nav-left {
-  left: 185px; /* push into the blue background */
+  left: 155px; /* push into the blue background */
 }
 
 .nav-right {
-  right: 185px; /* pull it fully onto the screen */
+  right: 155px; /* pull it fully onto the screen */
 }
 
 .nav-btn:hover {
