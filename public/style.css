@@ -79,7 +79,7 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  padding: 11px 15px;
+  padding: 11px 16px;
   border-radius: 5px;
   border: none;
   font-size: 0.8rem;
@@ -274,7 +274,7 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 12px 5px;
+  padding: 12px 10px;
   border-radius: 5px;
   border: none;
   font-size: 0.8rem;

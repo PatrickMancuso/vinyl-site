@@ -30,6 +30,16 @@ body {
   /* remove text-align: center; */
 }
 
+#info-panel p,
+#player-area p {
+  font-size: 1.2rem;            /* Bigger font size */
+  font-family: 'Garamond', serif;
+  color: #eee;                /* Light text */
+  text-align: left;
+  margin-top: 3rem;           /* Add vertical spacing */
+  user-select: none;          /* Optional: prevent text selection */
+}
+
 /* Title centered horizontally */
 .header-title {
   flex: 1; /* grow to fill space */
@@ -80,7 +90,7 @@ body {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 1px;
+  padding: 7px 1px;
   font-size: 0.5rem;
   text-align: center;
   cursor: pointer;
@@ -165,7 +175,7 @@ body {
 /* Info Panel (Left) */
 #info-panel {
   width: 30%;
-  padding: 1.5rem;
+  padding: 1.7rem;
   background: rgba(0, 0, 0, 0.6);
   border-right: 1px solid #333;
   overflow-y: auto;
