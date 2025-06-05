@@ -469,9 +469,9 @@ body.loaded #carousel-view {
   color: white;
   border: none;
   border-radius: 50%;
-  width: 45px;
+  width: 40px;
   height: 45px;
-  font-size: 24px;
+  font-size: 22px;
   cursor: pointer;
   transition: background 0.3s ease;
   position: absolute;
