@@ -4,18 +4,22 @@
   <meta charset="UTF-8" />
   <title>Listening Room</title>
   <link rel="stylesheet" href="room.css" />
+  <script type="module" src="/firebase-init.js"></script>
 </head>
 <body>
-
   <header class="room-header">Listening Station</header>
 
   <div id="album-list" class="album-strip"></div>
 
-  <div id="player-area" class="player-display">
-    <p>Select an album to listen.</p>
+  <div id="main-content">
+    <aside id="info-panel">
+      <p>Select an album to see details.</p>
+    </aside>
+    <div id="player-area" class="player-display">
+      <p>Select an album to listen.</p>
+    </div>
   </div>
 
-  <div class="bookshelf"></div>
 
   <script>
     let albums = [];
@@ -35,16 +39,25 @@
         div.className = 'album-thumb';
 
         div.innerHTML = `
-          <img src="${album.cover}" alt="${album.title}" title="${album.title} by ${album.artist}" />
+          <img src="${album.cover}" alt="${album.title}" />
+          <div class="hover-info">${album.title}<br><span>${album.artist}</span></div>
         `;
 
         div.addEventListener('click', () => {
           loadPlayer(album);
+          loadInfoPanel(album);
         });
 
         list.appendChild(div);
       });
     }
+    
+    document.getElementById('album-list').addEventListener('wheel', function (e) {
+  if (e.deltaY !== 0) {
+    e.preventDefault();
+    this.scrollLeft += e.deltaY;
+  }
+}, { passive: false });
 
     function loadPlayer(album) {
       const playerArea = document.getElementById('player-area');
@@ -54,7 +67,29 @@
         <iframe src="${album.spotify_url}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       `;
     }
-  </script>
 
+    function loadInfoPanel(album) {
+      const infoPanel = document.getElementById('info-panel');
+      infoPanel.innerHTML = `
+        <h2>${album.title}</h2>
+        <h3>${album.artist} (${album.year})</h3>
+        <p>Loading artist info...</p>
+      `;
+
+      const apiKey = "e530c016b028fa384b92183344f7526e";
+      fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(album.api_artist_name || album.artist)}&api_key=${apiKey}&format=json`)
+        .then(res => res.json())
+        .then(data => {
+          const bio = data.artist?.bio?.summary || 'No bio available.';
+          const tags = data.artist?.tags?.tag.map(t => t.name).join(', ') || 'No tags.';
+          infoPanel.innerHTML = `
+            <h2>${album.title}</h2>
+            <h3>${album.artist} (${album.year})</h3>
+            <p>${bio}</p>
+            <p><strong>Tags:</strong> ${tags}</p>
+          `;
+        });
+    }
+  </script>
 </body>
 </html>
