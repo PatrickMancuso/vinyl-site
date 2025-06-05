@@ -65,7 +65,6 @@
       const playerArea = document.getElementById('player-area');
       playerArea.innerHTML = `
         <img src="${album.cover}" alt="${album.title}" />
-        <div><strong>${album.title}</strong> by ${album.artist}</div>
         <iframe src="${album.spotify_url}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       `;
     }
