@@ -513,7 +513,7 @@
     "cover": "https://m.media-amazon.com/images/I/A1palN6Z3IL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Uriah Heep",
     "tags": "classic rock, hard rock, Progressive rock, rock, 70s",
-    "spotify_url": "https://open.spotify.com/embed/album/4F4eYkz0Qh7xX1K1sLkX5G",
+    "spotify_url": "https://open.spotify.com/embed/album/7L7N9ULOldjwBn8OEuwUuv?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -546,7 +546,7 @@
     "cover": "https://e.snmc.io/i/1200/s/b6b9abde70e8207a82ff0686c5dd6e26/4051943",
     "api_artist_name": "Silver",
     "tags": "rock, folk rock, classic rock, 70s",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5J",
+    "spotify_url": "https://open.spotify.com/embed/album/3sGENYCDR3UaIfFwWMJWrY?utm_source=generator",
     "artist_origin": "Los Angeles, California, USA"
   },
   {
@@ -568,7 +568,7 @@
     "cover": "https://i.discogs.com/p53bKY4rM5I2YSy7sQ_eKWDlI7RP9RmkjWVepK35iR0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDEy/NTExLTE2MDE4NTkx/ODQtOTg0NC5qcGVn.jpeg",
     "api_artist_name": "Three Dog Night",
     "tags": "classic rock, rock, 70s, oldies, Southern Rock",
-    "spotify_url": "https://open.spotify.com/embed/album/1H3pZc8Zq2K1K1K1sLkX5L",
+    "spotify_url": "https://open.spotify.com/embed/album/0hQ9bcocveWRrJ0Z2TbEa7?utm_source=generator",
     "artist_origin": "Los Angeles, California, USA"
   },
   {
@@ -601,7 +601,7 @@
     "cover": "https://m.media-amazon.com/images/I/71Gz3u2htNL.jpg",
     "api_artist_name": "Supertramp",
     "tags": "classic rock, Progressive rock, rock, 70s, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/1J1ghdI9ILb9eZp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/7i75GRwJbhDDiLi2uQHTtZ?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -700,7 +700,7 @@
     "cover": "https://i.ebayimg.com/images/g/dUgAAOSw~pll2jNs/s-l1200.jpg",
     "api_artist_name": "The Alan Parsons Project",
     "tags": "Progressive rock, classic rock, rock, 80s, electronic",
-    "spotify_url": "https://open.spotify.com/embed/album/1v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/2vtMi0d0613jhp85klO9eb?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -1085,6 +1085,7 @@
     "cover": "https://m.media-amazon.com/images/I/818muCDUYRL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Yes",
     "tags": "Progressive rock, classic rock, rock, Progressive, british",
+    "spotify_url": "https://open.spotify.com/embed/album/4X6gq5bgpGXcHINlFWzriM?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -1095,7 +1096,8 @@
     "cover": "https://m.media-amazon.com/images/I/71MWeHJdLNL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Yazoo",
     "tags": "80s, new wave, synthpop, electronic, synth pop",
-    "artist_origin": "Basildon, Essex, England"
+    "artist_origin": "Basildon, Essex, England",
+    "spotify_url": "https://open.spotify.com/embed/album/47FOg0GaQDPGTbBTHDXg9V?utm_source=generator"
   },
   {
     "id": "are-you-experienced",
@@ -1105,7 +1107,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040",
     "api_artist_name": "The Jimi Hendrix Experience",
     "tags": "classic rock, Psychedelic Rock, rock, blues, psychedelic",
-    "artist_origin": "London, UK"
+    "artist_origin": "London, UK",
+    "spotify_url": "https://open.spotify.com/embed/album/7rSZXXHHvIhF4yUFdaOCy9?utm_source=generator"
   },
   {
     "id": "brothers-in-arms",
@@ -1137,7 +1140,8 @@
     "cover": "https://m.media-amazon.com/images/I/71w-MtJH3fL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "The Alan Parsons Project",
     "tags": "Progressive rock, classic rock, rock, 80s, electronic",
-    "artist_origin": "London, UK"
+    "artist_origin": "London, UK",
+    "spotify_url": "https://open.spotify.com/embed/album/1yPaTI4UxwbhZYbRkyZrFR?utm_source=generator"
   },
   {
     "id": "ascension",
@@ -1158,7 +1162,8 @@
     "cover": "https://i.discogs.com/7Kg_Fcd9Bh3DfmAS3myLVEG9PiMrokFzac9mHAg36Ro/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMzk1/Ni0xMTczNDM1MDc2/LmpwZWc.jpeg",
     "api_artist_name": "Steve Hillage",
     "tags": "Progressive rock, space rock, Psychedelic Rock, psychedelic, Canterbury Scene",
-    "artist_origin": "London, UK"
+    "artist_origin": "London, UK",
+    "spotify_url": "https://open.spotify.com/embed/album/2IfufXMgO8WKAIEeyNbzoY?utm_source=generator"
   },
   {
     "id": "live",
@@ -1179,7 +1184,8 @@
     "cover": "https://m.media-amazon.com/images/I/71fvOq5SNeL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Télépopmusik",
     "tags": "electronic, chillout, trip-hop, downtempo, electronica",
-    "artist_origin": "Paris, France"
+    "artist_origin": "Paris, France",
+    "spotify_url": "https://open.spotify.com/embed/album/1H10CTGW4xbk0IQewKbK50?utm_source=generator"
   },
   {
     "id": "crack-the-skye",
@@ -1233,7 +1239,8 @@
     "cover": "https://m.media-amazon.com/images/I/71q0al3UjhL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Vanilla Fudge",
     "tags": "Psychedelic Rock, classic rock, psychedelic, 60s, rock",
-    "artist_origin": "Long Island, New York, USA"
+    "artist_origin": "Long Island, New York, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/4rvXyAx9phjxiU4cQS1AJh?utm_source=generator"
   },
   {
     "id": "teaser-and-the-firecat",
@@ -1288,7 +1295,8 @@
     "cover": "https://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpghttps://m.media-amazon.com/images/I/71lUQSu8HhL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Thelonious Monk",
     "tags": "jazz, bebop, piano, jazz piano, free jazz",
-    "artist_origin": "unknown"
+    "artist_origin": "unknown",
+    "spotify_url": "https://open.spotify.com/embed/album/5VTlqV8lZH3YspQ1cDcjrL?utm_source=generator"
   },
   {
     "id": "bitches-brew",
