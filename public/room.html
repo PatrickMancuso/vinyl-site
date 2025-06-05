@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listening Room</title>
+  <link rel="stylesheet" href="room.css" />
+</head>
+<body>
+
+  <header class="room-header">Listening Station</header>
+
+  <div id="album-list" class="album-strip"></div>
+
+  <div id="player-area" class="player-display">
+    <p>Select an album to listen.</p>
+  </div>
+
+  <div class="bookshelf"></div>
+
+  <script>
+    let albums = [];
+
+    fetch('records.json')
+      .then(res => res.json())
+      .then(data => {
+        albums = data.sort((a, b) => a.artist.localeCompare(b.artist));
+        renderAlbumList();
+      });
+
+    function renderAlbumList() {
+      const list = document.getElementById('album-list');
+
+      albums.forEach(album => {
+        const div = document.createElement('div');
+        div.className = 'album-thumb';
+
+        div.innerHTML = `
+          <img src="${album.cover}" alt="${album.title}" title="${album.title} by ${album.artist}" />
+        `;
+
+        div.addEventListener('click', () => {
+          loadPlayer(album);
+        });
+
+        list.appendChild(div);
+      });
+    }
+
+    function loadPlayer(album) {
+      const playerArea = document.getElementById('player-area');
+      playerArea.innerHTML = `
+        <img src="${album.cover}" alt="${album.title}" />
+        <div><strong>${album.title}</strong> by ${album.artist}</div>
+        <iframe src="${album.spotify_url}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      `;
+    }
+  </script>
+
+</body>
+</html>
