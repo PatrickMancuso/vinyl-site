@@ -139,7 +139,7 @@
     "cover": "https://m.media-amazon.com/images/I/71xO8ChJ3aL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Josh White",
     "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues",
-    "spotify_url": "https://open.spotify.com/embed/album/5ZvkLS9KmiDSdW9MbEWwLV?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/6AlfdrqwxILzakkBnYC0L5?utm_source=generator",
     "artist_origin": "Greenville, South Carolina, USA"
   },
   {
@@ -502,7 +502,7 @@
     "cover": "https://m.media-amazon.com/images/I/91nQIviADKL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Led Zeppelin",
     "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5F",
+    "spotify_url": "https://open.spotify.com/embed/album/4Q7cPyiP8cMIlUEHAqeYfd?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -579,7 +579,7 @@
     "cover": "https://m.media-amazon.com/images/I/71AS649ysgL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Heart",
     "tags": "classic rock, rock, female vocalists, 80s, hard rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2Q8v3y0Kz0Qh7xX1K1sLkX5M",
+    "spotify_url": "https://open.spotify.com/embed/album/2N0AgtWbCmVoNUl2GN1opH?utm_source=generator",
     "artist_origin": "Seattle, Washington, USA"
   },
   {
@@ -590,7 +590,7 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2731083325e2f648767a49ddfad",
     "api_artist_name": "Electric Light Orchestra",
     "tags": "classic rock, Progressive rock, rock, 70s, british",
-    "spotify_url": "https://open.spotify.com/embed/album/3ZVtYkz0Qh7xX1K1sLkX5N?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/4k1GJg2poyo6hwWLqJn9C2?utm_source=generator",
     "artist_origin": "Birmingham, England"
   },
   {
@@ -689,7 +689,7 @@
     "cover": "https://cdn-images.dzcdn.net/images/cover/2632e326fac7c48c2fbef198f295995a/0x1900-000000-80-0-0.jpg",
     "api_artist_name": "Depeche Mode",
     "tags": "electronic, new wave, 80s, synthpop, synth pop",
-    "spotify_url": "https://open.spotify.com/embed/album/0v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/45YmvYK4hB4CgQgTMuNRm8?utm_source=generator",
     "artist_origin": "Basildon, Essex, England"
   },
   {
@@ -733,7 +733,7 @@
     "cover": "https://m.media-amazon.com/images/I/81RPFmr49sL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Journey",
     "tags": "classic rock, rock, 80s, hard rock, Progressive rock",
-    "spotify_url": "https://open.spotify.com/embed/album/4v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/3pZ6D15onAaT2YyiTbcHmh?utm_source=generator",
     "artist_origin": "San Francisco, California, USA"
   },
   {
@@ -854,7 +854,7 @@
     "cover": "https://i.discogs.com/E-c86sYzWOiKzFzvdvy5rT0y-r4wIY0CFSYG_hJI-sQ/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNDY2/NDM1LTE3MzMyNTE1/MzItOTMzMy5qcGVn.jpeg",
     "api_artist_name": "Kazuhiko Uehara",
     "tags": "video game music",
-    "spotify_url": "https://open.spotify.com/embed/album/1x2x3x4x5x6x7x8x9x0x",
+    "spotify_url": "https://open.spotify.com/embed/playlist/3ILAdFelIJ1bAZXriZveEV?utm_source=generator",
     "artist_origin": "Japan"
   },
   {
@@ -876,7 +876,7 @@
     "cover": "https://f4.bcbits.com/img/a2067820735_10.jpg",
     "api_artist_name": "Jiro Inagaki",
     "tags": "jazz, japanese",
-    "spotify_url": "https://open.spotify.com/embed/album/4x5x6x7x8x9x0x1x2x3x",
+    "spotify_url": "https://open.spotify.com/embed/playlist/2LIjdhTdOWzy6CAJDNTjRc?utm_source=generator",
     "artist_origin": "Sendai, Japan"
   },
   {
@@ -1114,6 +1114,7 @@
     "cover": "https://www.udiscovermusic.com/wp-content/uploads/2025/03/dire-straits-brothers-in-arms-original-artwork.jpg",
     "api_artist_name": "Dire Straits",
     "tags": "classic rock, rock, 80s, blues, guitar",
+    "spotify_url": "https://open.spotify.com/embed/album/7jvcSnCnugLcisBCNBm60s?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -1124,7 +1125,8 @@
     "cover": "https://m.media-amazon.com/images/I/71-3FlvSemL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jean-Luc Ponty",
     "tags": "jazz, Fusion, jazz fusion, violin, instrumental",
-    "artist_origin": "Avranches, France"
+    "artist_origin": "Avranches, France",
+    "spotify_url": "https://open.spotify.com/embed/album/6EfLu75i2jqhN4s4xlqh6m?utm_source=generator"
   },
   {
     "id": "the-turn-of-a-friendly-card",
@@ -1144,7 +1146,8 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273870242be73ff3269f9b86689",
     "api_artist_name": "John Coltrane",
     "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde",
-    "artist_origin": "Hamlet, North Carolina, USA"
+    "artist_origin": "Hamlet, North Carolina, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/2TtadFmrnrFZecasfj0p4t?utm_source=generator"
   },
   {
     "id": "fish-rising",
@@ -1215,7 +1218,8 @@
     "cover": "https://m.media-amazon.com/images/I/71lIjU9sJUL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Jean Michel Jarre",
     "tags": "electronic, ambient, new age, instrumental, french",
-    "artist_origin": "Lyon, France"
+    "artist_origin": "Lyon, France",
+    "spotify_url": "https://open.spotify.com/embed/album/6qF91BDNaJY4PI0mSwYv8L?utm_source=generator"
   },
   {
     "id": "vanilla-fudge",
@@ -1256,7 +1260,8 @@
     "cover": "https://i.discogs.com/gNgNc0TGcdJvVIazjWFaXUqqyLC3Zt_Nzx4J2nLrylM/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Nzcz/NzExLTE1OTc1MzY3/MzAtNzQ0OC5qcGVn.jpeg",
     "api_artist_name": "Josh White",
     "tags": "blues, folk, piedmont blues, Folk Blues, Old Blues",
-    "artist_origin": "Greenville, South Carolina, USA"
+    "artist_origin": "Greenville, South Carolina, USA",
+    "artist_url": "https://open.spotify.com/embed/album/13qbsOthhnoXOmPexoJhaS?utm_source=generator"
   },
   {
     "id": "phoebe-snow",
@@ -1296,7 +1301,8 @@
     "cover": "https://m.media-amazon.com/images/I/71NthSs0XnL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Eric Clapton",
     "tags": "classic rock, blues, rock, blues rock, guitar",
-    "artist_origin": "unknown"
+    "artist_origin": "unknown",
+    "spotify_url":"https://open.spotify.com/embed/album/2lORE9lVX7YUCZfiFVnKWa?utm_source=generator"
   },
   {
     "id": "led-zeppelin",
@@ -1307,6 +1313,7 @@
     "api_artist_name": "Led Zeppelin",
     "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
     "artist_origin": "London, UK"
+    ""
   },
   {
     "id": "nursery-cryme",
@@ -1316,7 +1323,8 @@
     "cover": "https://m.media-amazon.com/images/I/81bX4BZZZPL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Genesis",
     "tags": "Progressive rock, classic rock, rock, 80s, Progressive",
-    "artist_origin": "unknown"
+    "artist_origin": "unknown",
+    "spotify_url": "https://open.spotify.com/embed/album/1ixuwlmJ9AOYGZCc2WrLwo?utm_source=generator"
   },
   {
     "id": "at-last",
