@@ -535,7 +535,7 @@
     "cover": "https://images.genius.com/e15a442e517a1a53b338a985a13a94b3.600x602x1.jpg",
     "api_artist_name": "Manfred Mann's Earth Band",
     "tags": "classic rock, Progressive rock, rock, 70s, art rock",
-    "spotify_url": "https://open.spotify.com/embed/album/2nE8G9u3XbO3q1I0p1zF8I",
+    "spotify_url": "https://open.spotify.com/embed/album/4lOyLeKXK85ioR4wpKjZ6Z?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -645,7 +645,7 @@
     "cover": "https://m.media-amazon.com/images/I/81jJzi9yMiL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Rainbow",
     "tags": "hard rock, classic rock, heavy metal, rock, metal",
-    "spotify_url": "https://open.spotify.com/embed/album/6v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/3LXOrVXLXwRiOguE446OZo?utm_source=generator",
     "artist_origin": "London, UK"
   },
   {
@@ -667,7 +667,7 @@
     "cover": "https://i.discogs.com/qM8fORa62C4Scl2ke2jo0oXI_xxathT5quSFkYIf9uc/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNDkx/NTEtMTQ2Mzk2MTMz/Ny05MTA1LmpwZWc.jpeg",
     "api_artist_name": "Scorpions",
     "tags": "hard rock, classic rock, rock, heavy metal, 80s",
-    "spotify_url": "https://open.spotify.com/embed/album/8v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/71cfSO0iO1fjgQLEb3Wc6C?utm_source=generator",
     "artist_origin": "Hanover, Germany"
   },
   {
@@ -711,7 +711,7 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b2733b67a6855fed4af6088ee72a",
     "api_artist_name": "Men at Work",
     "tags": "80s, new wave, rock, australian, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/2v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/4GDchmJ8oESRJ58cDXvnE0?utm_source=generator",
     "artist_origin": "Melbourne, Australia"
   },
   {
@@ -722,7 +722,7 @@
     "cover": "https://i.scdn.co/image/ab67616d0000b273aa5e4c9da271951ac0b31fa2",
     "api_artist_name": "Men at Work",
     "tags": "80s, new wave, rock, australian, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/3v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/4HDJMKkwAMVFewqfZcmf84?utm_source=generator",
     "artist_origin": "Melbourne, Australia"
   },
   {
@@ -744,7 +744,7 @@
     "cover": "https://i.discogs.com/CPtMk0l_qT05befircmRA7kihhf8qY-qppoiw5eJdZA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwODQ3/NTktMTM2MTc2Mzgx/OC0yNzM0LmpwZWc.jpeg",
     "api_artist_name": "Oingo Boingo",
     "tags": "new wave, 80s, rock, alternative, pop",
-    "spotify_url": "https://open.spotify.com/embed/album/5v7aI1xQhZ1vV1Zp6xGkKkF?utm_source=generator",
+    "spotify_url": "https://open.spotify.com/embed/album/44Q1H1q6nSnUnjjGPoxAJb?utm_source=generator",
     "artist_origin": "Los Angeles, California, USA"
   },
   {
@@ -1063,7 +1063,7 @@
     "cover": "https://i.discogs.com/zYJM7OxdMAD8pPjp_es2qUzvbWMcA1PD5lE77bOYFrY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ0/NzE0LTE1NzQ2Mzk3/ODktMTA4MC5qcGVn.jpeg",
     "api_artist_name": "Masayoshi Takanaka",
     "tags": "jazz, instrumental, japan, easy guitar music, jazz fusion",
-    "spotify_url": null,
+    "spotify_url": "https://open.spotify.com/embed/album/0zXeZw0oFC2Db99RqlfHur?utm_source=generator",
     "artist_origin": "Tokyo, Japan"
   },
   {
@@ -1074,7 +1074,8 @@
     "cover": "https://m.media-amazon.com/images/I/71dQKN2UEfL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Miles Davis",
     "tags": "jazz, trumpet, Fusion, bebop, blues",
-    "artist_origin": "Alton, Illinois, USA"
+    "artist_origin": "Alton, Illinois, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/1weenld61qoidwYuZ1GESA?utm_source=generator"
   },
   {
     "id": "fragile",
@@ -1188,7 +1189,8 @@
     "cover": "https://m.media-amazon.com/images/I/91M8-wmgfZL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Mastodon",
     "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
-    "artist_origin": "Atlanta, Georgia, USA"
+    "artist_origin": "Atlanta, Georgia, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/2W2nqEKXWBorbq5yvm3jZg?utm_source=generator"
   },
   {
     "id": "hushed-and-grim",
@@ -1198,7 +1200,8 @@
     "cover": "https://media.pitchfork.com/photos/613a64a57c34b5ffaef74527/master/pass/Mastodon.jpeg",
     "api_artist_name": "Mastodon",
     "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
-    "artist_origin": "Atlanta, Georgia, USA"
+    "artist_origin": "Atlanta, Georgia, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/5xnZl7sdxxIb4rkDcbD4IC?utm_source=generator"
   },
   {
     "id": "remission",
@@ -1208,7 +1211,8 @@
     "cover": "https://www.relapse.com/cdn/shop/products/d51ebe715fed37de01d62c938e9475ff_1500x.jpg?v=1691939472",
     "api_artist_name": "Mastodon",
     "tags": "Progressive metal, metal, Sludge, seen live, sludge metal",
-    "artist_origin": "Atlanta, Georgia, USA"
+    "artist_origin": "Atlanta, Georgia, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/1aQZecM7d2R3SvPs2HNNIA?utm_source=generator"
   },
   {
     "id": "oxygene",
@@ -1250,7 +1254,8 @@
     "cover": "https://i.discogs.com/DQHkhSmIKy2sK7mp2Efjkk0rM40sWz_LximC4dnFA0g/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDU2/NjMtMTM0OTE3NTc5/NS0zMDk5LmpwZWc.jpeg",
     "api_artist_name": "Nektar",
     "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
-    "artist_origin": "Hamburg, Germany"
+    "artist_origin": "Hamburg, Germany",
+    "spotify_url": "https://open.spotify.com/embed/album/4aGdxnGrlJzMRjRNCTZHiS?utm_source=generator"
   },
   {
     "id": "chain-gang-songs",
@@ -1271,7 +1276,9 @@
     "cover": "https://m.media-amazon.com/images/I/61dF6m9jhxL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Phoebe Snow",
     "tags": "female vocalists, singer-songwriter, blues, folk, pop",
-    "artist_origin": "unknown"
+    "artist_origin": "unknown",
+    "spotify_url": "https://open.spotify.com/embed/album/2WmtJRhLcDH9u6RPg65eHl?utm_source=generator"
+    
   },
   {
     "id": "monk-s-dream",
@@ -1291,7 +1298,8 @@
     "cover": "https://m.media-amazon.com/images/I/81m3DGSbOIL._UF1000,1000_QL80_.jpg",
     "api_artist_name": "Miles Davis",
     "tags": "jazz, trumpet, Fusion, bebop, blues",
-    "artist_origin": "Alton, Illinois, USA"
+    "artist_origin": "Alton, Illinois, USA",
+    "spotify_url": "https://open.spotify.com/embed/album/3Q0zkOZEOC855ErOOJ1AdO?utm_source=generator"
   },
   {
     "id": "unplugged",
@@ -1312,8 +1320,8 @@
     "cover": "https://m.media-amazon.com/images/I/91qw0ldKIKL.jpg",
     "api_artist_name": "Led Zeppelin",
     "tags": "classic rock, rock, hard rock, 70s, Progressive rock",
-    "artist_origin": "London, UK"
-    ""
+    "artist_origin": "London, UK",
+    "spotify_url": "https://open.spotify.com/embed/album/3ycjBixZf7S3WpC5WZhhUK?utm_source=generator"
   },
   {
     "id": "nursery-cryme",
