@@ -48,6 +48,8 @@ header::before {
 
 
 
+
+
 .header-left,
 .header-right {
   display: flex;
@@ -484,13 +486,17 @@ header::before {
   align-items: center;
   z-index: 10;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /* container ignores pointer events */
   transition: opacity 0.4s ease;
 }
 
 #carousel-view:hover .nav-controls {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: none; /* container still ignores pointer events */
+}
+
+.nav-controls .nav-btn {
+  pointer-events: auto; /* buttons receive pointer events */
 }
 
 .nav-btn {
@@ -517,23 +523,6 @@ header::before {
 .nav-btn:hover {
   background: #333;
 }
-
-/* BOOKSHELF 
-.bookshelf {
-  position: fixed;  
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 75px; /* reduce height 
-  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
-  background-size: cover;
-  box-shadow: inset 0 80px 12px rgba(0, 0, 0, 0.5);
-  
-
-  z-index: 1;
-}
-*/
-
 
 
 /* Responsive Styling */
