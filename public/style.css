@@ -4,18 +4,6 @@
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
-@font-face {
-  font-family: 'NiagaraSolid';
-  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Niagara%20Solid.TTF?v=1749234300420') format('opentype');
-}
-
-html, body {
-  overflow: hidden; /* hides all scrollbars */
-  height: 100%;     /* ensures full viewport height */
-  margin: 0;        /* remove default margin */
-  padding: 0;       /* remove default padding */
-}
-
 /* Global body styles */
 body {
   margin: 0;
@@ -33,7 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   color: white;
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
@@ -58,7 +46,7 @@ header::before {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
   flex: 1;
 }
 
@@ -74,7 +62,7 @@ header::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(8%);
-  font-size: 3.3rem;
+  font-size: 3.2rem;
   font-family: 'HooeyDemo', sans-serif;
   margin: 0;
   text-align: center;
@@ -108,36 +96,13 @@ header::before {
   margin-top: 1rem;
 }
 
-#toggle-view {
-  background: #000;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 10px 1px;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  min-width: 70px;
-    transition: background 0.3s ease, color 0.3s ease;  
-
-  
-}
-
-
-#toggle-view:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
 
 #add-album {
    background: #000;
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 10px 19px;
+  padding: 8px 19px;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
@@ -154,7 +119,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 7.5px 0px;
+  padding: 8px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -211,7 +176,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 4.5px 2px;
+  padding: 5px 2px;
   font-size: 1.4rem;
   text-align: center;
   cursor: pointer;
@@ -264,6 +229,28 @@ header::before {
   padding: 0 2rem;
 }
 
+#toggle-view {
+  background: #000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 7.5px 1px;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 70px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+  
+}
+
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
 
 
 
@@ -287,10 +274,10 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 11.5px 13px;
+  padding: 12px 10px;
   border-radius: 5px;
   border: none;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   width: 205px; /* Make it consistent */
 }
 
@@ -368,37 +355,24 @@ header::before {
 /* CAROUSEL */
 
 #carousel-view {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* no fixed height, let content decide */
-  position: relative; /* needed for .carousel-bg-bar absolute positioning */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
+
+body.loaded #carousel-view {
+  opacity: 1;
+}
+
 
 .carousel {
-  width: 100%;
-  height: 780px; /* shrink this height */
-  position: relative; /* relative for absolutely positioned .album inside */
-  overflow: visible; /* so albums can overflow vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  will-change: transform, opacity;
-}
+    width: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform, opacity;
 
-.carousel-bg-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 650px; /* match carousel height */
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-  transform: translateY(65px);
 }
-
 
 
 .album {
@@ -481,13 +455,10 @@ header::before {
 /* NAVIGATION */
 .nav-controls {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 100%;
-  height: 100%; /* make it fill the carousel */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transform: translateY(-70%);
   z-index: 10;
   opacity: 0;
   pointer-events: none;
@@ -510,14 +481,17 @@ header::before {
   font-size: 22px;
   cursor: pointer;
   transition: background 0.3s ease;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-75%);
 }
 
 .nav-left {
-  margin-left: 5%;
+  left: 190px;
 }
 
 .nav-right {
-  margin-right: 5%;
+  right: 190px;
 }
 
 .nav-btn:hover {
@@ -525,6 +499,21 @@ header::before {
 }
 
 
+/* BOOKSHELF 
+.bookshelf {
+  position: fixed;  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 75px; /* reduce height 
+  background: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/pngtree-dark-wood-grain-texture-background---seamless-pattern-picture-image_15712210.jpg?v=1746078585131') no-repeat center bottom;
+  background-size: cover;
+  box-shadow: inset 0 80px 12px rgba(0, 0, 0, 0.5);
+  
+
+  z-index: 1;
+}
+*/
 
 
 
