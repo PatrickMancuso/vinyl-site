@@ -460,11 +460,18 @@ body.loaded #carousel-view {
   width: 100%;
   transform: translateY(-70%);
   z-index: 10;
-  pointer-events: none; /* pass clicks through the container */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#carousel-view:hover .nav-controls {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .nav-btn {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 2px 6px rgba(0,0,0,0.6);
   color: white;
   border: none;
@@ -477,15 +484,14 @@ body.loaded #carousel-view {
   position: absolute;
   top: 60%;
   transform: translateY(-75%);
-  pointer-events: auto;
 }
 
 .nav-left {
-  left: 155px; /* push into the blue background */
+  left: 190px;
 }
 
 .nav-right {
-  right: 155px; /* pull it fully onto the screen */
+  right: 190px;
 }
 
 .nav-btn:hover {
@@ -514,26 +520,44 @@ body.loaded #carousel-view {
 /* Responsive Styling */
 @media (max-width: 1024px) {
   .album {
-    width: 500px;
-    height: 500px;
+    width: 360px;
+    height: 360px;
   }
-  .album.left1,
+
+  .album.main {
+    transform: translate3d(0, 0, 0) scale(1.05);
+    z-index: 5;
+  }
+  .album.left1 {
+    transform: translate3d(-200px, 0, 0) rotateY(25deg) scale(0.85);
+    z-index: 4;
+  }
   .album.right1 {
-    transform: translateX(180px) rotateY(25deg) scale(0.8);
+    transform: translate3d(200px, 0, 0) rotateY(-25deg) scale(0.85);
+    z-index: 4;
   }
-  .album.left2,
+  .album.left2 {
+    transform: translate3d(-360px, 0, 0) rotateY(25deg) scale(0.7);
+    z-index: 3;
+  }
   .album.right2 {
-    transform: translateX(360px) rotateY(25deg) scale(0.7);
+    transform: translate3d(360px, 0, 0) rotateY(-25deg) scale(0.7);
+    z-index: 3;
   }
-  .album.left3,
+  .album.left3 {
+    transform: translate3d(-480px, 0, 0) rotateY(25deg) scale(0.6);
+    z-index: 2;
+  }
   .album.right3 {
-    transform: translateX(540px) rotateY(25deg) scale(0.6);
+    transform: translate3d(480px, 0, 0) rotateY(-25deg) scale(0.6);
+    z-index: 2;
   }
-  
-.nav-controls {
+
+  .nav-controls {
     gap: 40px;
   }  
 }
+
 
 @media (max-width: 768px) {
   .header-title {
