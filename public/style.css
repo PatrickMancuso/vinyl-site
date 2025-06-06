@@ -3,11 +3,16 @@
   font-family: 'HooeyDemo';
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
+/* remove any overflow: hidden on html, body */
 html, body {
-  overflow: hidden; /* hides all scrollbars */
-  height: 100%;     /* ensures full viewport height */
-  margin: 0;        /* remove default margin */
-  padding: 0;       /* remove default padding */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Class to disable scrolling */
+body.no-scroll {
+  overflow: hidden;
 }
 
 /* Global body styles */
@@ -18,6 +23,10 @@ body {
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Header styles */
