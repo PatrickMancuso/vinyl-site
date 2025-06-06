@@ -3,6 +3,12 @@
   font-family: 'HooeyDemo';
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
+html, body {
+  overflow: hidden; /* hides all scrollbars */
+  height: 100%;     /* ensures full viewport height */
+  margin: 0;        /* remove default margin */
+  padding: 0;       /* remove default padding */
+}
 
 /* Global body styles */
 body {
@@ -384,7 +390,7 @@ header::before {
   height: 650px; /* match carousel height */
   background: rgba(0, 0, 0, 0.3);
   z-index: 0;
-  transform: translateY(10%);
+  transform: translateY(65px);
 }
 
 
@@ -469,10 +475,13 @@ header::before {
 /* NAVIGATION */
 .nav-controls {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 0;
   width: 100%;
-  transform: translateY(-70%);
+  height: 100%; /* make it fill the carousel */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 10;
   opacity: 0;
   pointer-events: none;
@@ -495,23 +504,19 @@ header::before {
   font-size: 22px;
   cursor: pointer;
   transition: background 0.3s ease;
-  position: absolute;
-  top: 60%;
-  transform: translateY(-75%);
 }
 
 .nav-left {
-  left: 190px;
+  margin-left: 5%;
 }
 
 .nav-right {
-  right: 190px;
+  margin-right: 5%;
 }
 
 .nav-btn:hover {
   background: #333;
 }
-
 
 /* BOOKSHELF 
 .bookshelf {
