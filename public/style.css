@@ -27,7 +27,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   color: white;
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
