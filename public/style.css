@@ -46,7 +46,7 @@ header::before {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   flex: 1;
 }
 
@@ -355,38 +355,36 @@ header::before {
 /* CAROUSEL */
 
 #carousel-view {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* no fixed height, let content decide */
+  position: relative; /* needed for .carousel-bg-bar absolute positioning */
 }
 
-body.loaded #carousel-view {
-  opacity: 1;
+.carousel {
+  width: 100%;
+  height: 780px; /* shrink this height */
+  position: relative; /* relative for absolutely positioned .album inside */
+  overflow: visible; /* so albums can overflow vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform, opacity;
 }
-
 
 .carousel-bg-bar {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; 
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent bar */
-  backdrop-filter: blur(1px);    /* Optional: blur effect */
+  height: 650px; /* match carousel height */
+  background: rgba(0, 0, 0, 0.3);
   z-index: 0;
+  transform: translateY(10%);
 }
-
-
-.carousel {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    will-change: transform, opacity;
-
-}
-
 
 
 
