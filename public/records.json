@@ -231,17 +231,6 @@
     "artist_origin": "Los Angeles, California, USA"
   },
   {
-    "id": "mysterious-traveler",
-    "title": "Mysterious Traveler",
-    "artist": "Weather Report",
-    "year": 1974,
-    "cover": "https://m.media-amazon.com/images/I/71yrT-bvEpL._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "Weather Report",
-    "tags": "jazz, Fusion, jazz fusion, instrumental, funk",
-    "spotify_url": "https://open.spotify.com/embed/album/2JARH6A2TX28OzcPwJnD1p?utm_source=generator",
-    "artist_origin": "New York, New York, USA"
-  },
-  {
     "id": "black-market",
     "title": "Black Market",
     "artist": "Weather Report",
@@ -1243,28 +1232,6 @@
     "spotify_url": "https://open.spotify.com/embed/album/4rvXyAx9phjxiU4cQS1AJh?utm_source=generator"
   },
   {
-    "id": "teaser-and-the-firecat",
-    "title": "Teaser and the Firecat",
-    "artist": "Cat Stevens",
-    "year": 1971,
-    "cover": "https://i0.wp.com/www.gratefulweb.com/sites/default/files/images/articles/unnamed-5_12.jpg",
-    "api_artist_name": "Cat Stevens",
-    "tags": "folk, singer-songwriter, classic rock, acoustic, rock",
-    "artist_origin": "London, UK",
-    "spotify_url": "https://open.spotify.com/embed/album/7ez8WRX4sGhKHZryJPJCNg?utm_source=generator"
-  },
-  {
-    "id": "a-tab-in-the-ocean",
-    "title": "A Tab in the Ocean",
-    "artist": "Nektar",
-    "year": 1972,
-    "cover": "https://i.discogs.com/DQHkhSmIKy2sK7mp2Efjkk0rM40sWz_LximC4dnFA0g/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3NDU2/NjMtMTM0OTE3NTc5/NS0zMDk5LmpwZWc.jpeg",
-    "api_artist_name": "Nektar",
-    "tags": "Progressive rock, Psychedelic Rock, space rock, psychedelic, classic rock",
-    "artist_origin": "Hamburg, Germany",
-    "spotify_url": "https://open.spotify.com/embed/album/4aGdxnGrlJzMRjRNCTZHiS?utm_source=generator"
-  },
-  {
     "id": "chain-gang-songs",
     "title": "Chain Gang Songs",
     "artist": "Josh White",
@@ -1285,7 +1252,6 @@
     "tags": "female vocalists, singer-songwriter, blues, folk, pop",
     "artist_origin": "unknown",
     "spotify_url": "https://open.spotify.com/embed/album/2WmtJRhLcDH9u6RPg65eHl?utm_source=generator"
-    
   },
   {
     "id": "monk-s-dream",
@@ -1318,7 +1284,7 @@
     "api_artist_name": "Eric Clapton",
     "tags": "classic rock, blues, rock, blues rock, guitar",
     "artist_origin": "unknown",
-    "spotify_url":"https://open.spotify.com/embed/album/2lORE9lVX7YUCZfiFVnKWa?utm_source=generator"
+    "spotify_url": "https://open.spotify.com/embed/album/2lORE9lVX7YUCZfiFVnKWa?utm_source=generator"
   },
   {
     "id": "led-zeppelin",
@@ -1418,5 +1384,27 @@
     "tags": "rock, Jam, seen live, alternative, blues",
     "spotify_url": "https://open.spotify.com/embed/album/6sTKCXNE3sOCgwS9mahfiO?utm_source=generator",
     "artist_origin": "Boulder, Colorado"
+  },
+  {
+    "id": "the-carnegie-hall-concert",
+    "title": "The Carnegie Hall Concert",
+    "artist": "Alice Coltrane",
+    "year": 1971,
+    "cover": "https://m.media-amazon.com/images/I/91KvuXuiG-L._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Alice Coltrane",
+    "tags": "jazz, free jazz, Avant-Garde, experimental, psychedelic",
+    "spotify_url": "https://open.spotify.com/embed/album/3QLSI5J1AcRtkqYRxVmEns?utm_source=generator",
+    "artist_origin": "Detroit, Michigan"
+  },
+  {
+    "id": "straight-life",
+    "title": "Straight Life",
+    "artist": "Freddie Hubbard",
+    "year": 1971,
+    "cover": "https://m.media-amazon.com/images/I/71cMg-FsjxL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Freddie Hubbard",
+    "tags": "jazz, trumpet, Hard Bop, bebop, Fusion",
+    "spotify_url": "https://open.spotify.com/embed/album/1BeVs7rQJ7LRj1sklSXRec?utm_source=generator",
+    "artist_origin": "Indianapolis, Indiana"
   }
 ]
