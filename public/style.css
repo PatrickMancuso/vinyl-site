@@ -21,7 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 1.5rem;
+  padding: 1.4rem 1.5rem;
   color: white;
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
@@ -102,7 +102,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 19px;
+  padding: 10px 19px;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
@@ -234,7 +234,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 7.5px 1px;
+  padding: 9px 1px;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
