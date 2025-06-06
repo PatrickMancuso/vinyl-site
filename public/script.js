@@ -77,6 +77,9 @@ function renderCarousel(albums) {
   });
 
   updateCarouselClasses();
+  
+  
+  
 }
 
 function updateCarouselClasses() {
@@ -195,4 +198,9 @@ favToggle.addEventListener("click", () => {
   favoritesOnly = !favoritesOnly;
   favToggle.classList.toggle("active", favoritesOnly);
   applyFilters();
+});
+
+window.addEventListener('load', () => {
+  const carousel = document.querySelector('.carousel');
+  carousel.style.opacity = '1';
 });

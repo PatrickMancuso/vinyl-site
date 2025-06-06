@@ -382,6 +382,10 @@ header::before {
   justify-content: center;
   align-items: center;
   will-change: transform, opacity;
+    opacity: 0;
+    transition: opacity 2s ease;
+
+
 }
 
 .carousel-bg-bar {
@@ -398,6 +402,7 @@ header::before {
 
 
 .album {
+  
   backface-visibility: hidden;
   transform-style: preserve-3d;
   position: absolute;
@@ -513,11 +518,11 @@ header::before {
 }
 
 .nav-left {
-  margin-left: 5%;
+  margin-left: 9%;
 }
 
 .nav-right {
-  margin-right: 5%;
+  margin-right: 9%;
 }
 
 .nav-btn:hover {
