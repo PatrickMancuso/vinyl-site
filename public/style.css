@@ -370,6 +370,38 @@ header::before {
 }
 
 
+.site-footer {
+  background-color: #1a1a1a;
+  color: #eee;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 0.9rem;
+  font-family: 'Garamond', monospace;
+  margin-top: auto; /* ensures it stays at the bottom in flex layout */
+}
+
+.site-footer a {
+  color: #eee;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #f1c40f;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+
 /* CAROUSEL */
 
 #carousel-view {
