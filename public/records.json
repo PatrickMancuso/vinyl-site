@@ -1406,16 +1406,5 @@
     "tags": "jazz, trumpet, Hard Bop, bebop, Fusion",
     "spotify_url": "https://open.spotify.com/embed/album/1BeVs7rQJ7LRj1sklSXRec?utm_source=generator",
     "artist_origin": "Indianapolis, Indiana"
-  },
-  {
-    "id": "moving-pictures",
-    "title": "Moving Pictures",
-    "artist": "Rush",
-    "year": 1978,
-    "cover": "https://m.media-amazon.com/images/I/71bpEokoF+L._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "Rush",
-    "tags": "Progressive rock, classic rock, hard rock, rock, Progressive",
-    "spotify_url": "https://open.spotify.com/embed/album/2xg7iIKoSqaDNpDbJnyCjY?utm_source=generator",
-    "artist_origin": "Ontario, Canada"
   }
 ]
