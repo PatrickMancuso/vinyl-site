@@ -9,6 +9,20 @@ body {
   overflow: hidden;
 }
 
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  color: white;
+  flex-wrap: wrap;
+  overflow: hidden; /* ensures background doesn't spill */
+  z-index: 1;
+}
+
+
+
 #album-selector {
   width: 200px;
   background: #2a2a2a;
