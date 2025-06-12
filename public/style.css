@@ -19,7 +19,7 @@ body.no-scroll {
 body {
   margin: 0;
   font-family: 'Garamond', serif;  /* Default font */
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/backgroundvinylvault2.png?v=1748534052763') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinilovyi-proigryvatel-vinil-proigryvatel-plastinok.jpg?v=1749767284426') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -41,6 +41,8 @@ header {
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
   z-index: 1;
+  background-color: #1a1a1a;
+  
 }
 
 header::before {
@@ -51,7 +53,6 @@ header::before {
   width: 100%;
   height: 100%;
   background-size: cover;
-  opacity: 0; /* adjust this to your liking */
   z-index: -1;
 }
 
@@ -373,7 +374,6 @@ header::before {
 .site-footer {
   background-color: #1a1a1a;
   color: #eee;
-  opacity: 0.8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -435,7 +435,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 650px; /* match carousel height */
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 0;
   transform: translateY(65px);
 }
