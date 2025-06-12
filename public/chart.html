@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Your Vinyl Chart</title>
+  <link rel="stylesheet" href="chart.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1>Create Your Favorite Vinyl Chart</h1>
+
+  <label for="chart-size">Chart Size:</label>
+  <select id="chart-size">
+    <option value="3">3x3</option>
+    <option value="4">4x4</option>
+    <option value="5">5x5</option>
+  </select>
+
+  <div id="album-selector"></div>
+
+  <div id="chart-grid" class="grid-3"></div>
+
+  <button id="download-chart">Download Chart</button>
+
+  <script src="chart.js"></script>
+</body>
+</html>
