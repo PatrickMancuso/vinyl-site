@@ -16,14 +16,25 @@ function populateAlbumSelector() {
   const container = document.getElementById('album-selector');
   container.innerHTML = '';
   albums.forEach(album => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'album-container';
+
     const div = document.createElement('div');
     div.className = 'album-thumb';
     div.style.backgroundImage = `url(${album.cover})`;
     div.setAttribute('draggable', true);
     div.dataset.albumId = album.id;
-    container.appendChild(div);
+
+    const info = document.createElement('div');
+    info.className = 'album-info';
+    info.innerHTML = `<strong>${album.title}</strong><br>${album.artist}`;
+
+    wrapper.appendChild(div);
+    wrapper.appendChild(info);
+    container.appendChild(wrapper);
   });
 }
+
 
 function createGrid(size) {
   const grid = document.getElementById('chart-grid');
