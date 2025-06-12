@@ -41,7 +41,7 @@ header {
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
   z-index: 1;
-  background-color: #1a1a1a;
+  background: rgba(1,1,1 , 0.95);
   
 }
 
@@ -372,7 +372,7 @@ header::before {
 
 
 .site-footer {
-  background-color: #1a1a1a;
+  background: rgba(1,1,1 , 0.95);
   color: #eee;
   display: flex;
   justify-content: space-between;
@@ -424,7 +424,7 @@ header::before {
   align-items: center;
   will-change: transform, opacity;
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 3s ease;
 
 
 }
