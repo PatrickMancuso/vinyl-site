@@ -1298,17 +1298,6 @@
     "spotify_url": "https://open.spotify.com/embed/album/3ycjBixZf7S3WpC5WZhhUK?utm_source=generator"
   },
   {
-    "id": "nursery-cryme",
-    "title": "Nursery Cryme",
-    "artist": "Genesis",
-    "year": 1971,
-    "cover": "https://m.media-amazon.com/images/I/81bX4BZZZPL._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "Genesis",
-    "tags": "Progressive rock, classic rock, rock, 80s, Progressive",
-    "artist_origin": "unknown",
-    "spotify_url": "https://open.spotify.com/embed/album/1ixuwlmJ9AOYGZCc2WrLwo?utm_source=generator"
-  },
-  {
     "id": "at-last",
     "title": "At Last!",
     "artist": "Etta James",
@@ -1386,17 +1375,6 @@
     "artist_origin": "Boulder, Colorado"
   },
   {
-    "id": "the-carnegie-hall-concert",
-    "title": "The Carnegie Hall Concert",
-    "artist": "Alice Coltrane",
-    "year": 1971,
-    "cover": "https://m.media-amazon.com/images/I/91KvuXuiG-L._UF1000,1000_QL80_.jpg",
-    "api_artist_name": "Alice Coltrane",
-    "tags": "jazz, free jazz, Avant-Garde, experimental, psychedelic",
-    "spotify_url": "https://open.spotify.com/embed/album/3QLSI5J1AcRtkqYRxVmEns?utm_source=generator",
-    "artist_origin": "Detroit, Michigan"
-  },
-  {
     "id": "straight-life",
     "title": "Straight Life",
     "artist": "Freddie Hubbard",
@@ -1406,5 +1384,27 @@
     "tags": "jazz, trumpet, Hard Bop, bebop, Fusion",
     "spotify_url": "https://open.spotify.com/embed/album/1BeVs7rQJ7LRj1sklSXRec?utm_source=generator",
     "artist_origin": "Indianapolis, Indiana"
+  },
+  {
+    "id": "blue-train",
+    "title": "Blue Train",
+    "artist": "John Coltrane",
+    "year": 1958,
+    "cover": "https://jazzjournal.co.uk/wp-content/uploads/2022/08/Coltrane-John-771673-Blue-train.webp",
+    "api_artist_name": "John Coltrane",
+    "tags": "jazz, saxophone, free jazz, bebop, Avant-Garde",
+    "spotify_url": "https://open.spotify.com/embed/album/2Z11cXWEa2qqYQBGkJrCga?utm_source=generator",
+    "artist_origin": "Hamlet, North Carolina"
+  },
+  {
+    "id": "duke-ellington-john-coltrane",
+    "title": "Duke Ellington & John Coltrane",
+    "artist": "Duke Ellington",
+    "year": 1963,
+    "cover": "https://m.media-amazon.com/images/I/61DKwX0WTKL._UF1000,1000_QL80_.jpg",
+    "api_artist_name": "Duke Ellington",
+    "tags": "jazz, swing, Big Band, piano, blues",
+    "spotify_url": "https://open.spotify.com/embed/album/1OvmilWKtrabJGEpPRlgK5?utm_source=generator",
+    "artist_origin": "Washington, D.C."
   }
 ]
