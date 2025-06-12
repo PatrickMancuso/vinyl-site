@@ -97,11 +97,13 @@ header {
   align-items: center;
   overflow: hidden;
   border-radius: 6px;
+    max-height: 80%;
+
 }
 
 .chart-slot img {
   max-width: 100%;
-  max-height: 80%;
+  max-height: 90%;
   border-radius: 4px;
 }
 
