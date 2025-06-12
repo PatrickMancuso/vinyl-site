@@ -2,105 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  
-    <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
-<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-
-  
+  <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Favorites Chart</title>
   <link rel="stylesheet" href="chart.css" />
 </head>
 <body>
-  
-  
-  <div id="vault-header" class="slide-up">
+
+  <!-- HEADER SECTION -->
   <header>
-  <div class="header-left">
-    <input type="text" id="search-input" placeholder="🔍 Search by title or artist...">
-
-
-            <a href="index.html" id="toggle-view" title="Main Menu">Back to Carousel</a>
-
-
-
-
-  </div>
-
-  <div class="header-title">Album Charts</div>
-
-  <div class="header-right">
-      
-
-    
-
-
-
-
-    <div class="filter-group">
-      <select id="genre-select">
-        <option value="all">All Genres</option>
-        <option value="rock">Rock</option>
-        <option value="funk">Funk</option>
-        <option value="soul">Soul</option>
-        <option value="rnb">R&B</option>
-        <option value="jazz">Jazz</option>
-        <option value="electronic">Electronic</option>
-        <option value="ambient">Ambient</option>
-        <option value="psychedelic">Psychedelic</option>
-        <option value="progressive rock">Progressive Rock</option>
-        <option value="new wave">New Wave</option>
-        <option value="pop">Pop</option>
-        <option value="disco">Disco</option>
-        <option value="blues">Blues</option>
-        <option value="folk">Folk</option>
-        <option value="reggae">Reggae</option>
-        <option value="soundtrack">Soundtrack</option>
-        <option value="instrumental">Instrumental</option>
-
-      </select>
-
-      <select id="decade-select">
-        <option value="all">All Decades</option>
-        <option value="1950">1950s</option>
-        <option value="1960">1960s</option>
-        <option value="1970">1970s</option>
-        <option value="1980">1980s</option>
-        <option value="1990">1990s</option>
-        <option value="2000">2000s</option>
-        <option value="2010">2010s</option>
-        <option value="2020">2020s</option>
-      </select>
-    </div>
-    
-    
-    <div id="chart-controls">
-      <label for="chart-size">Chart size:</label>
-      <select id="chart-size">
-        <option value="3">3x3</option>
-        <option value="4">4x4</option>
-        <option value="5">5x5</option>
-                <option value="2">2x2</option>
-                <option value="100">100x100</option>
-
-
-      </select>
-      <button id="download-chart">Download</button>
+    <div class="header-left">
+      <input type="text" id="search-input" placeholder="🔍 Search by title or artist...">
+      <a href="index.html" id="toggle-view" title="Main Menu">Back to Carousel</a>
     </div>
 
-  </div>
-</header>
-</div>
-  
-  
-  <div id="album-selector"></div>
+    <div class="header-title">Album Charts</div>
 
-  <div id="main-content">
-    
-    <div id="chart-grid"></div>
+    <div class="header-right">
+      <div class="filter-group">
+        <select id="genre-select">
+          <option value="all">All Genres</option>
+          <option value="rock">Rock</option>
+          <option value="funk">Funk</option>
+          <option value="soul">Soul</option>
+          <option value="rnb">R&B</option>
+          <option value="jazz">Jazz</option>
+          <option value="electronic">Electronic</option>
+          <option value="ambient">Ambient</option>
+          <option value="psychedelic">Psychedelic</option>
+          <option value="progressive rock">Progressive Rock</option>
+          <option value="new wave">New Wave</option>
+          <option value="pop">Pop</option>
+          <option value="disco">Disco</option>
+          <option value="blues">Blues</option>
+          <option value="folk">Folk</option>
+          <option value="reggae">Reggae</option>
+          <option value="soundtrack">Soundtrack</option>
+          <option value="instrumental">Instrumental</option>
+        </select>
+
+        <select id="decade-select">
+          <option value="all">All Decades</option>
+          <option value="1950">1950s</option>
+          <option value="1960">1960s</option>
+          <option value="1970">1970s</option>
+          <option value="1980">1980s</option>
+          <option value="1990">1990s</option>
+          <option value="2000">2000s</option>
+          <option value="2010">2010s</option>
+          <option value="2020">2020s</option>
+        </select>
+      </div>
+
+      <div id="chart-controls">
+        <label for="chart-size">Chart size:</label>
+        <select id="chart-size">
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          <option value="5">5x5</option>
+          <option value="2">2x2</option>
+        </select>
+        <button id="download-chart">Download</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT WRAPPER FOR ALBUM SELECTOR + CHART -->
+  <div id="content-wrapper">
+    <div id="album-selector"></div>
+
+    <div id="main-content">
+      <div id="chart-grid"></div>
+    </div>
   </div>
 
   <script src="chart.js"></script>
 </body>
-
 </html>
