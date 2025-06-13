@@ -1,4 +1,6 @@
 let albums = [];
+let albumsData = [];
+let filteredAlbums = [];
 
 fetch('records.json')
   .then(res => res.json())
@@ -79,3 +81,42 @@ document.getElementById('download-chart').addEventListener('click', () => {
     link.click();
   });
 });
+
+// ---- FILTERING & INIT ----
+
+function applyFilters() {
+  const genre = document.getElementById("genre-select").value.toLowerCase();
+  const decade = document.getElementById("decade-select")?.value || 'all';
+  const search = document.getElementById("search-input").value.toLowerCase();
+
+  filteredAlbums = albumsData.filter(album => {
+    const isFavorite = localStorage.getItem(`fav-${album.id}`) === 'true';
+    const matchGenre = genre === "all" || (album.tags && album.tags.toLowerCase().includes(genre));
+    const matchSearch = album.title.toLowerCase().includes(search) || album.artist.toLowerCase().includes(search);
+    const matchDecade = decade === "all" || (album.year && Math.floor(album.year / 10) * 10 == parseInt(decade));
+    return matchGenre && matchSearch && matchDecade;
+  });
+
+  currentIndex = 0;
+  renderCarousel(filteredAlbums);
+}
+
+
+
+// ---- EVENT BINDINGS ----
+
+document.getElementById("prevBtn").onclick = prevSlide;
+document.getElementById("nextBtn").onclick = nextSlide;
+document.getElementById("randomBtn").onclick = randomSlide;
+document.getElementById("genre-select").addEventListener("change", applyFilters);
+document.getElementById("decade-select")?.addEventListener("change", applyFilters);
+document.getElementById("search-input").addEventListener("input", applyFilters);
+
+document.getElementById("toggle-view").onclick = () => {
+  const isCarouselVisible = document.getElementById("carousel-view").style.display !== "none";
+  document.getElementById("carousel-view").style.display = isCarouselVisible ? "none" : "block";
+  document.getElementById("list-view").style.display = isCarouselVisible ? "block" : "none";
+  document.getElementById("toggle-view").textContent = isCarouselVisible ? "Carousel" : "List";
+};
+
+
