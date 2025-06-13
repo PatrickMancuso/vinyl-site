@@ -1,6 +1,5 @@
 let albums = [];
 let filteredAlbums = [];
-let favoritesOnly = false;
 
 
 
@@ -11,11 +10,10 @@ function applyFilters() {
 
   filteredAlbums = albums.filter(album => {
     const isFavorite = localStorage.getItem(`fav-${album.id}`) === 'true';
-    const matchFav = !favoritesOnly || isFavorite;
     const matchGenre = genre === "all" || (album.tags && album.tags.toLowerCase().includes(genre));
     const matchSearch = album.title.toLowerCase().includes(search) || album.artist.toLowerCase().includes(search);
     const matchDecade = decade === "all" || (album.year && Math.floor(album.year / 10) * 10 == parseInt(decade));
-    return matchFav && matchGenre && matchSearch && matchDecade;
+    return matchGenre && matchSearch && matchDecade;
   });
 
   populateAlbumSelector(); // only show filtered
@@ -39,21 +37,28 @@ document.getElementById('chart-size').addEventListener('change', e => {
 function populateAlbumSelector() {
   const container = document.getElementById('album-selector');
   container.innerHTML = '';
-filteredAlbums.forEach(album => {
+
+  filteredAlbums.forEach(album => {
     const wrapper = document.createElement('div');
     wrapper.className = 'album-container';
 
-    const div = document.createElement('div');
-    div.className = 'album-thumb';
-    div.style.backgroundImage = `url(${album.cover})`;
-    div.setAttribute('draggable', true);
-    div.dataset.albumId = album.id;
+    const thumbDiv = document.createElement('div');
+    thumbDiv.className = 'album-thumb';
+    thumbDiv.setAttribute('draggable', true);
+    thumbDiv.dataset.albumId = album.id;
+
+    const img = document.createElement('img');
+    img.src = album.cover;
+    img.alt = album.title;
+    img.crossOrigin = "anonymous"; // Required for html2canvas to access images
+
+    thumbDiv.appendChild(img);
 
     const info = document.createElement('div');
     info.className = 'album-info';
     info.innerHTML = `<strong>${album.title}</strong><br>${album.artist}`;
 
-    wrapper.appendChild(div);
+    wrapper.appendChild(thumbDiv);
     wrapper.appendChild(info);
     container.appendChild(wrapper);
   });
@@ -84,7 +89,7 @@ function handleDrop(e) {
 
   const slot = e.currentTarget;
   slot.innerHTML = `
-    <img src="${album.cover}" alt="${album.title}">
+    <img src="${album.cover}" alt="${album.title}" crossorigin="anonymous">
     <div class="caption">${album.title} – ${album.artist}</div>
   `;
 }
