@@ -3,6 +3,7 @@ let filteredAlbums = [];
 let favoritesOnly = false;
 
 
+
 function applyFilters() {
   const genre = document.getElementById("genre-select").value.toLowerCase();
   const decade = document.getElementById("decade-select").value;
