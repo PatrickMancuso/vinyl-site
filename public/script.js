@@ -1,9 +1,3 @@
-import { auth } from './firebase-init.js';
-import {
-  onAuthStateChanged
-} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-
-
 let currentIndex = 3;
 let albumsData = [];
 let filteredAlbums = [];
@@ -158,26 +152,13 @@ function applyFilters() {
   renderCarousel(filteredAlbums);
 }
 
-// ---- LOAD USER'S ALBUMS BASED ON AUTH ----
-
-onAuthStateChanged(auth, user => {
-  if (user) {
-    fetch("records.json")
-      .then(res => res.json())
-      .then(data => {
-        const userAlbums = data.users?.[user.uid] || [];
-        albumsData = userAlbums.sort((a, b) => a.artist.localeCompare(b.artist));
-        filteredAlbums = [...albumsData];
-        renderCarousel(filteredAlbums);
-      });
-  } else {
-    // Optional: Show a message or redirect to login page
-    console.warn("User not logged in. Showing empty state.");
-    albumsData = [];
-    filteredAlbums = [];
+fetch("records.json")
+  .then(res => res.json())
+  .then(data => {
+    albumsData = data.sort((a, b) => a.artist.localeCompare(b.artist));
+    filteredAlbums = [...albumsData];
     renderCarousel(filteredAlbums);
-  }
-});
+  });
 
 // ---- EVENT BINDINGS ----
 
