@@ -204,3 +204,6 @@ window.addEventListener('load', () => {
   const carousel = document.querySelector('.carousel');
   carousel.style.opacity = '1';
 });
+
+
+
