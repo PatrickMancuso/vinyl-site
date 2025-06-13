@@ -96,6 +96,8 @@ document.addEventListener('dragstart', e => {
 });
 
 document.getElementById('download-chart').addEventListener('click', () => {
+  console.log("html2canvas available?", typeof html2canvas);
+
   html2canvas(document.getElementById('chart-grid')).then(canvas => {
     const link = document.createElement('a');
     link.download = 'vinyl-chart.png';
