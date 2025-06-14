@@ -165,6 +165,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   cursor: pointer;
+    transform: translateZ(0); 
+
   transition: background 0.2s, transform 0.2s;
 }
 
