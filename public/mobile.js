@@ -56,7 +56,7 @@ function renderAlbums() {
 
       const div = document.createElement("div");
       div.className = "album " + (isGridView ? "album-grid" : "album-list");
-      div.onclick = () => window.location.href = `detail.html?id=${album.id}`;
+      div.onclick = () => window.location.href = `album.html?id=${album.id}`;
 
       const img = document.createElement("img");
       img.src = album.cover;
