@@ -1,90 +1,90 @@
-let currentIndex = 0;
 let albumsData = [];
-let filteredAlbums = [];
+let isGridView = true;
 let favoritesOnly = false;
 
-function renderCarousel(albums) {
-  const carousel = document.getElementById("carousel");
-  carousel.innerHTML = "";
-
-  albums.forEach((album, index) => {
-    const key = `fav-${album.id}`;
-    const isFavorite = localStorage.getItem(key) === 'true';
-    const star = isFavorite ? '⭐' : '☆';
-
-    const card = document.createElement("div");
-    card.className = "album";
-    card.innerHTML = `
-      <img src="${album.cover}" alt="${album.title}">
-      <div>
-        <strong>${album.title}</strong><br>
-        ${album.artist} (${album.year})<br>
-        <span class="fav-icon">${star}</span>
-      </div>
-    `;
-
-    card.querySelector(".fav-icon").onclick = (e) => {
-      e.stopPropagation();
-      const newState = !isFavorite;
-      localStorage.setItem(key, newState);
-      applyFilters();
-    };
-
-    card.onclick = () => {
-      window.location.href = `album.html?id=${album.id}`;
-    };
-
-    carousel.appendChild(card);
-  });
-}
-
-function applyFilters() {
-  const search = document.getElementById("search-input").value.toLowerCase();
-  const genre = document.getElementById("genre-select").value.toLowerCase();
-  const decade = document.getElementById("decade-select").value;
-
-  filteredAlbums = albumsData.filter(album => {
-    const isFav = localStorage.getItem(`fav-${album.id}`) === 'true';
-    const matchFav = !favoritesOnly || isFav;
-    const matchSearch = album.title.toLowerCase().includes(search) || album.artist.toLowerCase().includes(search);
-    const matchGenre = genre === "all" || (album.tags && album.tags.toLowerCase().includes(genre));
-    const matchDecade = decade === "all" || Math.floor(album.year / 10) * 10 == parseInt(decade);
-    return matchFav && matchSearch && matchGenre && matchDecade;
-  });
-
-renderCarousel(filteredAlbums);
-}
+const container = document.getElementById("album-container");
+const searchInput = document.getElementById("search-input");
+const genreFilter = document.getElementById("genre-filter");
+const decadeFilter = document.getElementById("decade-filter");
+const viewToggle = document.getElementById("view-toggle");
+const favToggle = document.getElementById("fav-filter-toggle");
 
 fetch("records.json")
   .then(res => res.json())
   .then(data => {
     albumsData = data;
-  albumsData = data.sort((a, b) => a.artist.localeCompare(b.artist));
-    applyFilters();
+    renderAlbums();
   });
 
-document.getElementById("search-input").addEventListener("input", applyFilters);
-document.getElementById("genre-select").addEventListener("change", applyFilters);
-document.getElementById("decade-select").addEventListener("change", applyFilters);
+searchInput.addEventListener("input", renderAlbums);
+genreFilter.addEventListener("change", renderAlbums);
+decadeFilter.addEventListener("change", renderAlbums);
 
-document.getElementById("fav-filter-toggle").addEventListener("click", () => {
+favToggle.addEventListener("click", () => {
   favoritesOnly = !favoritesOnly;
-  document.getElementById("fav-filter-toggle").classList.toggle("active", favoritesOnly);
-  applyFilters();
+  favToggle.classList.toggle("active", favoritesOnly);
+  renderAlbums();
 });
 
-document.getElementById("prevBtn").addEventListener("click", () => {
-  if (currentIndex > 0) currentIndex--;
-  scrollCarouselTo(currentIndex);
+viewToggle.addEventListener("click", () => {
+  isGridView = !isGridView;
+  container.className = isGridView ? "album-grid" : "album-list";
+  viewToggle.textContent = isGridView ? "Switch to List View" : "Switch to Grid View";
+  renderAlbums();
 });
 
-document.getElementById("nextBtn").addEventListener("click", () => {
-  if (currentIndex < filteredAlbums.length - 1) currentIndex++;
-  scrollCarouselTo(currentIndex);
-});
+function renderAlbums() {
+  const search = searchInput.value.toLowerCase();
+  const genre = genreFilter.value.toLowerCase();
+  const decade = decadeFilter.value;
+  
+  container.innerHTML = "";
 
-function scrollCarouselTo(index) {
-  const carousel = document.getElementById("carousel");
-  const cards = carousel.querySelectorAll(".album");
-  if (cards[index]) cards[index].scrollIntoView({ behavior: "smooth", inline: "center" });
+  albumsData
+    .filter(album => {
+      const inFav = !favoritesOnly || localStorage.getItem(`fav-${album.id}`) === "true";
+      const matchSearch =
+        album.title.toLowerCase().includes(search) ||
+        album.artist.toLowerCase().includes(search);
+      const matchGenre = !genre || (album.tags && album.tags.toLowerCase().includes(genre));
+      const matchDecade = !decade || Math.floor(album.year / 10) * 10 == decade;
+      return inFav && matchSearch && matchGenre && matchDecade;
+    })
+    .forEach(album => {
+      const favKey = `fav-${album.id}`;
+      const isFav = localStorage.getItem(favKey) === "true";
+
+      const div = document.createElement("div");
+      div.className = "album " + (isGridView ? "album-grid" : "album-list");
+      div.onclick = () => window.location.href = `detail.html?id=${album.id}`;
+
+      const img = document.createElement("img");
+      img.src = album.cover;
+      img.alt = album.title;
+
+      const info = document.createElement("div");
+      info.className = "info";
+
+      const title = document.createElement("div");
+      title.className = "title";
+      title.textContent = album.title;
+
+      const meta = document.createElement("div");
+      meta.className = "meta";
+      meta.textContent = `${album.artist} (${album.year})`;
+
+      const favIcon = document.createElement("div");
+      favIcon.className = "fav-icon";
+      favIcon.textContent = isFav ? "★" : "☆";
+      favIcon.classList.toggle("active", isFav);
+      favIcon.addEventListener("click", e => {
+        e.stopPropagation();
+        localStorage.setItem(favKey, (!isFav).toString());
+        renderAlbums();
+      });
+
+      info.append(title, meta, favIcon);
+      div.append(img, info);
+      container.appendChild(div);
+    });
 }
