@@ -184,8 +184,8 @@ header {
   justify-content: center;
   align-content: center;
   aspect-ratio: 1 / 1;
-  max-height: calc(100vh - 120px); /* adjusts for header + controls */
-  max-width: calc(100vw - 180px);  /* adjusts for sidebar */
+  max-height: calc(100vh - 120px); 
+  max-width: calc(100vw - 180px); 
   margin: auto;
 }
 
