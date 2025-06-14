@@ -1,8 +1,6 @@
 let albums = [];
 let filteredAlbums = [];
 
-
-
 function applyFilters() {
   const genre = document.getElementById("genre-select").value.toLowerCase();
   const decade = document.getElementById("decade-select").value;
@@ -19,7 +17,6 @@ function applyFilters() {
   populateAlbumSelector(); // only show filtered
 }
 
-
 fetch('records.json')
   .then(res => res.json())
   .then(data => {
@@ -29,7 +26,6 @@ fetch('records.json')
     createGrid(3); 
   });
 
-
 document.getElementById('chart-size').addEventListener('change', e => {
   createGrid(parseInt(e.target.value));
 });
@@ -37,7 +33,7 @@ document.getElementById('chart-size').addEventListener('change', e => {
 function populateAlbumSelector() {
   const container = document.getElementById('album-selector');
   container.innerHTML = '';
-filteredAlbums.forEach(album => {
+  filteredAlbums.forEach(album => {
     const wrapper = document.createElement('div');
     wrapper.className = 'album-container';
 
@@ -56,7 +52,6 @@ filteredAlbums.forEach(album => {
     container.appendChild(wrapper);
   });
 }
-
 
 function createGrid(size) {
   const grid = document.getElementById('chart-grid');
@@ -93,21 +88,42 @@ document.addEventListener('dragstart', e => {
   }
 });
 
-document.getElementById('download-chart').addEventListener('click', () => {
-  console.log("html2canvas available?", typeof html2canvas);
+// Wait for all images inside a container to load before continuing
+function waitForImagesToLoad(container) {
+  const images = container.querySelectorAll('img');
+  const promises = [];
 
-  html2canvas(document.getElementById('chart-grid')).then(canvas => {
-    const link = document.createElement('a');
-    link.download = 'vinyl-chart.png';
-    link.href = canvas.toDataURL();
-    link.click();
+  images.forEach(img => {
+    if (!img.complete) {
+      promises.push(new Promise(resolve => {
+        img.onload = img.onerror = () => resolve();
+      }));
+    }
+  });
+
+  return Promise.all(promises);
+}
+
+// Download button handler with image load check and html2canvas options
+document.getElementById('download-chart').addEventListener('click', () => {
+  const chartGrid = document.getElementById('chart-grid');
+
+  waitForImagesToLoad(chartGrid).then(() => {
+    html2canvas(chartGrid, { useCORS: true, backgroundColor: '#fff' }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'vinyl-chart.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }).catch(err => {
+      console.error('html2canvas error:', err);
+      alert('Error capturing chart image.');
+    });
   });
 });
 
 document.getElementById("genre-select").addEventListener("change", applyFilters);
 document.getElementById("decade-select").addEventListener("change", applyFilters);
 document.getElementById("search-input").addEventListener("input", applyFilters);
-document.getElementById("fav-filter-toggle").addEventListener("click", () => {
+document.getElementById("fav-filter-toggle")?.addEventListener("click", () => {
   applyFilters();
 });
-

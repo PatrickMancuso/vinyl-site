@@ -254,3 +254,8 @@ header {
   color: #ccc;
   margin-top: 6px;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
