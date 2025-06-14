@@ -6,14 +6,20 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/pexels-antonh-145707.jpg?v=1749768071057') no-repeat center center fixed;
+  background:#111;
   background-size: cover;
   color: white;
   overflow-x: hidden;
+  padding-top: 200px;
 }
 
 /* HEADER */
 header {
+  position: fixed;        /* Fix it at the top */
+  top: 0;                 /* Align to top */
+  left: 0;                /* Align to left */
+  width: 100%;            /* Full width */
+  z-index: 1000;          /* On top of other content */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +28,7 @@ header {
   color: white;
   padding: 0.5rem;
   text-align: center;
+  box-sizing: border-box; /* Make sure padding doesn’t break width */
 }
 
 .header-title {
@@ -38,20 +45,20 @@ header {
 }
 
 #search-input {
-  padding: 0.4rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 5px;
   border: none;
   font-size: 0.95rem;
-  width: 180px;
+  width: 160px;
 }
 
 #fav-filter-toggle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background: #000;
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.3rem 0.6rem;
   cursor: pointer;
 }
 
@@ -87,8 +94,16 @@ main {
 /* GRID VIEW */
 #album-container.album-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
   gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* Responsive: 2 columns on smaller screens */
+@media (max-width: 768px) {
+  #album-container.album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* LIST VIEW */
@@ -132,12 +147,12 @@ main {
 .album.album-list {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.4rem;
 }
 
 .album.album-list img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: 4px;
   margin-right: 1rem;
@@ -155,7 +170,6 @@ main {
   color: #ccc;
   font-size: 0.85rem;
 }
-
 
 /* TOGGLE BUTTON */
 #view-toggle {
