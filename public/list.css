@@ -6,8 +6,10 @@
 html, body {
   overflow-y: hidden !important;
   height: 100%;
-}
+  scroll-behavior: smooth;
 
+
+}
 
 
 body {

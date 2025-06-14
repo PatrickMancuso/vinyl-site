@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* Header styles */
+
 /* Header styles */
 header {
   position: relative;
@@ -189,7 +189,7 @@ header::before {
 
 }
 
-#music-room {
+#music-chart {
    background: #000000;
   color: white;
   border: 1px solid #ccc;
@@ -207,7 +207,7 @@ header::before {
 }
 
 
-#music-room:hover {
+#music-chart:hover {
   
   background: rgba(255, 255, 255, 0.4);
 }
