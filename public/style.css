@@ -3,6 +3,11 @@
   font-family: 'HooeyDemo';
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
+
+@font-face {
+  font-family: 'Oquelque';
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Quelque%20free.ttf?v=1750109318215') format('opentype');
+}
 /* remove any overflow: hidden on html, body */
 html, body {
   height: 100%;
@@ -80,8 +85,8 @@ header::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(8%);
-  font-size: 3.3rem;
-  font-family: 'HooeyDemo', sans-serif;
+  font-size: 2.7rem;
+  font-family: 'Oquelque', sans-serif;
   margin: 0;
   text-align: center;
   pointer-events: none; /* Optional: ignore clicks so it doesn’t block UI */
