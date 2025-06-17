@@ -205,5 +205,21 @@ window.addEventListener('load', () => {
   carousel.style.opacity = '1';
 });
 
+// Dropdown menu toggle
+const dropdownToggle = document.getElementById("dropdown-toggle");
+const dropdownMenu = document.getElementById("dropdown-menu");
+
+dropdownToggle.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("show");
+});
+
+// Optional: Close dropdown if you click outside it
+window.addEventListener("click", (event) => {
+  if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.classList.remove("show");
+  }
+});
+
+
 
 

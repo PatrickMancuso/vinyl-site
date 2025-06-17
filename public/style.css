@@ -44,7 +44,6 @@ header {
   padding: 1.2rem 0.8rem;
   color: white;
   flex-wrap: wrap;
-  overflow: hidden; /* ensures background doesn't spill */
   z-index: 1;
   background: rgba(1,1,1 , 0.95);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
@@ -279,6 +278,43 @@ header::before {
 
 
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Toggle button (☰) */
+#dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white; /* or inherit from header if preferred */
+}
+
+/* Hidden dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+  min-width: 160px;
+  z-index: 1000;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Shown when .show class is applied */
+.dropdown-content.show {
+  display: flex;
+}
 
 
 
