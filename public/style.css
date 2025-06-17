@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 0.8rem;
+  padding: 1.4rem 0.8rem;
   color: white;
   flex-wrap: wrap;
   z-index: 1;
@@ -334,11 +334,11 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 11px 13px;
+  padding: 11px 11px;
   border-radius: 5px;
   border: none;
   font-size: 0.85rem;
-  width: 205px; /* Make it consistent */
+  width: 200px; /* Make it consistent */
 }
 
 
