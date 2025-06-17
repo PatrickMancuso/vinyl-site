@@ -301,12 +301,11 @@ header::before {
   background-color: #222;
   border: 1px solid #555;
   border-radius: 8px;
-  min-width: 160px;
+  min-width: 50px;
   z-index: 1000;
   padding: 10px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 
-  display: flex;
   flex-direction: column;
   gap: 10px;
 }
@@ -315,7 +314,6 @@ header::before {
 .dropdown-content.show {
   display: flex;
 }
-
 
 
 
