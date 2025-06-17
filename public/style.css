@@ -165,7 +165,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 8px 0px;
+  padding: 7px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -199,7 +199,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 6px 0px;
+  padding: 5px 0px;
   font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
@@ -304,6 +304,7 @@ header::before {
   min-width: 50px;
   z-index: 1000;
   padding: 10px;
+   top: 50px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 
   flex-direction: row;
