@@ -124,7 +124,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 10px 1px;
+  padding: 9px 1px;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
@@ -148,7 +148,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 10px 19px;
+  padding: 9px 19px;
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
@@ -199,7 +199,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 7px 0px;
+  padding: 6px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -298,7 +298,7 @@ header::before {
 
 #search-input {
   top: 10px;
-  padding: 11.5px 13px;
+  padding: 11px 13px;
   border-radius: 5px;
   border: none;
   font-size: 0.85rem;
