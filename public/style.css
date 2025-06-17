@@ -530,27 +530,27 @@ header::before {
   z-index: 5;
 }
 .album.left1 {
-  transform: translate3d(-260px, 0, 0)  scale(0.9);
+  transform: translate3d(-270px, 0, 0)  scale(0.9);
   z-index: 4;
 }
 .album.right1 {
-  transform: translate3d(260px, 0, 0)  scale(0.9);
+  transform: translate3d(270px, 0, 0)  scale(0.9);
   z-index: 4;
 }
 .album.left2 {
-  transform: translate3d(-420px, 0, 0)  scale(0.7);
+  transform: translate3d(-440px, 0, 0)  scale(0.7);
   z-index: 3;
 }
 .album.right2 {
-  transform: translate3d(420px, 0, 0)  scale(0.7);
+  transform: translate3d(440px, 0, 0)  scale(0.7);
   z-index: 3;
 }
 .album.left3 {
-  transform: translate3d(-540px, 0, 0)  scale(0.5);
+  transform: translate3d(-560px, 0, 0)  scale(0.5);
   z-index: 2;
 }
 .album.right3 {
-  transform: translate3d(540px, 0, 0)  scale(0.5);
+  transform: translate3d(560px, 0, 0)  scale(0.5);
   z-index: 2;
 }
 .album.hidden {
@@ -600,11 +600,11 @@ header::before {
 }
 
 .nav-left {
-  margin-left: 9%;
+  margin-left: 7%;
 }
 
 .nav-right {
-  margin-right: 9%;
+  margin-right: 7%;
 }
 
 .nav-btn:hover {
