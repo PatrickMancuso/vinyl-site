@@ -125,8 +125,8 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 10px;
-  font-size: 1.1rem;
+  padding: 9px 10px;
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
