@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3rem 1.5rem;
+  padding: 1.3rem 0.8rem;
   color: white;
   flex-wrap: wrap;
   overflow: hidden; /* ensures background doesn't spill */
@@ -85,8 +85,8 @@ header::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(8%);
-  font-size: 2.7rem;
-  font-family: 'Oquelque', sans-serif;
+  font-size: 3.1rem;
+  font-family: 'HooeyDemo', sans-serif;
   margin: 0;
   text-align: center;
   pointer-events: none; /* Optional: ignore clicks so it doesn’t block UI */
