@@ -297,14 +297,14 @@ header::before {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: -250px;
+  right: -240px;
   background-color: #222;
   border: 1px solid #555;
   border-radius: 8px;
   min-width: 50px;
   z-index: 1000;
   padding: 10px;
-   top: 50px;
+   top: 67px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 
   flex-direction: row;
@@ -333,14 +333,14 @@ header::before {
 
 
 #search-input {
-  padding: 11px 11px 11px 36px; /* add left padding for the icon */
+  padding: 11px 11px 11px 36px; 
   border-radius: 5px;
   border: none;
   font-size: 0.85rem;
   width: 200px;
   
   background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat left center;
-  background-size: 25px 25px; /* adjust size to fit nicely */
+  background-size: 25px 25px; 
 }
 
 

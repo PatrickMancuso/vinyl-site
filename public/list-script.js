@@ -100,14 +100,3 @@ fetch("records.json")
     document.getElementById("decade-select").addEventListener("change", applyFilters);
   });
 
-// Vinyl spin logic — after everything (including images) is loaded
-window.onload = () => {
-  document.querySelectorAll('.spinnable-vinyl').forEach(vinyl => {
-    vinyl.addEventListener('click', () => {
-      vinyl.classList.remove('spin');
-      void vinyl.offsetWidth;
-      vinyl.classList.add('spin');
-      setTimeout(() => vinyl.classList.remove('spin'), 5000);
-    });
-  });
-};

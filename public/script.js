@@ -160,6 +160,7 @@ fetch("records.json")
     renderCarousel(filteredAlbums);
   });
 
+
 // ---- EVENT BINDINGS ----
 
 document.getElementById("prevBtn").onclick = prevSlide;
