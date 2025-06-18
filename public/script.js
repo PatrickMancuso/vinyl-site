@@ -224,3 +224,24 @@ window.addEventListener("click", (event) => {
 
 
 
+// ---- NEW: Search icon toggle dropdown ----
+
+const searchToggle = document.getElementById("search-toggle");
+const searchDropdown = document.getElementById("search-dropdown");
+
+searchToggle.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent immediate outside-close
+  searchDropdown.classList.toggle("show");
+  if (searchDropdown.classList.contains("show")) {
+    setTimeout(() => {
+      document.getElementById("search-input").focus();
+    }, 50);
+  }
+});
+
+// Close if clicking outside
+window.addEventListener("click", (e) => {
+  if (!searchDropdown.contains(e.target) && !searchToggle.contains(e.target)) {
+    searchDropdown.classList.remove("show");
+  }
+});

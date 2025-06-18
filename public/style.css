@@ -332,15 +332,46 @@ header::before {
 }
 
 
+/* Search icon button */
+#search-toggle {
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat center;
+  background-size: 25px 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Wrapper to hold icon + dropdown side-by-side */
+#search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown container - now right of the icon */
+#search-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;         /* align with top of icon */
+  left: 50px;     /* position to the right of the icon */
+  z-index: 100;
+}
+
+/* Show dropdown when active */
+#search-dropdown.show {
+  display: block;
+}
+
+/* Style the actual input */
 #search-input {
-  padding: 11px 11px 11px 36px; 
+  padding: 11px 11px 11px 10px;
   border-radius: 5px;
   border: none;
   font-size: 0.85rem;
   width: 200px;
-  
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat left center;
-  background-size: 25px 25px; 
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
 
