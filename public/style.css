@@ -144,19 +144,18 @@ header::before {
 
 
 #add-album {
-  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641') no-repeat 12px center;
-  background-size: 27px 27px;        /* Increased from 18px */
+  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641') no-repeat 8px center; /* less offset */
+  background-size: 27px 27px;
   color: white;
   border-radius: 6px;
-  padding: 15px 16px 15px 46px;        /* Increased left padding to fit larger icon */
+  padding: 15px 16px 15px 30px; /* smaller left padding */
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   min-width: 100px;
-      margin-top: 2px; /* adjust value as needed */
-left: 5px;
+  margin-top: 2px;
 }
 
 
