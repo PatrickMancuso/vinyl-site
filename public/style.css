@@ -288,7 +288,7 @@ header::before {
 #dropdown-toggle {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   cursor: pointer;
   color: white; /* or inherit from header if preferred */
 }
@@ -297,7 +297,7 @@ header::before {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: -15px;
+  right: -10px;
   background-color: #222;
   border: 1px solid #555;
   border-radius: 8px;
