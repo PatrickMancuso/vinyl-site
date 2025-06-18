@@ -144,21 +144,22 @@ header::before {
 
 
 #add-album {
-   background: #000;
+  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641') no-repeat 12px center;
+  background-size: 27px 27px;        /* Increased from 18px */
   color: white;
-  border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 9px 11px;
+  padding: 15px 16px 15px 46px;        /* Increased left padding to fit larger icon */
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  width: auto;
-  min-width: 77px;
-    transition: background 0.3s ease, color 0.3s ease;  
-
+  min-width: 100px;
+      margin-top: 2px; /* adjust value as needed */
+left: 5px;
 }
+
+
 
 #album-stats {
    background: #000000;
@@ -255,10 +256,7 @@ header::before {
   background: rgba(255, 255, 255, 0.4);
 }
 
-#add-album:hover {
-  
-  background: rgba(255, 255, 255, 0.4);
-}
+
 
 #album-stats:hover {
   background: rgba(255, 255, 255, 0.4);
@@ -341,6 +339,8 @@ header::before {
   border: none;
   cursor: pointer;
   position: relative;
+    margin-top: 2px; /* adjust value as needed */
+
 }
 
 /* Wrapper to hold icon + dropdown side-by-side */
@@ -357,6 +357,8 @@ header::before {
   top: 0;         /* align with top of icon */
   left: 50px;     /* position to the right of the icon */
   z-index: 100;
+  margin-top: 2px; /* adjust value as needed */
+
 }
 
 /* Show dropdown when active */

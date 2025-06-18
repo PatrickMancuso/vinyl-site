@@ -239,9 +239,3 @@ searchToggle.addEventListener("click", (e) => {
   }
 });
 
-// Close if clicking outside
-window.addEventListener("click", (e) => {
-  if (!searchDropdown.contains(e.target) && !searchToggle.contains(e.target)) {
-    searchDropdown.classList.remove("show");
-  }
-});
