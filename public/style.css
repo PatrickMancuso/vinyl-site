@@ -199,7 +199,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 5px 0px;
+  padding: 6px 0px;
   font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
@@ -290,23 +290,23 @@ header::before {
   color: white; /* or inherit from header if preferred */
 }
 
-/* Hidden dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
-  right: -240px;
+  top: 100%;
+  margin-top: 0px;
+  right: 0; /* aligns with right edge of button */
   background-color: #222;
   border: 1px solid #555;
   border-radius: 8px;
-  min-width: 50px;
+  min-width: 45px;
   z-index: 1000;
-  padding: 10px;
-  top: 67px;
+  padding: 7px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
+  left: -10px;
 
-  /* Optional: for smooth fade in/out */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
