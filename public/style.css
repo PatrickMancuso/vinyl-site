@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.4rem 0.8rem;
+  padding: 1rem 0.8rem;
   color: white;
   flex-wrap: wrap;
   z-index: 1;
@@ -120,26 +120,17 @@ header::before {
 }
 
 #toggle-view {
-  background: #000;
-  color: white;
-  border: 1px solid #ccc;
+  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1750310347769') no-repeat center;
+  background-size: 40px 40px; /* adjust size */
   border-radius: 6px;
-  padding: 9px 10px;
-  font-size: 1rem;
-  text-align: center;
+  padding: 10px; 
+  width: 40px;  
+  height: 40px;  
+  text-indent: -9999px; 
+  overflow: hidden;
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  min-width: 70px;
-    transition: background 0.3s ease, color 0.3s ease;  
+    margin-top: 3px;
 
-  
-}
-
-
-#toggle-view:hover {
-  background: rgba(255, 255, 255, 0.4);
 }
 
 
@@ -165,7 +156,7 @@ header::before {
   color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 7px 0px;
+  padding: 8px 0px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;

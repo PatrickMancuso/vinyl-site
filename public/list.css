@@ -88,7 +88,7 @@ body {
   color: white;
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 8px 15px;
+  padding: 9px 15px;
   font-size: 1.1rem;
   text-align: center;
   cursor: pointer;
@@ -109,7 +109,7 @@ body {
 #decade-select,
 #search-input
 {
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-radius: 5px;
   font-size: 0.95rem;
   border: none;
