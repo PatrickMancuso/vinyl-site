@@ -121,7 +121,7 @@ header::before {
 
 #toggle-view {
   background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1750310347769') no-repeat center;
-  background-size: 40px 40px; /* adjust size */
+  background-size: 38px 38px; /* adjust size */
   border-radius: 6px;
   padding: 10px; 
   width: 40px;  
@@ -506,7 +506,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 650px; /* match carousel height */
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 0;
   transform: translateY(65px);
 }
