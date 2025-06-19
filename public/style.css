@@ -24,7 +24,7 @@ body.no-scroll {
 body {
   margin: 0;
   font-family: 'Garamond', serif;  /* Default font */
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinilovyi-proigryvatel-vinil-proigryvatel-plastinok.jpg?v=1749767284426') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/lack-music-studio-technics-wallpaper-preview.jpg?v=1749769044266') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -45,8 +45,8 @@ header {
   color: white;
   flex-wrap: wrap;
   z-index: 1;
-  background: rgba(1,1,1 , 0.95);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  background: rgba(1,1,1 , 0);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
   
 }
 
