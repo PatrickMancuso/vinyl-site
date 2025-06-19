@@ -337,27 +337,19 @@ header::before {
   height: 40px;
   border: none;
   cursor: pointer;
-  position: relative;
-    margin-top: 2px; /* adjust value as needed */
-
+  margin-top: 2px; /* Optional tweak */
 }
 
 /* Wrapper to hold icon + dropdown side-by-side */
 #search-container {
-  position: relative;
   display: flex;
   align-items: center;
+  gap: 0.5rem; /* Space between icon and input */
 }
 
-/* Dropdown container - now right of the icon */
+/* Dropdown container - inline with button */
 #search-dropdown {
   display: none;
-  position: absolute;
-  top: 0;         /* align with top of icon */
-  left: 50px;     /* position to the right of the icon */
-  z-index: 100;
-  margin-top: 2px; /* adjust value as needed */
-
 }
 
 /* Show dropdown when active */
@@ -373,8 +365,9 @@ header::before {
   font-size: 0.85rem;
   width: 200px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  background-color: white;
+  color: black;
 }
-
 
 .fav-icon {
   color: #aaa;
