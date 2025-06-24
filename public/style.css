@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'GeneralSans-Light';
-  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/GeneralSans-Medium.otf?v=1750795553433') format('opentype');
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Sentient-Light.otf?v=1750800335190') format('opentype');
 }
 
 /* remove any overflow: hidden on html, body */
@@ -117,10 +117,10 @@ header::before {
   -webkit-appearance: none;
   -moz-appearance: none;
   
-  padding: 11px 39px 12px 7px;
-  border-radius: 6px;
+  padding: 11px 35px 12px 7px;
+  border-radius: 7px;
   border: 1px solid #ccc;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-family: 'GeneralSans-Light', sans-serif;
   background-color: #fff;
   color: #111;
