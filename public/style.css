@@ -106,7 +106,7 @@ header::before {
   -webkit-appearance: none;
   -moz-appearance: none;
   
-  padding: 10px 35px 10px 14px;
+  padding: 11px 37px 12px 14px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 0.85rem;
@@ -177,7 +177,7 @@ header::before {
 #dropdown-toggle {
   background-color: black;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   background: none;
 }
 
@@ -314,14 +314,7 @@ header::before {
   display: inline-block;
 }
 
-/* Toggle button (☰) */
-#dropdown-toggle {
-  background: none;
-  border: none;
-  font-size: 1.9rem;
-  cursor: pointer;
-  color: white; /* or inherit from header if preferred */
-}
+
 
 .dropdown-content {
   display: none;
