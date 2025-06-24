@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'GeneralSans-Light';
-  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/GeneralSans-Light.otf?v=1750795544472') format('opentype');
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/GeneralSans-Medium.otf?v=1750795553433') format('opentype');
 }
 
 /* remove any overflow: hidden on html, body */
@@ -117,10 +117,10 @@ header::before {
   -webkit-appearance: none;
   -moz-appearance: none;
   
-  padding: 11px 37px 12px 14px;
+  padding: 11px 37px 10px 7px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'GeneralSans-Light', sans-serif;
   background-color: #fff;
   color: #111;
@@ -457,7 +457,7 @@ header::before {
   align-items: center;
   padding: 15px 30px;
   font-size: 0.9rem;
-  font-family: 'Garamond', monospace;
+  font-family: 'GeneralSans-Light', monospace;
   margin-top: auto; /* ensures it stays at the bottom in flex layout */
 }
 
