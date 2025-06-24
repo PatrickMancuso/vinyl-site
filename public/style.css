@@ -14,6 +14,10 @@
   src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Gambarino-Regular.ttf?v=1750794950114') format('opentype');
 }
 
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/GeneralSans-Light.otf?v=1750795544472') format('opentype');
+}
 
 /* remove any overflow: hidden on html, body */
 html, body {
@@ -117,7 +121,7 @@ header::before {
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  font-family: 'Garamond', sans-serif;
+  font-family: 'GeneralSans-Light', sans-serif;
   background-color: #fff;
   color: #111;
   cursor: pointer;
