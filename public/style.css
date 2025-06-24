@@ -139,6 +139,21 @@ header::before {
   margin-top: 1rem;
 }
 
+.header-icon {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
 #toggle-view {
   background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1750310347769') no-repeat center;
   background-size: 38px 38px; /* adjust size */
