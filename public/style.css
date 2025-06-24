@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0.8rem;
+  padding: 1.5rem 0.8rem;
   color: white;
   flex-wrap: wrap;
   z-index: 1;
@@ -154,63 +154,34 @@ header::before {
   flex-shrink: 0;
 }
 
-#toggle-view {
-  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1750310347769') no-repeat center;
-  background-size: 38px 38px; /* adjust size */
-  border-radius: 6px;
-  padding: 10px; 
-  width: 40px;  
-  height: 40px;  
-  text-indent: -9999px; 
-  overflow: hidden;
-  cursor: pointer;
-    margin-top: 3px;
-
-}
-
-
-#add-album {
-  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641') no-repeat 8px center; /* less offset */
-  background-size: 27px 27px;
-  color: white;
-  border-radius: 6px;
-  padding: 15px 5px 15px 15px; /* smaller left padding */
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 15px;
-  margin-top: 2px;
+#search-toggle {
+  background-image: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921');
+  background-size: 25px 25px;
 }
 
 #music-room {
-  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/sahreicon.svg?v=1750779557577') no-repeat 8px center; /* less offset */
+  background-image: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/sahreicon.svg?v=1750779557577');
   background-size: 32px 32px;
+}
+
+#add-album {
+  background-image: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641');
+  background-size: 27px 27px;
+}
+
+#toggle-view {
+  background-image: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1750310347769');
+  background-size: 38px 38px;
+}
+
+#dropdown-toggle {
+  background-color: black;
   color: white;
-  border-radius: 6px;
-  padding: 15px 5px 25px 15px; /* smaller left padding */
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  min-width: 15px;
-  margin-top: 2px;
-
+  font-size: 1.5rem;
+  background: none;
 }
 
 
-/* Search icon button */
-#search-toggle {
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat center;
-  background-size: 25px 25px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  margin-top: 2px; /* Optional tweak */
-}
 
 /* Wrapper to hold icon + dropdown side-by-side */
 #search-container {
