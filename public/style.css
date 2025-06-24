@@ -169,12 +169,12 @@ header::before {
   margin-top: 2px;
 }
 
-#add-album {
-  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/add%20icon.svg?v=1750266533641') no-repeat 8px center; /* less offset */
-  background-size: 27px 27px;
+#music-room {
+  background: #000 url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/sahreicon.svg?v=1750779557577') no-repeat 8px center; /* less offset */
+  background-size: 32px 32px;
   color: white;
   border-radius: 6px;
-  padding: 15px 5px 15px 15px; /* smaller left padding */
+  padding: 15px 5px 25px 15px; /* smaller left padding */
   font-size: 1rem;
   text-align: center;
   cursor: pointer;
@@ -182,7 +182,50 @@ header::before {
   display: inline-block;
   min-width: 15px;
   margin-top: 2px;
+
 }
+
+
+/* Search icon button */
+#search-toggle {
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat center;
+  background-size: 25px 25px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 2px; /* Optional tweak */
+}
+
+/* Wrapper to hold icon + dropdown side-by-side */
+#search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and input */
+}
+
+/* Dropdown container - inline with button */
+#search-dropdown {
+  display: none;
+}
+
+/* Show dropdown when active */
+#search-dropdown.show {
+  display: block;
+}
+
+/* Style the actual input */
+#search-input {
+  padding: 11px 11px 11px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.85rem;
+  width: 200px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  background-color: white;
+  color: black;
+}
+
 
 #album-stats {
    background: #000000;
@@ -218,28 +261,8 @@ header::before {
 
 }
 
-#music-room {
-   background: #000000;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 6px 0px;
-  font-size: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  width: auto;
-  min-width:43px;
-    transition: background 0.3s ease, color 0.3s ease;  
-
-}
 
 
-#music-room:hover {
-  
-  background: rgba(255, 255, 255, 0.4);
-}
 
 #randomBtn {
   background: #000000;
@@ -365,45 +388,6 @@ header::before {
 }
 
 
-/* Search icon button */
-#search-toggle {
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921') no-repeat center;
-  background-size: 25px 25px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  margin-top: 2px; /* Optional tweak */
-}
-
-/* Wrapper to hold icon + dropdown side-by-side */
-#search-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* Space between icon and input */
-}
-
-/* Dropdown container - inline with button */
-#search-dropdown {
-  display: none;
-}
-
-/* Show dropdown when active */
-#search-dropdown.show {
-  display: block;
-}
-
-/* Style the actual input */
-#search-input {
-  padding: 11px 11px 11px 10px;
-  border-radius: 5px;
-  border: none;
-  font-size: 0.85rem;
-  width: 200px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
-  background-color: white;
-  color: black;
-}
 
 .fav-icon {
   color: #aaa;
