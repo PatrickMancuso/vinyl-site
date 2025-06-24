@@ -113,23 +113,13 @@ header::before {
 /* Unified select styles */
 #genre-select,
 #decade-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  
-  padding: 11px 35px 12px 7px;
-  border-radius: 7px;
-  border: 1px solid #ccc;
-  font-size: 0.95rem;
-  font-family: 'GeneralSans-Light', sans-serif;
-  background-color: #fff;
-  color: #111;
+   padding: 11px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8rem;
+  background: #fff;
+  color: #000;
   cursor: pointer;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="%23111" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 12px;
-  transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
 #genre-select:hover,

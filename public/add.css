@@ -4,6 +4,10 @@
   src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
 }
 
+@font-face {
+  font-family: 'Gambarino-Regular';
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Gambarino-Regular.ttf?v=1750794950114') format('opentype');
+}
 /* Global body styles */
 body {
   margin: 0;
@@ -20,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.65rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   color: white;
   flex-wrap: wrap;
 }
@@ -44,9 +48,8 @@ header {
 .header-title {
   flex: 1;
   text-align: center;
-  font-size: 3rem;
-  font-family: 'HooeyDemo', sans-serif;
-  transform: translateY(10%);
+  font-size: 2.5rem;
+  font-family: 'Gambarino-Regular', sans-serif;
   margin: 0;
 }
 
