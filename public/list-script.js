@@ -100,3 +100,20 @@ fetch("records.json")
     document.getElementById("decade-select").addEventListener("change", applyFilters);
   });
 
+
+// Layout Toggle Logic
+const layoutToggleBtn = document.getElementById("layout-toggle");
+const layoutIcon = document.getElementById("layout-icon");
+const listContainer = document.getElementById("list-container");
+
+// Your list icon (already uploaded)
+const listIconURL = "https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/list%20icon.svg?v=1749915539078";
+
+// Grid icon (inline base64 SVG)
+const gridIconURL = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M3 3h6v6H3V3zm6 6h6v6h-6V9zm6 6h6v6h-6v-6zM3 9h6v6H3V9zm0 6h6v6H3v-6zm12-6h6V3h-6v6z'/%3E%3C/svg%3E";
+
+layoutToggleBtn.addEventListener("click", () => {
+  const isCompact = listContainer.classList.toggle("compact-view");
+  layoutIcon.src = isCompact ? gridIconURL : listIconURL;
+});
+
