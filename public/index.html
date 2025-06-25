@@ -7,6 +7,8 @@
   <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
   
   <link rel="stylesheet" href="style.css" />
+  <script type="module" src="/firebase-login.js"></script>
+
   
   <script>
   if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
@@ -47,7 +49,12 @@
 
  <div class="header-right">
 
-
+<!-- Firebase Login UI -->
+<div id="auth-ui" style="display: flex; gap: 10px; align-items: center;">
+  <button id="login-btn">Sign in</button>
+  <button id="logout-btn" style="display: none;">Sign out</button>
+  <span id="user-info" style="color: white; font-size: 0.8rem;"></span>
+</div>
 
 
     <div class="filter-group">
