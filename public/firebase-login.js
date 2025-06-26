@@ -1,4 +1,3 @@
-// firebase-login.js
 import { auth, provider } from './firebase-init.js';
 import {
   signInWithPopup,
@@ -6,12 +5,12 @@ import {
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-// Use existing buttons already in HTML
+let currentUser = null;
+
 const loginBtn = document.getElementById('login-btn');
 const logoutBtn = document.getElementById('logout-btn');
 const userInfo = document.getElementById('user-info');
 
-// Sign in
 loginBtn.addEventListener("click", async () => {
   try {
     await signInWithPopup(auth, provider);
@@ -20,7 +19,6 @@ loginBtn.addEventListener("click", async () => {
   }
 });
 
-// Sign out
 logoutBtn.addEventListener("click", async () => {
   try {
     await signOut(auth);
@@ -29,8 +27,8 @@ logoutBtn.addEventListener("click", async () => {
   }
 });
 
-// Update UI when user logs in/out
 onAuthStateChanged(auth, (user) => {
+  currentUser = user;
   if (user) {
     loginBtn.style.display = "none";
     logoutBtn.style.display = "inline-block";
@@ -43,3 +41,5 @@ onAuthStateChanged(auth, (user) => {
     document.body.dataset.uid = "";
   }
 });
+
+export { currentUser }; // Optional: use if needed elsewhere

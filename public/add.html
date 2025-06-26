@@ -131,38 +131,37 @@
 }
 
 
-    async function submitAlbum() {
-      const result = document.getElementById('result').textContent;
-      if (!result) {
-        alert("Please generate the album entry first!");
-        return;
-      }
+    import { db } from './firebase-init.js';
+import { collection, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { auth } from './firebase-init.js';
 
-      try {
-        const response = await fetch("/add-album", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: result,
-        });
+async function submitAlbum() {
+  const result = document.getElementById('result').textContent;
+  if (!result) {
+    alert("Please generate the album entry first!");
+    return;
+  }
 
-        if (response.ok) {
-          alert("Album added successfully!");
-          document.getElementById("title").value = "";
-          document.getElementById("artist").value = "";
-          document.getElementById("year").value = "";
-          document.getElementById("image").value = "";
-          document.getElementById("spotify").value = "";
-          document.getElementById("result").textContent = "";
-        } else {
-          alert("Failed to save album.");
-        }
-      } catch (err) {
-        console.error(err);
-        alert("Error submitting album.");
-      }
-    }
+  const album = JSON.parse(result);
+  const user = auth.currentUser;
+
+  if (!user) {
+    alert("You must be signed in to add an album.");
+    return;
+  }
+
+  try {
+    const userAlbumsRef = doc(db, `users/${user.uid}/albums/${album.id}`);
+    await setDoc(userAlbumsRef, album);
+
+    alert("Album added to your collection!");
+    // Optionally clear form
+  } catch (err) {
+    console.error("Error writing to Firestore:", err);
+    alert("Failed to save album.");
+  }
+}
+
   </script>
 
 </body>
