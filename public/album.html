@@ -7,7 +7,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>Album Details</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     
     @font-face {
@@ -113,18 +112,23 @@
         return;
       }
 
-      document.getElementById('album-container').innerHTML = `
-        <a href="/" class="back-link">&larr; Back to Dashboard</a>
-        <img src="${album.cover}" alt="${album.title} album cover">
-        <h2>${album.title}</h2>
-        <h3>${album.artist} (${album.year})</h3>
-        ${album.spotify_url ? `
-          <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media" width="100%" height="380" style="border-radius:12px; margin-top:40px; margin-bottom:40px;"></iframe>
-        ` : ''}
-        <button id="delete-btn" onclick="deleteAlbum('${album.id}')">Delete Album</button>
-        <div id="artist-info"><p>Loading artist info...</p></div>
-      `;
-
+     document.getElementById('album-container').innerHTML = `
+  <a href="/" class="back-link">&larr; Back to Dashboard</a>
+  <div class="album-flex">
+    <div class="album-left">
+      <img src="${album.cover}" alt="${album.title} album cover">
+    </div>
+    <div class="album-right">
+      <h2>${album.title}</h2>
+      <h3>${album.artist} (${album.year})</h3>
+      ${album.spotify_url ? `
+        <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      ` : ''}
+      <button id="delete-btn" onclick="deleteAlbum('${album.id}')">Delete Album</button>
+      <div id="artist-info"><p>Loading artist info...</p></div>
+    </div>
+  </div>
+`;
       const apiKey = "e530c016b028fa384b92183344f7526e";
       fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${encodeURIComponent(album.api_artist_name)}&api_key=${apiKey}&format=json`)
         .then(res => res.json())
