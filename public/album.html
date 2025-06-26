@@ -15,12 +15,26 @@
 }
 
     
-    html, 
-    
-    body {
-        overflow-x: hidden;
-
+    /* remove any overflow: hidden on html, body */
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Class to disable scrolling */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Global body styles */
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;  /* Default font */
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/lack-music-studio-technics-wallpaper-preview.jpg?v=1749769044266') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
 }
 
     .header-title {
@@ -35,7 +49,7 @@
 
     
     .detail-container {
-      max-width: 600px;
+      max-width: 1200px;
       margin: 40px auto;
       padding: 20px;
       background-color: #1a1a1a;
@@ -85,10 +99,66 @@
       color: #eee;
     }
     
+    
+    .album-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.album-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.album-left img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+    
+    .cover-and-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-title {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+    
+    .album-meta {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+.album-right {
+  flex: 1;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.spotify-embed {
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+    
   </style>
 </head>
 <body>
-  <header>Album Details</header>
   
 
   
@@ -116,11 +186,13 @@
   <a href="/" class="back-link">&larr; Back to Dashboard</a>
   <div class="album-flex">
     <div class="album-left">
-      <img src="${album.cover}" alt="${album.title} album cover">
+      <div class="cover-and-title">
+        <img src="${album.cover}" alt="${album.title} album cover">
+        <h2 class="album-title">${album.title}</h2>
+        <h3 class="album-meta">${album.artist} (${album.year})</h3>
+      </div>
     </div>
     <div class="album-right">
-      <h2>${album.title}</h2>
-      <h3>${album.artist} (${album.year})</h3>
       ${album.spotify_url ? `
         <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       ` : ''}
