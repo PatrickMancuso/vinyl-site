@@ -154,6 +154,27 @@ body {
   border-radius: 12px;
   margin: 40px 0;
 }
+    
+    #toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 9px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
 
     
   </style>
@@ -163,7 +184,6 @@ body {
 
   
   <div class="detail-container" id="album-container">
-    <a href="/" class="back-link">&larr; Back to Dashboard</a>
     
     
     <p>Loading album...</p>
@@ -183,7 +203,7 @@ body {
       }
 
      document.getElementById('album-container').innerHTML = `
-  <a href="/" class="back-link">&larr; Back to Dashboard</a>
+      <a href="index.html" id="toggle-view">← Back to Carousel</a>
   <div class="album-flex">
     <div class="album-left">
       <div class="cover-and-title">
