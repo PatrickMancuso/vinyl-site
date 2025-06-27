@@ -10,32 +10,36 @@
   <title>Album Details</title>
   <style>
 
-    @font-face {
-  font-family: 'HooeyDemo';
-  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
+  
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-y: scroll; /* Still allows scrolling */
 }
 
-    
-    /* remove any overflow: hidden on html, body */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
-/* Class to disable scrolling */
-body.no-scroll {
-  overflow: hidden;
-}
 
 /* Global body styles */
 body {
   margin: 0;
-  font-family: 'Garamond', serif;  /* Default font */
+  height: 100%;
+  font-family: 'Garamond', serif;
   background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/lack-music-studio-technics-wallpaper-preview.jpg?v=1749769044266') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
-  overflow-x: hidden;
+
+  /* Scrollbar hiding styles */
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+  overflow-x: hidden;        /* Hide horizontal */
+}
+
+/* Hide scrollbar on WebKit (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
 }
 
     .header-title {
@@ -73,7 +77,6 @@ body {
   background-color: red;
   color: white;
   padding: 10px;
-  margin-top: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -180,6 +183,8 @@ body {
 #toggle-view:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+    
+    
 
     
   </style>
