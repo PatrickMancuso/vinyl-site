@@ -221,7 +221,7 @@ header::before {
   color: white;
   font-size: 1.8rem;
   background: none;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 
 }
 
