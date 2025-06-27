@@ -48,15 +48,21 @@ body {
   user-select: none;
 }
 
-    
     .detail-container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    }
+  position: relative; /* Needed for absolute children */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
     .detail-container img {
       width: 100%;
       border-radius: 8px;
@@ -67,7 +73,7 @@ body {
   background-color: red;
   color: white;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -149,7 +155,7 @@ body {
 
 .spotify-embed {
   width: 100%;
-  height: 380px;
+  height: 420px;
   border-radius: 12px;
   margin: 40px 0;
 }
@@ -203,6 +209,9 @@ body {
 
      document.getElementById('album-container').innerHTML = `
       <a href="index.html" id="toggle-view">← Back to Carousel</a>
+<div class="top-right">
+  <button id="delete-btn" onclick="deleteAlbum('${album.id}')">Delete Album</button>
+</div>
   <div class="album-flex">
     <div class="album-left">
       <div class="cover-and-title">
@@ -212,10 +221,10 @@ body {
       </div>
     </div>
     <div class="album-right">
+
       ${album.spotify_url ? `
         <iframe class="spotify-embed" src="${album.spotify_url}" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       ` : ''}
-      <button id="delete-btn" onclick="deleteAlbum('${album.id}')">Delete Album</button>
       <div id="artist-info"><p>Loading artist info...</p></div>
     </div>
   </div>
