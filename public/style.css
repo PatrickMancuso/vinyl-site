@@ -755,7 +755,7 @@ header::before {
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(0.95);
+    transform: translate3d(0, 0, 0) scale(0.85);
   }
 
   .nav-btn {
@@ -782,7 +782,7 @@ header::before {
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(0.9);
+    transform: translate3d(0, 0, 0) scale(0.75);
   }
 
   .nav-btn {
