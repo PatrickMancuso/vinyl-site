@@ -12,7 +12,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;  /* Default font */
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/musical-turntable-with-vinyl-record.jpg?v=1751319837693') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/lack-music-studio-technics-wallpaper-preview.jpg?v=1749769044266') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -24,7 +24,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   color: white;
   flex-wrap: wrap;
 }
