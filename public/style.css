@@ -34,7 +34,7 @@ body.no-scroll {
 body {
   margin: 0;
   font-family: 'Garamond', serif;  /* Default font */
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/lack-music-studio-technics-wallpaper-preview.jpg?v=1749769044266') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/553707.jpg?v=1751319526085') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   overflow-x: hidden;
@@ -54,7 +54,7 @@ header {
   color: white;
   flex-wrap: wrap;
   z-index: 1;
-  background: rgba(1,1,1 , 0);
+  background: rgba(1,1,1 , 0.95);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
 }
 
@@ -215,7 +215,6 @@ header::before {
   display: inline-block;
   width: 44px;
   height: 44px;
-  background-color: black;
   border: none;
   border-radius: 6px;
   background-repeat: no-repeat;
@@ -229,6 +228,7 @@ header::before {
 #search-toggle {
   background-image: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/search%20icon%20fix.svg?v=1750263991921');
   background-size: 25px 25px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #music-room {
