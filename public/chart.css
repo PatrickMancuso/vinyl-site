@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Garamond', serif;
-  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/wp3140313.jpg?v=1749768311319') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/wallpapersden.com_the-sound-of-music-vinyl-player_1920x1200.jpg?v=1749768439655') no-repeat center center fixed;
   background-size: cover;
   color: white;
   height: 100vh;
@@ -45,7 +45,7 @@ body {
 header {
   width: 100%;
   padding: 1.5rem 1.5rem;
-  background: rgba(0, 0, 0, 0.65); 
+  background: rgba(0, 0, 0, 0.95); 
   color: white;
   display: flex;
   flex-wrap: wrap;
