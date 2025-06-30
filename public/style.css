@@ -96,7 +96,6 @@ header::before {
   margin: 0;
   text-align: center;
   flex-shrink: 0;
-  transform: translateX(-5px);
 }
 
 /* Sticky footer compatibility */
@@ -686,49 +685,25 @@ header::before {
 }
 
 
+/* Responsive Styling */
+/* Large desktops (min-width: 1600px) */
 @media (min-width: 1600px) {
   body {
-    font-size: 18px; /* increase base font size on very wide screens */
+    font-size: 16px; /* Slightly larger base font */
   }
 
   .container {
-    max-width: 1400px;
-    padding: 0 3rem;
-  }
-
-  .album {
-    width: 600px;
-    height: 600px;
-  }
-
-  .album.main {
-    transform: translate3d(0, 0, 0) scale(1.2);
-  }
-
-  .nav-btn {
-    width: 50px;
-    height: 55px;
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 0 2.5rem;
   }
 
   .album {
-    width: 480px;
-    height: 480px;
+    width: 520px;
+    height: 520px;
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(1.15);
+    transform: translate3d(0, 0, 0) scale(1.1);
   }
 
   .nav-btn {
@@ -738,21 +713,24 @@ header::before {
   }
 }
 
+/* Large desktops (1200px - 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  body {
+    font-size: 15px;
+  }
 
-
-@media (min-width: 992px) and (max-width: 1199px) {
   .container {
-    max-width: 900px;
+    max-width: 1000px;
     padding: 0 2rem;
   }
 
   .album {
-    width: 400px;
-    height: 400px;
+    width: 460px;
+    height: 460px;
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(1.1);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 
   .nav-btn {
@@ -762,8 +740,30 @@ header::before {
   }
 }
 
+/* Medium desktops/laptops (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 850px;
+    padding: 0 1.8rem;
+  }
 
+  .album {
+    width: 400px;
+    height: 400px;
+  }
 
+  .album.main {
+    transform: translate3d(0, 0, 0) scale(0.95);
+  }
+
+  .nav-btn {
+    width: 36px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Small laptops (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     font-size: 14px;
@@ -775,18 +775,19 @@ header::before {
   }
 
   .album {
-    width: 320px;
-    height: 320px;
+    width: 340px;
+    height: 340px;
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(0.9);
   }
 
   .nav-btn {
-    width: 36px;
+    width: 32px;
     height: 36px;
     font-size: 18px;
   }
 }
+
 
