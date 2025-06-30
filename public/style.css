@@ -161,7 +161,7 @@ header::before {
 #genre-select:focus,
 #decade-select:focus {
   border-color: #888;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 6px rgba(0,0,0,1);
   outline: none;
 }
 
