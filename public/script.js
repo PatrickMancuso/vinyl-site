@@ -206,6 +206,10 @@ window.addEventListener('load', () => {
   carousel.style.opacity = '1';
 });
 
+ // Load saved theme
+  const savedTheme = localStorage.getItem('theme') || 'default';
+  document.body.classList.add(`theme-${savedTheme}`);
+
 // Dropdown menu toggle
 const dropdownToggle = document.getElementById("dropdown-toggle");
 const dropdownMenu = document.getElementById("dropdown-menu");
@@ -239,3 +243,9 @@ searchToggle.addEventListener("click", (e) => {
   }
 });
 
+
+function setTheme(theme) {
+  document.body.classList.remove('theme-default', 'theme-retro', 'theme-minimal');
+  document.body.classList.add(`theme-${theme}`);
+  localStorage.setItem('theme', theme);
+}

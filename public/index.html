@@ -20,30 +20,39 @@
 <body style="height: 100%; width: 100%; display: flex; flex-direction: column;">
   
 <div id="vault-header" class="slide-up">
-  <header>
+<header>
   <div class="header-left">
-  <div class="dropdown">
-    <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
-    <div id="dropdown-menu" class="dropdown-content">
-      <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
-      <button id="randomBtn" title="Random Album"><span class="dice-icon">🎲</span></button>
-      <a href="map.html" id="album-map" title="Music Map">🗺️</a>
-      <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
+
+    <!-- Dropdown Menu (☰) with all buttons including themes -->
+    <div class="dropdown">
+      <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
+      <div id="dropdown-menu" class="dropdown-content">
+        <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
+        <button id="randomBtn" title="Random Album"><span class="dice-icon">🎲</span></button>
+        <a href="map.html" id="album-map" title="Music Map">🗺️</a>
+        <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
+
+        <hr style="border: none; border-top: 1px solid #444; margin: 6px 0;" />
+
+        <!-- Theme toggle buttons -->
+        <button onclick="setTheme('default')" title="Default Theme">🎵 Default</button>
+        <button onclick="setTheme('retro')" title="Retro Theme">🧨 Retro</button>
+        <button onclick="setTheme('minimal')" title="Minimal Theme">📘 Minimal</button>
+      </div>
     </div>
-  </div>
 
-  <div id="search-container">
-    <button id="search-toggle" class="header-icon" aria-label="Search"></button>
-    <div id="search-dropdown">
-      <input type="text" id="search-input" placeholder="Search by title or artist...">
+    <!-- Search and Other Buttons -->
+    <div id="search-container">
+      <button id="search-toggle" class="header-icon" aria-label="Search"></button>
+      <div id="search-dropdown">
+        <input type="text" id="search-input" placeholder="Search by title or artist...">
+      </div>
     </div>
+    <a href="add.html" id="add-album" class="header-icon" title="Add a New Album"></a>
+    <a href="chart.html" id="music-room" class="header-icon" title="Share With Friends"></a>
+    <a href="list.html" id="toggle-view" class="header-icon" title="List View"></a>
+
   </div>
-  <a href="add.html" id="add-album" class="header-icon" title="Add a New Album"></a>
-      <a href="chart.html" id="music-room" class="header-icon" title="Share With Friends"></a>
-
-  <a href="list.html" id="toggle-view" class="header-icon" title="List View"></a>
-
-</div>
 
   <div class="header-title">Vinyl  Vault</div>
 
