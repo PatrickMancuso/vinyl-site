@@ -819,7 +819,7 @@ body.theme-retro {
   background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/backgroundvinylvault2.png?v=1748534052763') no-repeat center center fixed;
   background-size: cover;
   color: #f5deb3;
-  font-family: 'Courier New', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 body.theme-retro header
@@ -839,6 +839,22 @@ body.theme-retro .header-title {
 
 }
 
+/* === Retro Theme Footer Override === */
+body.theme-retro .site-footer {
+  background-color: transparent;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-shadow: 1px 1px 2px #000;
+}
+
+body.theme-retro .site-footer a {
+  color: white;
+}
+
+body.theme-retro .site-footer a:hover {
+  color: white;
+}
+
 
 /* ========== MINIMAL THEME ========== */
 body.theme-minimal {
@@ -855,7 +871,7 @@ body.theme-minimal .carousel-bg-bar {
 }
 
 body.theme-minimal .header-title {
-  font-family: 'GeneralSans-Light', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
   color: #222;
   letter-spacing: 0.5px;
