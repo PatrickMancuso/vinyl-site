@@ -793,31 +793,54 @@ header::before {
 }
 
 
-/* RETRO THEME */
+/* ========== DEFAULT THEME ========== */
+body.theme-default {
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/553707.jpg?v=1751319526085') no-repeat center center fixed;
+  color: #ffffff;
+  font-family: 'Garamond', sans-serif;
+}
+
+body.theme-default header,
+body.theme-default .site-footer {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+body.theme-default .header-title {
+  font-family: 'Gambarino-Regular', sans-serif;
+  font-size: 2.3rem;
+  color: #fefefe;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #000;
+}
+
+
+/* ========== RETRO THEME ========== */
 body.theme-retro {
-  background: url('https://example.com/retro-wallpaper.jpg') no-repeat center center fixed;
+  background: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/backgroundvinylvault2.png?v=1748534052763') no-repeat center center fixed;
   background-size: cover;
   color: #f5deb3;
   font-family: 'Courier New', monospace;
 }
 
-body.theme-retro header,
-body.theme-retro .site-footer,
-body.theme-retro .carousel-bg-bar {
-  background-color: rgba(20, 20, 20, 0.9);
+body.theme-retro header
+{
+  background-color: rgba(20, 20, 20, 0);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+
 }
 
-body.theme-retro .nav-btn,
-body.theme-retro #randomBtn,
-body.theme-retro #album-stats,
-body.theme-retro #album-map,
-body.theme-retro #fav-filter-toggle {
-  background: #222;
-  color: #f5deb3;
-  border-color: #444;
+body.theme-retro .header-title {
+  font-family: 'HooeyDemo', monospace;
+  font-size: 3.3rem;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #000;
+      transform: translateY(3px);
+
 }
 
-/* MINIMAL THEME */
+
+/* ========== MINIMAL THEME ========== */
 body.theme-minimal {
   background: #f5f5f5;
   color: #222;
@@ -831,12 +854,9 @@ body.theme-minimal .carousel-bg-bar {
   color: #222;
 }
 
-body.theme-minimal .nav-btn,
-body.theme-minimal #randomBtn,
-body.theme-minimal #album-stats,
-body.theme-minimal #album-map,
-body.theme-minimal #fav-filter-toggle {
-  background: #ddd;
-  color: #111;
-  border-color: #bbb;
+body.theme-minimal .header-title {
+  font-family: 'GeneralSans-Light', sans-serif;
+  font-size: 2.4rem;
+  color: #222;
+  letter-spacing: 0.5px;
 }
