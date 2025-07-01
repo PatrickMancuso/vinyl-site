@@ -55,7 +55,7 @@ header {
   flex-wrap: wrap;
   z-index: 1;
   background: rgba(1,1,1 , 0.95);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 }
 
 header::before {
@@ -834,10 +834,7 @@ body.theme-default {
   font-family: 'Garamond', sans-serif;
 }
 
-body.theme-default header,
-body.theme-default .site-footer {
-  background-color: rgba(0, 0, 0, 0.95);
-}
+
 
 body.theme-default .header-title {
   font-family: 'Gambarino-Regular', sans-serif;
