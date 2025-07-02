@@ -23,30 +23,30 @@
 <header>
   <div class="header-left">
 
-   <!-- Main dropdown (☰) -->
-<div class="dropdown">
-  <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
 
-  <div id="dropdown-menu" class="dropdown-content">
-    <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
-    <button id="randomBtn" title="Random Album">🎲</button>
-    <a href="map.html"   id="album-map"   title="Music Map">🗺️</a>
-    <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
+  <!-- Main dropdown (☰) -->
+    <div class="dropdown">
+      <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
 
-    <hr>
+      <div id="dropdown-menu" class="dropdown-content">
+        <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
+        <button id="randomBtn" title="Random Album">🎲</button>
+        <a href="map.html"   id="album-map"   title="Music Map">🗺️</a>
+        <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
 
-<button id="theme-toggle" class="theme-icon" title="Theme Menu">🎨</button>
+        <hr>
 
-<!-- Theme Submenu -->
-<div id="theme-submenu" class="submenu">
-  <button class="theme-btn" onclick="setTheme('default')">Default</button>
-  <button class="theme-btn" onclick="setTheme('retro')">Legacy</button>
-  <button class="theme-btn" onclick="setTheme('minimal')">Minimal</button>
-</div>
+        <!-- Theme toggle stays here -->
+        <button id="theme-toggle" class="header-icon" title="Choose a theme">🎨</button>
+      </div>
     </div>
-  </div>
-</div>
 
+    <!-- Floating submenu OUTSIDE the dropdown -->
+    <div id="theme-submenu" class="submenu floating-theme-menu">
+      <button class="theme-btn" onclick="setTheme('default')">Default</button>
+      <button class="theme-btn" onclick="setTheme('retro')">Legacy</button>
+      <button class="theme-btn" onclick="setTheme('minimal')">Minimal</button>
+    </div>
     <!-- Search and Other Buttons -->
     <div id="search-container">
       <button id="search-toggle" class="header-icon" aria-label="Search"></button>

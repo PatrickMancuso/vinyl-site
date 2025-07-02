@@ -287,7 +287,7 @@ header::before {
   background: none;
     transform: translateY(-1px);
 
-}
+}\
 
 #theme-toggle {
   background: #000000;
@@ -303,30 +303,41 @@ header::before {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Theme toggle button hover effect */
 #theme-toggle:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 
-/* Submenu for themes */
+/* Wrapper to handle hover */
+.theme-hover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Submenu (floating to the right of the theme icon) */
 .submenu {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
   flex-direction: column;
   gap: 6px;
   background-color: #111;
   border: 1px solid #444;
   border-radius: 6px;
-  padding: 6px;
-  margin-top: -2px;
+  padding: 8px;
+  z-index: 9999;
+  white-space: nowrap;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Show submenu when toggled by JS */
-.submenu.open {
+/* Show submenu on hover of wrapper */
+.theme-hover-wrapper:hover .submenu {
   display: flex;
 }
 
-/* Theme buttons inside submenu */
-.submenu .theme-btn {
+/* Buttons inside submenu */
+.theme-btn {
   background: #000;
   color: white;
   border: 1px solid #666;
@@ -338,9 +349,10 @@ header::before {
   transition: background 0.3s ease;
 }
 
-.submenu .theme-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+.theme-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 /* Wrapper to hold icon + dropdown side-by-side */
 #search-container {
