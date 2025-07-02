@@ -307,6 +307,8 @@ header::before {
   background: rgba(255, 255, 255, 0.4);
 }
 
+
+
 .floating-theme-menu {
   position: absolute;
   top: 300px; 
@@ -366,6 +368,7 @@ header::before {
   font-size: 0.95rem;
   cursor: pointer;
   text-align: left;
+
   transition: background 0.3s ease;
 }
 
@@ -521,7 +524,7 @@ header::before {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   flex-direction: column;
   gap: 10px;
-  left: -10px;
+  left: -8px;
 
   opacity: 0;
   pointer-events: none;
