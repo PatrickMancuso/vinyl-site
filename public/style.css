@@ -649,7 +649,7 @@ header::before {
 
 .carousel {
   width: 100%;
-  height: 780px; /* shrink this height */
+  height: 790px; /* shrink this height */
   position: relative; /* relative for absolutely positioned .album inside */
   overflow: visible; /* so albums can overflow vertically */
   display: flex;
@@ -824,7 +824,7 @@ header::before {
   }
 
   .album.main {
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1.1);
   }
 
   .nav-btn {
