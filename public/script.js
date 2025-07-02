@@ -249,3 +249,19 @@ function setTheme(theme) {
   document.body.classList.add(`theme-${theme}`);
   localStorage.setItem('theme', theme);
 }
+
+
+// Theme submenu toggle logic
+const themeToggle = document.getElementById('theme-toggle');
+const themeSubmenu = document.getElementById('theme-submenu');
+
+// Toggle submenu open/close
+themeToggle.addEventListener('click', (e) => {
+  e.stopPropagation(); // prevent bubbling
+  themeSubmenu.classList.toggle('open');
+});
+
+// Close submenu if clicking outside
+document.addEventListener('click', () => {
+  themeSubmenu.classList.remove('open');
+});

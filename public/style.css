@@ -289,7 +289,58 @@ header::before {
 
 }
 
+#theme-toggle {
+  background: #000000;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5.5px 6.5px;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 43px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Submenu for themes */
+.submenu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background-color: #111;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px;
+  margin-top: -2px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Show submenu when toggled by JS */
+.submenu.open {
+  display: flex;
+}
+
+/* Theme buttons inside submenu */
+.submenu .theme-btn {
+  background: #000;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.submenu .theme-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 /* Wrapper to hold icon + dropdown side-by-side */
 #search-container {

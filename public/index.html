@@ -23,24 +23,29 @@
 <header>
   <div class="header-left">
 
-    <!-- Dropdown Menu (☰) with all buttons including themes -->
-    <div class="dropdown">
-      <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
-      <div id="dropdown-menu" class="dropdown-content">
-        <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
-        <button id="randomBtn" title="Random Album"><span class="dice-icon">🎲</span></button>
-        <a href="map.html" id="album-map" title="Music Map">🗺️</a>
-        <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
+   <!-- Main dropdown (☰) -->
+<div class="dropdown">
+  <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
 
-        <hr style="border: none; border-top: 1px solid #444; margin: 6px 0;" />
+  <div id="dropdown-menu" class="dropdown-content">
+    <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
+    <button id="randomBtn" title="Random Album">🎲</button>
+    <a href="map.html"   id="album-map"   title="Music Map">🗺️</a>
+    <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
 
-        <!-- Theme toggle buttons -->
-        <button class="theme-btn theme-default" onclick="setTheme('default')" title="Default Theme">Default</button>
-<button class="theme-btn theme-retro" onclick="setTheme('retro')" title="Retro Theme">Legacy</button>
-                <button class="theme-btn theme-minimal" onclick="setTheme('minimal')" title="Minimal Theme">Minimal</button>
+    <hr>
 
-      </div>
+<button id="theme-toggle" class="theme-icon" title="Theme Menu">🎨</button>
+
+<!-- Theme Submenu -->
+<div id="theme-submenu" class="submenu">
+  <button class="theme-btn" onclick="setTheme('default')">Default</button>
+  <button class="theme-btn" onclick="setTheme('retro')">Legacy</button>
+  <button class="theme-btn" onclick="setTheme('minimal')">Minimal</button>
+</div>
     </div>
+  </div>
+</div>
 
     <!-- Search and Other Buttons -->
     <div id="search-container">
