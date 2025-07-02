@@ -250,3 +250,14 @@ function setTheme(theme) {
   localStorage.setItem('theme', theme);
 }
 
+const themeToggle = document.getElementById('theme-toggle');
+const themeSubmenu = document.getElementById('theme-submenu');
+
+themeToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  themeSubmenu.classList.toggle('open');
+});
+
+document.addEventListener('click', () => {
+  themeSubmenu.classList.remove('open');
+});
