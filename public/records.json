@@ -10,6 +10,18 @@
     "spotify_url": "https://open.spotify.com/embed/album/2PfGKHtqEX58bHtkQxJnWG?utm_source=generator",
     "artist_origin": "London, UK"
   },
+
+  {
+  "id": "the-black-saint-and-the-sinner-lady",
+  "title": "The Black Saint and the Sinner Lady",
+  "artist": "Charles Mingus",
+  "year": 1963,
+  "cover": "https://m.media-amazon.com/images/I/81hhw07NBDL._UF1000,1000_QL80_.jpg",
+  "api_artist_name": "Charles Mingus",
+  "tags": "jazz, bebop, bass, Avant-Garde, Post-Bop",
+  "spotify_url": "https://open.spotify.com/embed/album/6Sts4Yh7KsDFwq2yTWrGGV?utm_source=generator",
+  "artist_origin": "Nogales, Arizona"
+},
   {
     "id": "adam-s-apple",
     "title": "Adam's Apple",
