@@ -131,36 +131,7 @@
 }
 
 
-    import { db } from './firebase-init.js';
-import { collection, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { auth } from './firebase-init.js';
-
-async function submitAlbum() {
-  const result = document.getElementById('result').textContent;
-  if (!result) {
-    alert("Please generate the album entry first!");
-    return;
-  }
-
-  const album = JSON.parse(result);
-  const user = auth.currentUser;
-
-  if (!user) {
-    alert("You must be signed in to add an album.");
-    return;
-  }
-
-  try {
-    const userAlbumsRef = doc(db, `users/${user.uid}/albums/${album.id}`);
-    await setDoc(userAlbumsRef, album);
-
-    alert("Album added to your collection!");
-    // Optionally clear form
-  } catch (err) {
-    console.error("Error writing to Firestore:", err);
-    alert("Failed to save album.");
-  }
-}
+    
 
   </script>
 
