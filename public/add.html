@@ -131,7 +131,43 @@
 }
 
 
+ async function submitAlbum() {
+  const resultEl = document.getElementById('result');
+  if (!resultEl.textContent) {
+    alert("Please generate the album entry first!");
+    return;
+  }
+  
+  try {
+    const albumEntry = JSON.parse(resultEl.textContent);
     
+    const response = await fetch('/add-album', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(albumEntry)
+    });
+    
+    if (response.ok) {
+      alert('Album saved successfully!');
+      // Optionally clear the form and result area:
+      document.getElementById('result').textContent = '';
+      document.getElementById('title').value = '';
+      document.getElementById('artist').value = '';
+      document.getElementById('year').value = '';
+      document.getElementById('image').value = '';
+      document.getElementById('spotify').value = '';
+      document.getElementById('origin').value = '';
+    } else {
+      const errorText = await response.text();
+      alert('Failed to save album: ' + errorText);
+    }
+  } catch (err) {
+    alert('Error submitting album: ' + err.message);
+  }
+}
+   
 
   </script>
 
