@@ -96,6 +96,8 @@ header::before {
   margin: 0;
   text-align: center;
   flex-shrink: 0;
+      transform: translateX(-1px);
+
 }
 
 /* Sticky footer compatibility */
