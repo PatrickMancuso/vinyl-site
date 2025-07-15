@@ -96,7 +96,7 @@ header::before {
   margin: 0;
   text-align: center;
   flex-shrink: 0;
-      transform: translateX(-3px);
+      transform: translateX(3px);
 
 }
 
