@@ -1,77 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100vh; width: 100vw;">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vinyl Vault</title>
-  
+
   <link rel="icon" href="https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/vinyl.svg?v=1748371254359" type="image/png" />
-  
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="style.css?v=2" />
   <script type="module" src="/firebase-login.js"></script>
 
-  
   <script>
-  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = "mobile.html";
-  }
-</script>
-  
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      window.location.href = "mobile.html";
+    }
+  </script>
 </head>
-<body style="height: 100%; width: 100%; display: flex; flex-direction: column;">
-  
+
+<body class="theme-default">
+
 <div id="vault-header" class="slide-up">
 <header>
   <div class="header-left">
 
-
-  <!-- Main dropdown (☰) -->
     <div class="dropdown">
       <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
 
       <div id="dropdown-menu" class="dropdown-content">
         <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
         <button id="randomBtn" title="Random Album">🎲</button>
-        <a href="map.html"   id="album-map"   title="Music Map">🗺️</a>
+        <a href="map.html" id="album-map" title="Music Map">🗺️</a>
         <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
-
-
-        <!-- Theme toggle stays here -->
         <button id="theme-toggle" class="header-icon" title="Choose a theme">🎨</button>
       </div>
     </div>
 
-    <!-- Floating submenu OUTSIDE the dropdown -->
     <div id="theme-submenu" class="submenu floating-theme-menu">
       <button class="theme-btn" onclick="setTheme('default')">Default</button>
       <button class="theme-btn" onclick="setTheme('retro')">Legacy</button>
       <button class="theme-btn" onclick="setTheme('minimal')">Minimal</button>
     </div>
-    <!-- Search and Other Buttons -->
+
     <div id="search-container">
-      <button id="search-toggle" class="header-icon" aria-label="Search"></button>
+      <button id="search-toggle" class="header-icon"></button>
       <div id="search-dropdown">
         <input type="text" id="search-input" placeholder="Search by title or artist...">
       </div>
     </div>
-    <a href="add.html" id="add-album" class="header-icon" title="Add a New Album"></a>
-    <a href="chart.html" id="music-room" class="header-icon" title="Share With Friends"></a>
-    <a href="list.html" id="toggle-view" class="header-icon" title="List View"></a>
+
+    <a href="add.html" id="add-album" class="header-icon"></a>
+    <a href="chart.html" id="music-room" class="header-icon"></a>
+    <a href="list.html" id="toggle-view" class="header-icon"></a>
 
   </div>
 
-  <div class="header-title">Vinyl  Vault</div>
+  <div class="header-title">Vinyl Vault</div>
 
- <div class="header-right">
-
-<!-- Firebase Login UI -->
-   <!-- 
-<div id="auth-ui" style="display: flex; gap: 10px; align-items: center;">
-  <button id="login-btn">Sign in</button>
-  <button id="logout-btn" style="display: none;">Sign out</button>
-  <span id="user-info" style="color: white; font-size: 0.8rem;"></span>
-</div>
--->
-
+  <div class="header-right">
     <div class="filter-group">
       <select id="genre-select">
         <option value="all">All Genres</option>
@@ -92,7 +77,6 @@
         <option value="reggae">Reggae</option>
         <option value="soundtrack">Soundtrack</option>
         <option value="instrumental">Instrumental</option>
-
       </select>
 
       <select id="decade-select">
@@ -107,39 +91,25 @@
         <option value="2020">2020s</option>
       </select>
     </div>
-
   </div>
-    
-    
-    
+
 </header>
 </div>
 
-
-<!-- Carousel View -->
-<div id="carousel-view" style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">   
- <!-- Carousel View -->  
-  <!-- Background bar -->
+<div id="carousel-view">
   <div class="carousel-bg-bar"></div>
-
-  <!-- Carousel content -->
   <div class="carousel" id="carousel"></div>
 
-  <!-- Nav Controls -->
   <div class="nav-controls">
     <button class="nav-btn nav-left" id="prevBtn">&#10094;</button>
     <button class="nav-btn nav-right" id="nextBtn">&#10095;</button>
   </div>
-
 </div>
 
-
-
 <div class="bookshelf"></div>
-  
-  <footer class="site-footer">
+
+<footer class="site-footer">
   <div class="footer-left">© 2025 Vinyl Vault</div>
-    
   <div class="footer-links">
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
