@@ -1,0 +1,172 @@
+/* Load the custom font */
+@font-face {
+  font-family: 'HooeyDemo';
+  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gambarino-Regular';
+  src: url('/assets/Gambarino-Regular.otf') format('opentype');
+}
+/* Global body styles */
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;  /* Default font */
+  background: url('/assets/lack-music-studio-technics-wallpaper-preview.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 1.5rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
+
+/* define spin animation */
+@keyframes spinRecord {
+  from { transform: rotate(0deg) scale(1.1); }
+  to   { transform: rotate(360deg) scale(1.1); }
+}
+
+.header-logo {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  filter: brightness(1.2) contrast(1.2);
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  animation: spinRecord 1.2s linear infinite; /* keep spinning */
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 2.1rem;
+  font-family: 'Gambarino-Regular', sans-serif;
+  margin: 0;
+}
+
+/* Optional: for tighter layout grouping */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.smaller {
+  width: 85%;  /* adjust as needed */
+  max-width: 850px;
+  display: block;
+  margin: 10px 0;
+}
+
+
+
+#add-album {
+   background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+}
+
+#add-album:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Flex container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.2rem;
+  }
+
+  #search-input {
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .header-left,
+  .header-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  }
+
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-left,
+  .header-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+}
+
+

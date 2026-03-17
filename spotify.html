@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to Embed a Spotify Album</title>
+  <link rel="stylesheet" href="add.css" />
+  <link rel="icon" href="/assets/vinyl.svg" type="image/png" />
+
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: sans-serif;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+
+    h1 {
+      color: #ffffff;
+      margin-top: 20px;
+    }
+
+    .step {
+      margin: 40px 0;
+    }
+
+    img {
+      max-width: 100%;
+      border: 2px solid #444;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .caption {
+      font-size: 0.95em;
+      color: #ccc;
+    }
+
+    a.back-link {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 15px;
+      font-size: 1.1rem;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      width: auto;
+      min-width: 80px;
+        transition: background 0.3s ease, color 0.3s ease;  
+
+    }
+
+     a.back-link:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="add.html" class="back-link">← Back to Add Album Form</a>
+
+  <h1>How to Get a Spotify Embed Link</h1>
+
+  <div class="step">
+    <h2>Step 1: Open the Share Menu</h2>
+    <p class="caption">Right-click the album or episode in Spotify, hover over “Share,” then select “Embed album” or “Embed song.”</p>
+    <img src="assets/embed-menu.png" alt="Embed option in Spotify share menu" class="smaller">
+    
+  </div>
+
+  <div class="step">
+    <h2>Step 2: Copy the Embed Link</h2>
+     <p class="caption">A popup will appear—click the green “Copy” button to copy the embed link.</p>
+    <img src="assets/embed-options.png" alt="Spotify embed window with copy button" class="smaller">
+   
+  </div>
+
+  <div class="step">
+    <h2>Step 3: Find the Embed URL</h2>
+    <p class="caption">When pasted the embed link will look like this<br>
+    <code>&lt;iframe src="https://open.spotify.com/embed/album/xyz123"...&gt;</code><br>
+    This can be alot so don't panic, this is how it should look<br>
+    This is the URL you’ll paste into the Spotify Embed field on the form.</p>
+    <img src="assets/Screenshot2025-07-16113215.png" alt="Example of the full embed code" />
+    
+  </div>
+
+  <a href="add.html" class="back-link">← Back to Add Album Form</a>
+
+
+</body>
+</html>

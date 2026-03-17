@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh; width: 100vw;">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl Vault</title>
+  
+  <link rel="icon" href="/assets/vinyl.svg" type="image/png" />
+  
+  <link rel="stylesheet" href="/style.css" />
+  
+  <script>
+  if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.href = "mobile.html";
+  }
+</script>
+  
+</head>
+  <body class="theme-default" style="height: 100%; width: 100%; display: flex; flex-direction: column;">  
+<div id="vault-header" class="slide-up">
+<header>
+  <div class="header-left">
+
+
+  <!-- Main dropdown (☰) -->
+    <div class="dropdown">
+      <button id="dropdown-toggle" class="header-icon" title="Extras">☰</button>
+
+      <div id="dropdown-menu" class="dropdown-content">
+        <button id="fav-filter-toggle" title="Show Favorites">⭐</button>
+        <button id="randomBtn" title="Random Album">
+          <span class="dice-icon">🎲</span>
+        </button>
+        <a href="stats.html" id="album-stats" title="Album Stats">📊</a>
+
+        <a href="chart.html" id="music-room" title="Create a Chart">🚀</a>
+
+
+        <button id="theme-toggle" class="header-icon" title="Choose a theme">🎨</button>
+      </div>
+    </div>
+
+    <!-- Floating submenu OUTSIDE the dropdown -->
+    <div id="theme-submenu" class="submenu floating-theme-menu">
+      <button class="theme-btn" onclick="setTheme('default')">Default</button>
+      <button class="theme-btn" onclick="setTheme('retro')">Retro</button>
+      <button class="theme-btn" onclick="setTheme('legacy')">Legacy</button>
+      <button class="theme-btn" onclick="setTheme('minimal')">Minimal</button>
+    </div>
+    <!-- Search and Other Buttons -->
+    <div id="search-container">
+      <button id="search-toggle" class="header-icon" aria-label="Search"></button>
+      <div id="search-dropdown">
+        <input type="text" id="search-input" placeholder="Search by title or artist...">
+      </div>
+    </div>
+    <a href="add.html" id="add-album" class="header-icon" title="Add a New Album"></a>
+     <a href="rec.html" id="artist-rec" class="header-icon" title="Find a new artist"></a>
+
+
+    <a href="list.html" id="toggle-view" class="header-icon" title="List View"></a>
+
+  </div>
+
+  <div class="header-title">Vinyl  Vault</div>
+
+ <div class="header-right">
+
+<!-- Firebase Login UI -->
+   <!-- 
+<div id="auth-ui" style="display: flex; gap: 10px; align-items: center;">
+  <button id="login-btn">Sign in</button>
+  <button id="logout-btn" style="display: none;">Sign out</button>
+  <span id="user-info" style="color: white; font-size: 0.8rem;"></span>
+</div>
+-->
+   
+    <div class="filter-group">
+      <select id="genre-select">
+        <option value="all">All Genres</option>
+        <option value="rock">Rock</option>
+        <option value="funk">Funk</option>
+        <option value="soul">Soul</option>
+        <option value="rnb">R&B</option>
+        <option value="jazz">Jazz</option>
+        <option value="electronic">Electronic</option>
+        <option value="ambient">Ambient</option>
+        <option value="psychedelic">Psychedelic</option>
+        <option value="progressive rock">Progressive Rock</option>
+        <option value="new wave">New Wave</option>
+        <option value="pop">Pop</option>
+        <option value="disco">Disco</option>
+        <option value="blues">Blues</option>
+        <option value="folk">Folk</option>
+        <option value="reggae">Reggae</option>
+        <option value="soundtrack">Soundtrack</option>
+        <option value="instrumental">Instrumental</option>
+
+      </select>
+
+      <select id="decade-select">
+        <option value="all">All Decades</option>
+        <option value="1950">1950s</option>
+        <option value="1960">1960s</option>
+        <option value="1970">1970s</option>
+        <option value="1980">1980s</option>
+        <option value="1990">1990s</option>
+        <option value="2000">2000s</option>
+        <option value="2010">2010s</option>
+        <option value="2020">2020s</option>
+      </select>
+    </div>
+   <a href="https://open.spotify.com/playlist/3KBRKLF4VzVYXQcR6a7RET?si=8640f7135d7a4a4e" target="_blank" rel="noopener" title="Currently Spinning">
+     <img src="/assets/vinyl.svg" alt="Logo" class="header-logo" />
+   </a>
+  </div>
+    
+    
+    
+</header>
+</div>
+
+
+  <!-- Carousel View -->
+  <div id="carousel-view">
+    <div class="carousel-bg-bar"></div>
+
+    <div class="carousel-scale-wrapper">
+      <div class="carousel" id="carousel"></div>
+    </div>
+
+    <div class="nav-controls">
+      <button class="nav-btn nav-left" id="prevBtn">&#10094;</button>
+      <button class="nav-btn nav-right" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+
+
+  
+  <footer class="site-footer">
+  <div class="footer-left">© 2025 Vinyl Vault</div>
+    
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'HooeyDemo';
+  src: url('https://cdn.glitch.global/ee373bf0-c70b-4a5f-8b98-9206bd8d2559/HooeyDEMO-Regular.otf?v=1746308587648') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gambarino-Regular';
+  src: url('/assets/Gambarino-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('https://cdn.glitch.global/5a61e06d-3a29-4f64-9308-866c806f9357/Sentient-Light.otf?v=1750800335190') format('opentype');
+}
+
+html, body {
+  overflow-y: hidden !important;
+  height: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background: url('/assets/record+black+background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.list-header {
+  background-color: rgba(0, 0, 0, 0); /* semi-transparent black */
+  backdrop-filter: blur(4px); /* optional blur for a modern effect */
+  padding: 1.2rem 0rem 1rem;
+  color: white;
+  position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+
+}
+
+/* HEADER TOP - flex container centered */
+.header-top {
+  display: flex;
+  justify-content: center; /* center the title */
+  align-items: center;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+/* LEFT and RIGHT - absolutely positioned, vertically centered */
+.header-left,
+.header-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+  font-size: 1rem;
+}
+
+.header-left {
+  left: 1.5rem;
+}
+
+.header-right {
+  right: 1.5rem;
+  gap: 8px;
+}
+
+
+
+
+
+/* Title centered */
+.header-title {
+  font-family: 'Gambarino-Regular', serif;
+  font-size: 2.2rem;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: center;
+  user-select: none;
+  transform: translateX(-3px);
+
+}
+
+/* Record count styling */
+.record-count {
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Back button styling */
+/* Back Button */
+#toggle-view {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 9px 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: auto;
+  min-width: 80px;
+    transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+#toggle-view:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Logo on right */
+.header-logo {
+  height: 45px;
+  width: 45px;
+  filter: brightness(1.1) contrast(1.2);
+  transition: transform 0.6s ease;
+}
+
+.header-logo:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Control Styling */
+#genre-select,
+#decade-select,
+#search-input
+{
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border: none;
+}
+
+#genre-select,
+#decade-select {
+  padding: 11px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8rem;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+#search-input {
+  width: 200px;
+}
+
+/* HEADER BOTTOM - search bar centered */
+.header-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+/* Album list container */
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 60px 100px;
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  opacity: 1;
+  transform: translateY(0);
+      transition: background 0.3s ease, color 0.3s ease;  
+
+}
+
+/* Hide scrollbar */
+.album-list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Album item */
+.album-item {
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  cursor: pointer;
+    transform: translateZ(0); 
+
+  transition: background 0.2s, transform 0.2s;
+}
+
+.album-item:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: scale(1.05);
+}
+
+.album-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.album-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.album-info p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .spinnable-vinyl {
+    display: none;
+  }
+}
+
+
+
+.album-list.compact-view {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 20px 40px 80px;
+}
+
+/* Compact view album items: no image, just tight text */
+.album-list.compact-view .album-item {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  text-align: left;
+}
+
+/* Hide image in compact view */
+.album-list.compact-view .album-icon {
+  display: none;
+}
+
+.album-list.compact-view .album-info h3 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.album-list.compact-view .album-info p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #bbb;
+}
+
+
+#layout-toggle {
+  background: none;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+#layout-toggle:hover {
+  opacity: 0.6;
+}
+
+#layout-icon {
+  filter: brightness(0) invert(1); /* Makes the icon white regardless of source */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease;
+}
+
+#layout-toggle:hover #layout-icon {
+  transform: scale(1.1);
+}
+
+/* Large View: big icons, 3 per row */
+.album-list.large-view {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 70px 90px 110px;
+}
+
+.album-list.large-view .album-item {
+  flex-direction: column; /* stack image + text */
+  align-items: center;
+  text-align: center;
+  max-width: 400px; /* or whatever looks good */
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.album-list.large-view .album-icon {
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.album-list.large-view .album-info h3 {
+  font-size: 1.4rem;
+}
+
+.album-list.large-view .album-info p {
+  font-size: 1rem;
+}

@@ -1,0 +1,208 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vinyl Stats</title>
+  <link rel="icon" href="/assets/vinyl.svg" type="image/png" />
+
+  <link rel="stylesheet" href="stats.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <a href="index.html" id="toggle-view">← Back to Carousel</a>
+      <div class="record-count" id="record-count">0 Albums</div>
+    </div>
+    <div class="header-title">Album Insights</div>
+    <div class="header-right"></div>
+  </header>
+
+  <main>
+    <section class="chart-section">
+      <h2>Albums by Genre</h2>
+      <canvas id="genreChart" width="300" height="200"></canvas>
+    </section>
+    
+    <section class="chart-section">
+      <h2>Albums by Decade</h2>
+      <canvas id="decadeChart" width="300" height="150"></canvas>
+    </section>
+    
+    <section class="chart-section">
+      <h2>Albums by Artist Origin</h2>
+      <canvas id="originChart" width="300" height="200"></canvas>
+    </section>
+
+  </main>
+  <section id="album-list" class="album-list"></section>
+
+<script>
+  const usStates = [
+    "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+    "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
+    "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi",
+    "Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico",
+    "New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+    "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont",
+    "Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+  ];
+  const usKeywords = ["USA", "United States", "U.S.", "US"];
+
+  function cleanOrigin(origin) {
+    if (!origin) return "Unknown";
+    const parts = origin.split(",").map(p => p.trim());
+    const usStateFullNames = usStates.map(s => s.toLowerCase());
+    const usStateAbbrevs = ["al","ak","az","ar","ca","co","ct","de","fl","ga","hi","id","il","in","ia","ks","ky","la","me","md","ma","mi","mn","ms","mo","mt","ne","nv","nh","nj","nm","ny","nc","nd","oh","ok","or","pa","ri","sc","sd","tn","tx","ut","vt","va","wa","wv","wi","wy"];
+    const partsLower = parts.map(p => p.toLowerCase());
+
+    const isUSState = partsLower.some(part =>
+      usStateFullNames.includes(part) || usStateAbbrevs.includes(part)
+    );
+    const isUSKeyword = partsLower.some(part =>
+      usKeywords.map(k => k.toLowerCase()).includes(part)
+    );
+
+    if (isUSState || isUSKeyword) {
+      const statePart = parts.find(p => 
+        usStateFullNames.includes(p.toLowerCase()) || usStateAbbrevs.includes(p.toLowerCase())
+      );
+      return statePart || "USA";
+    } else {
+      return parts[parts.length - 1] || "Unknown";
+    }
+  }
+
+  function renderAlbumList(albums, heading) {
+    const container = document.getElementById("album-list");
+    container.innerHTML = `<h2>${heading}</h2>`;
+    if (albums.length === 0) {
+      container.innerHTML += "<p>No albums found.</p>";
+      return;
+    }
+    const listHTML = albums.map(a => `
+      <div class="album-card">
+        <img src="${a.cover}" alt="${a.title}" />
+        <div class="album-info">
+          <h3>${a.title}</h3>
+          <p><strong>${a.artist}</strong> (${a.year || "Unknown"})</p>
+        </div>
+      </div>
+    `).join("");
+    container.innerHTML += `<div class="album-grid">${listHTML}</div>`;
+
+    container.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  }
+
+  fetch("records.json")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("record-count").textContent = `${data.length} Albums`;
+
+    const decadeCounts = {}, genreCounts = {}, originCounts = {};
+    data.forEach(album => {
+      if (album.year) {
+        const decade = Math.floor(album.year / 10) * 10;
+        decadeCounts[decade] = (decadeCounts[decade] || 0) + 1;
+      }
+      if (album.tags) {
+        album.tags.toLowerCase().split(',').map(tag => tag.trim()).forEach(tag => {
+          if (tag) genreCounts[tag] = (genreCounts[tag] || 0) + 1;
+        });
+      }
+      const origin = cleanOrigin(album.artist_origin ? album.artist_origin.trim() : "Unknown");
+      originCounts[origin] = (originCounts[origin] || 0) + 1;
+    });
+
+    // 📊 Decade Chart (vertical bar, pink, sorted by decade)
+    const sortedDecades = Object.entries(decadeCounts).sort((a,b) => a[0] - b[0]);
+    const decadeChart = new Chart(document.getElementById('decadeChart'), {
+      type: 'bar',
+      data: {
+        labels: sortedDecades.map(d => d[0]),
+        datasets: [{
+          label: 'Albums',
+          data: sortedDecades.map(d => d[1]),
+          backgroundColor: '#ff6384'
+        }]
+      },
+      options: {
+        scales: { y: { beginAtZero: true }},
+        plugins: { legend: { display: false }},
+        onClick: (evt) => {
+          const points = decadeChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, false);
+          if (points.length > 0) {
+            const index = points[0].index;
+            const decade = decadeChart.data.labels[index];
+            const albums = data.filter(a => Math.floor(a.year/10)*10 == decade);
+            renderAlbumList(albums, `Albums from the ${decade}s`);
+          }
+        }
+      }
+    });
+
+    // 📊 Genre Chart (horizontal bar, blue, top 20, sorted descending)
+    const topN = 20;
+    const sortedGenres = Object.entries(genreCounts).sort((a,b) => b[1]-a[1]).slice(0, topN);
+    const genreChart = new Chart(document.getElementById('genreChart'), {
+      type: 'bar',
+      data: {
+        labels: sortedGenres.map(g => g[0]),
+        datasets: [{
+          label: 'Albums',
+          data: sortedGenres.map(g => g[1]),
+          backgroundColor: '#36a2eb'
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        scales: { x: { beginAtZero: true }},
+        plugins: { legend: { display: false }},
+        onClick: (evt) => {
+          const points = genreChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, false);
+          if (points.length > 0) {
+            const index = points[0].index;
+            const genre = genreChart.data.labels[index];
+            const albums = data.filter(a => a.tags && a.tags.toLowerCase().includes(genre.toLowerCase()));
+            renderAlbumList(albums, `Albums in Genre: ${genre}`);
+          }
+        }
+      }
+    });
+
+    // 📊 Origin Chart (horizontal bar, yellow, sorted descending)
+    const sortedOrigins = Object.entries(originCounts).sort((a,b) => b[1]-a[1]);
+    const originChart = new Chart(document.getElementById('originChart'), {
+      type: 'bar',
+      data: {
+        labels: sortedOrigins.map(o => o[0]),
+        datasets: [{
+          label: 'Albums',
+          data: sortedOrigins.map(o => o[1]),
+          backgroundColor: '#ffce56'
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        scales: { x: { beginAtZero: true }},
+        plugins: { legend: { display: false }},
+        onClick: (evt) => {
+          const points = originChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, false);
+          if (points.length > 0) {
+            const index = points[0].index;
+            const origin = originChart.data.labels[index];
+            const albums = data.filter(a => cleanOrigin(a.artist_origin) === origin);
+            renderAlbumList(albums, `Albums from ${origin}`);
+          }
+        }
+      }
+    });
+  });
+
+
+</script>
+</body>
+</html>
